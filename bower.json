@@ -1,0 +1,32 @@
+{
+  "name": "d3-showcase",
+  "version": "0.0.0",
+  "authors": [
+    "Cyril Panecker <cyrilp@imaginea.com>",
+    "Roshan Joshi <roshanj@imaginea.com>",
+    "Arnab Das <arnab.das@imaginea.com>"
+  ],
+  "description": "This will be a collection of charts & info-graphics made by D3",
+  "main": "src/html/index.html",
+  "keywords": [
+    "reader"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderuse/d3-showcase.git"
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://coderuse.github.io/d3-showcase",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~1.11.3",
+    "d3": "~3.5.10"
+  }
+}
