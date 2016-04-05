@@ -1,0 +1,13 @@
+body {
+  font: 3.6em sans-serif;
+  color: #333;
+}
+
+path {
+  fill: #ccc;
+  stroke: #fff;
+  stroke-width: .5px;
+}
+path:hover {
+  fill: red;
+}
