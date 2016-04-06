@@ -2,17 +2,9 @@ body {
   font: 3.6em sans-serif;
   color: #333;
 }
-
-path {
+body svg path {
+  cursor: pointer;
   fill: #ccc;
   stroke: #fff;
   stroke-width: .5px;
-}
-
-text {
-  font-size: 10px;
-}
-
-svg path {
-  cursor: pointer;
 }
