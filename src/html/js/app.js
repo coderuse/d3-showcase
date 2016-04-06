@@ -36,6 +36,10 @@
                     })
                     .on('click',function(datum){
                         console.log(states[datum.id]);
+                    })
+                    .append('title')
+                    .text(function(datum){
+                        return states[datum.id];
                     });
 
             // svg.selectAll('.state-name')
