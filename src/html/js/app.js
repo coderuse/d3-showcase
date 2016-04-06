@@ -4,10 +4,14 @@
   // Declaring lib variables
   var d3 = w.d3, topojson = w.topojson;
   
-  var width = 960,
+  var width = 800,
     height = 500;
+    
+var projection = d3.geo.albersUsa()
+    .scale(1000)
+    .translate([width / 2, height / 2]);
 
-  var path = d3.geo.path();
+  var path = d3.geo.path().projection(projection);
   var pathVar;
   var svg = d3.select('.chart').append('svg')
     .attr('width', width)
