@@ -38,20 +38,20 @@
                         console.log(states[datum.id]);
                     });
 
-            svg.selectAll('.state-name')
-                .data(data)
-                .enter().append('text')
-                    .attr('class','state-name')
-                    .text(function(datum){
-                        return states[datum.id];
-                    })
-                    .attr('x',function(datum){
-                        return path.centroid(datum)[0];
-                    })
-                    .attr('y',function(datum){
-                        return path.centroid(datum)[1];
-                    })
-                    .attr('text-anchor','middle');
+            // svg.selectAll('.state-name')
+            //     .data(data)
+            //     .enter().append('text')
+            //         .attr('class','state-name')
+            //         .text(function(datum){
+            //             return states[datum.id];
+            //         })
+            //         .attr('x',function(datum){
+            //             return path.centroid(datum)[0];
+            //         })
+            //         .attr('y',function(datum){
+            //             return path.centroid(datum)[1];
+            //         })
+            //         .attr('text-anchor','middle');
 
         });
 
