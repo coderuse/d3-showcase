@@ -8,6 +8,11 @@ path {
   stroke: #fff;
   stroke-width: .5px;
 }
-path:hover {
-  fill: red;
+
+text {
+  font-size: 10px;
+}
+
+svg path {
+  cursor: pointer;
 }
