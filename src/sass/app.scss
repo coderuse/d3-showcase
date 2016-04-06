@@ -19,5 +19,10 @@ body {
             stroke: #fff;
             stroke-width: .5px;
         }
+		.active {
+  			fill: orange;
+  			stroke:#000;
+  			stroke-width: .5px;
+		}
     }
 }
