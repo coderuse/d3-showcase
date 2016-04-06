@@ -8,3 +8,7 @@ path {
   stroke: #fff;
   stroke-width: .5px;
 }
+
+text {
+  font-size: 10px;
+}
