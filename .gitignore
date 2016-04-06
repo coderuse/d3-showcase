@@ -192,3 +192,6 @@ node_modules
 
 # Karma-Jasmine Report
 reports
+
+# Release folder
+release

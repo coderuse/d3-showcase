@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
   var pkg = grunt.file.readJSON('package.json');
   for (var taskName in pkg.devDependencies) {
@@ -15,11 +15,14 @@ module.exports = function (grunt) {
     }
   };
 
-//  var util = require('util');
-//  console.log(util.inspect(devDependencies));
+  //  var util = require('util');
+  //  console.log(util.inspect(devDependencies));
 
   grunt.initConfig({
     pkg: pkg,
+    clean: {
+      release: ['release']
+    },
     connect: {
       options: {
         hostname: '0.0.0.0'
@@ -35,6 +38,18 @@ module.exports = function (grunt) {
         }
       }
     },
+    copy: {
+      release: {
+        files: [
+          {
+            expand: true,
+            cwd: 'src/html/',
+            src: ['**'],
+            dest: 'release/'
+          }
+        ]
+      }
+    },
     sass: {
       dev: {
         options: {
@@ -48,12 +63,22 @@ module.exports = function (grunt) {
         }
       }
     },
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      customJS: ['src/html/js/**/*.js']
+    },
     watch: {
       styles: {
         files: [
           'src/sass/**/*.scss'
         ],
         tasks: ['sass:dev']
+      },
+      jsChanges: {
+        files: ['src/html/js/**/*.js'],
+        tasks: ['jshint']
       },
       sources: {
         options: {
@@ -70,5 +95,8 @@ module.exports = function (grunt) {
   });
 
   // Development
-  grunt.registerTask('default', ['sass', 'connect:dev', 'watch']);
+  grunt.registerTask('default', ['sass', 'jshint', 'connect:dev', 'watch']);
+
+  // Release
+  grunt.registerTask('release', ['clean', 'sass', 'jshint', 'copy']);
 };
