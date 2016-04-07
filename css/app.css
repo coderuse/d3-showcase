@@ -2,17 +2,21 @@ body {
   font: 3.6em sans-serif;
   color: #333;
 }
-
-path {
+body .container-fluid {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+body svg path {
+  cursor: pointer;
   fill: #ccc;
   stroke: #fff;
   stroke-width: .5px;
 }
-
-text {
-  font-size: 10px;
-}
-
-svg path {
-  cursor: pointer;
+body svg .active {
+  fill: orange;
+  stroke: #000;
+  stroke-width: .5px;
 }
