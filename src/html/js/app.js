@@ -59,6 +59,7 @@ var x, y, k;
     var centroid = path.centroid(d);
     x = centroid[0];
     y = centroid[1];
+    console.log(x,y);
     k = 3;
     centered = d;
   transformStates( x, y, k,false);
@@ -89,7 +90,7 @@ function transformStates( x, y, k,state){
       .style("stroke-width", 1.5 / k + "px");
 
   if(state==true){
-   // d3.select('path.active').  
+   d3.select('path.active').classed("active", false);
     g.selectAll('path')
     .transition()
       .duration(1000)
