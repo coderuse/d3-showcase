@@ -38,11 +38,18 @@ var g = svg.append("g");
             .attr('class', 'state')
             .attr('d', path)
             .attr('class', 'abc')
-            .on("click", goThroughState)
+            .on("click",  function(d){
+              console.log(d)
+              if((d3.select(this).style('opacity'))!=1){
+                 transformStates(width / 2,height / 2, 1,true);
+              }else{
+              goThroughState(d);
+              }
+            })
             .append('title')
-            // .text(function(datum) {
-            //   return states[datum.id];
-            // });
+            .text(function(datum) {
+              return states[datum.id];
+            });
     });
   });
   function goThroughState(d) {
@@ -54,11 +61,11 @@ var x, y, k;
     y = centroid[1];
     k = 3;
     centered = d;
-  transformStates( x, y, k);
+  transformStates( x, y, k,false);
      g.selectAll('path:not(.active)')
      .transition()
       .duration(1000)
-      .style('opacity','0');
+      .style('opacity','0.5');
   } else {
     x = width / 2;
     y = height / 2;
@@ -72,7 +79,7 @@ var x, y, k;
   }
 
   }
-function transformStates( x, y, k){
+function transformStates( x, y, k,state){
    g.selectAll("path")
       .classed("active", centered && function(d) { return d === centered; });
 
@@ -80,6 +87,14 @@ function transformStates( x, y, k){
       .duration(1000)
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
       .style("stroke-width", 1.5 / k + "px");
+
+  if(state==true){
+   // d3.select('path.active').  
+    g.selectAll('path')
+    .transition()
+      .duration(1000)
+      .style('opacity','1');
+  }
  
 }
 })(window);
