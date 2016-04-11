@@ -68,12 +68,11 @@
 
       var gEl = g.selectAll('.state')
         .data(data)
-        .enter().append('g');
+        .enter().append('g')
+        .attr('class', 'state');
 
       gEl.append('path')
-        .attr('class', 'state')
         .attr('d', path)
-        .attr('class', 'abc')
         .attr('fill',function(d){
           if(states[d.id].population === 0){
             return 'red';

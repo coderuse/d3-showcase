@@ -6,16 +6,11 @@ body {
     font: $font-size*3 $font-stack;
     color: $primary-color;
     .container-fluid{
-        position:absolute;
-        top:50%;
-        -ms-transform: translateY(-50%);
-        -webkit-transform: translate(0,-50%);
-        transform: translate(0,-50%);
+        margin-top: 50px;
     }
     svg{
         path{
             cursor:pointer;
-            // fill: #ccc;
             stroke: #fff;
             stroke-width: .5px;
         }
