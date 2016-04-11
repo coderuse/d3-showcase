@@ -15,7 +15,7 @@
 
   var path = d3.geo.path().projection(projection);
   var pathVar = [];
-  var svg = d3.select('.chart').append('svg')
+  var svg = d3.select('.map').append('svg')
     .attr('width', width)
     .attr('height', height);
 
@@ -39,6 +39,36 @@
         return color.darker(step*(value-mean)/mean).toString();
       };
   }
+  
+  var chartWidth = 500;
+  var chartHeight = 200;
+  var chartSvg = d3.select('.charts').append('svg')
+      .attr('width', chartWidth)
+      .attr('height', chartHeight);
+      
+  var barChart = chartSvg.append('g')
+    .attr('class','bar-chart');
+  
+  function drawBarChart(config){
+    var values = config.data.map(function(datum){return datum[config.property]});
+    var barScale = d3.scale.ordinal()
+      .domain(config.data.map(function(datum){return datum.id;}))
+      .rangeBands([0,chartWidth],0.3);
+    var barWidth = barScale.rangeBand();
+    var valueScale = d3.scale.linear()
+      .domain([d3.min(values)-1000,d3.max(values)+1000])
+      .range([chartHeight,0]);
+    var barSet = barChart.selectAll('rect.bar').data(config.data,function(datum){return datum.id;});
+    barSet.exit().remove();
+    barSet.enter().append('rect').attr('class','bar');
+    barSet
+      .attr('x',function(datum){return barScale(datum.id);})
+      .attr('width',barWidth)
+      .attr('y',function(datum){return valueScale(datum[config.property]);})
+      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
+      .attr('stroke','black')
+      .attr('fill','blue');
+  }
 
 
   d3.json('data/us.json', function(error, us) {
@@ -50,21 +80,68 @@
 
     d3.tsv('data/us-state-names.tsv', function(stateMapping) {
 
-      var states = {};
-      var populationValues = [];
+      var states = [];
       var maxPopulationValue, minPopulationValue;
       stateMapping.forEach(function(state) {
-        states[state.id] = {
+        states.push({
+          id:parseInt(state.id),
           name:state.name,
-          population:state.population
-        };
-        populationValues.push(parseInt(state.population));
+          population:parseInt(state.population),
+          income:parseInt(state.medianHouseholdIncome)
+        });
       });
       
-      maxPopulationValue = d3.max(populationValues.filter(function(value){ return value !== 0; }));
-      minPopulationValue = d3.min(populationValues.filter(function(value){ return value !== 0; }));
+      var getState = function(id){
+        return states.filter(function(state){return state.id === id;})[0];
+      };
       
-      var blueShades = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75); 
+      var getComparableStates = function(id,property){
+        var max, min, h1, h2, h3, l1, l2, l3, maxSet, minSet;
+        var outValues = [];
+        var values = states
+          .map(function(state){return state[property];})
+          .filter(function(value){return value!==0;})
+          // .sort(function(value1,value2){return value2-value1;});
+        max = states.filter(function(state){return state[property] === d3.max(values);})[0];
+        min = states.filter(function(state){return state[property] === d3.min(values);})[0];
+        maxSet = states
+          .filter(function(state){return state[property]!==0 && (state[property] > getState(id)[property]);})
+          .sort(function(state1,state2){return state1[property] - state2[property];});
+        minSet = states
+          .filter(function(state){return state[property]!==0 && (state[property] < getState(id)[property]);})
+          .sort(function(state1,state2){return state2[property] - state1[property];});
+        outValues.push(min);
+        if(minSet[2] && (minSet[2].id!==min.id)){outValues.push(minSet[2]);}
+        if(minSet[1] && (minSet[1].id!==min.id)){outValues.push(minSet[1]);}
+        if(minSet[0] && (minSet[0].id!==min.id)){outValues.push(minSet[0]);}
+        if(id !== min.id && id !== max.id){outValues.push(getState(id));}
+        if(maxSet[0] && (maxSet[0].id!==max.id)){outValues.push(maxSet[0]);}
+        if(maxSet[1] && (maxSet[1].id!==max.id)){outValues.push(maxSet[1]);}
+        if(maxSet[2] && (maxSet[2].id!==max.id)){outValues.push(maxSet[2]);}
+        outValues.push(max);
+        return outValues;
+      }
+      
+      drawBarChart({
+        data:states
+          .filter(function(state){return state.income!==0;})
+          .sort(function(state1,state2){return state2.income - state1.income;}),
+        property:'income'
+      });
+
+      maxPopulationValue = d3.max(
+        states
+          .map(function(state){return state.population;})
+          .filter(function(value){return value !== 0;})
+      );
+
+      minPopulationValue = d3.min(
+        states
+          .map(function(state){return state.population;})
+          .filter(function(value){return value !== 0;})
+      );
+      
+      var blueShadesForState = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75); 
 
       var gEl = g.selectAll('.state')
         .data(data)
@@ -74,10 +151,10 @@
       gEl.append('path')
         .attr('d', path)
         .attr('fill',function(d){
-          if(states[d.id].population === 0){
+          if(getState(d.id).population === 0){
             return 'red';
           } else {
-            return blueShades(states[d.id].population);
+            return blueShadesForState(getState(d.id).population);
           }
         })
         .on("click", function(d) {
@@ -86,10 +163,14 @@
           } else {
             goThroughState(d);
           }
+          drawBarChart({
+            data:getComparableStates(d.id,'income'),
+            property:'income'
+          });
         })
         .on('mouseover', function(d) {
           tooltip.transition().style('opacity', 0.6);
-          tooltip.html(states[d.id].name)
+          tooltip.html(getState(d.id).name)
             .style({
               'left': (d3.event.pageX + 5) + 'px',
               'top': (d3.event.pageY - 20) + 'px'
