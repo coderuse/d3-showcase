@@ -58,13 +58,13 @@
           name:state.name,
           population:state.population
         };
-        populationValues.push(state.population);
+        populationValues.push(parseInt(state.population));
       });
       
-      maxPopulationValue = d3.max(populationValues.filter(function(value){ return value!==0; }));
-      minPopulationValue = d3.min(populationValues.filter(function(value){ return value!==0; }));
+      maxPopulationValue = d3.max(populationValues.filter(function(value){ return value !== 0; }));
+      minPopulationValue = d3.min(populationValues.filter(function(value){ return value !== 0; }));
       
-      var blueShades = colorGenerator(minPopulationValue,maxPopulationValue,'blue',2); 
+      var blueShades = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75); 
 
       var gEl = g.selectAll('.state')
         .data(data)
