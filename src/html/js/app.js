@@ -31,6 +31,15 @@
       opacity: 0,
       'font-size': 'medium'
     });
+    
+  function colorGenerator(minValue,maxValue,baseColor,step){
+      var mean = d3.mean([minValue,maxValue]);
+      var color = d3.hsl(baseColor);
+      return function(value){
+        return color.darker(step*(value-mean)/mean).toString();
+      };
+  }
+
 
   d3.json('data/us.json', function(error, us) {
 
@@ -42,9 +51,20 @@
     d3.tsv('data/us-state-names.tsv', function(stateMapping) {
 
       var states = {};
+      var populationValues = [];
+      var maxPopulationValue, minPopulationValue;
       stateMapping.forEach(function(state) {
-        states[state.id] = state.name;
+        states[state.id] = {
+          name:state.name,
+          population:state.population
+        };
+        populationValues.push(state.population);
       });
+      
+      maxPopulationValue = d3.max(populationValues.filter(function(value){ return value!==0; }));
+      minPopulationValue = d3.min(populationValues.filter(function(value){ return value!==0; }));
+      
+      var blueShades = colorGenerator(minPopulationValue,maxPopulationValue,'blue',2); 
 
       var gEl = g.selectAll('.state')
         .data(data)
@@ -54,6 +74,13 @@
         .attr('class', 'state')
         .attr('d', path)
         .attr('class', 'abc')
+        .attr('fill',function(d){
+          if(states[d.id].population === 0){
+            return 'red';
+          } else {
+            return blueShades(states[d.id].population);
+          }
+        })
         .on("click", function(d) {
           if ((d3.select(this).style('opacity')) != 1) {
             transformStates(width / 2, height / 2, 1, true);
@@ -63,7 +90,7 @@
         })
         .on('mouseover', function(d) {
           tooltip.transition().style('opacity', 0.6);
-          tooltip.html(states[d.id])
+          tooltip.html(states[d.id].name)
             .style({
               'left': (d3.event.pageX + 5) + 'px',
               'top': (d3.event.pageY - 20) + 'px'
