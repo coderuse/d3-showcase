@@ -20,6 +20,18 @@
     .attr('height', height);
 
   var g = svg.append("g");
+
+  var tooltip = d3.select('body').append('div')
+    .style({
+      position: 'absolute',
+      padding: '5px',
+      color: '#fff',
+      background: '#000',
+      'border-radius': '5px',
+      opacity: 0,
+      'font-size': 'medium'
+    });
+
   d3.json('data/us.json', function(error, us) {
 
     if (error) {
@@ -33,9 +45,11 @@
       stateMapping.forEach(function(state) {
         states[state.id] = state.name;
       });
+
       var gEl = g.selectAll('.state')
         .data(data)
         .enter().append('g');
+
       gEl.append('path')
         .attr('class', 'state')
         .attr('d', path)
@@ -47,9 +61,16 @@
             goThroughState(d);
           }
         })
-        .append('title')
-        .text(function(datum) {
-          return states[datum.id];
+        .on('mouseover', function(d) {
+          tooltip.transition().style('opacity', 0.6);
+          tooltip.html(states[d.id])
+            .style({
+              'left': (d3.event.pageX + 5) + 'px',
+              'top': (d3.event.pageY - 20) + 'px'
+            });
+        })
+        .on('mouseout', function() {
+          tooltip.transition().style('opacity', 0);
         });
     });
   });
@@ -61,6 +82,7 @@
       var centroid = path.centroid(d);
       x = centroid[0];
       y = centroid[1];
+      console.log(x, y);
       k = 3;
       centered = d;
       transformStates(x, y, k, false);
@@ -94,7 +116,7 @@
       .style("stroke-width", 1.5 / k + "px");
 
     if (state === true) {
-      // d3.select('path.active').  
+      d3.select('path.active').classed("active", false);
       g.selectAll('path')
         .transition()
         .duration(1000)
