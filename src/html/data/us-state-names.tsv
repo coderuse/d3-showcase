@@ -1,61 +1,61 @@
-id	code	name	population
-1	AL	Alabama	4858979
-2	AK	Alaska	738432
-4	AZ	Arizona	6828065
-5	AR	Arkansas	2978204
-6	CA	California	39144818
-8	CO	Colorado	5456574
-9	CT	Connecticut	3590886
-10	DE	Delaware	945934
-11	DC	District of Columbia	672228
-12	FL	Florida	20271272
-13	GA	Georgia	10214860
-15	HI	Hawaii	1431603
-16	ID	Idaho	1654930
-17	IL	Illinois	12859995
-18	IN	Indiana	6619680
-19	IA	Iowa	3123899
-20	KS	Kansas	2911641
-21	KY	Kentucky	4425092
-22	LA	Louisiana	4670724
-23	ME	Maine	1329328
-24	MD	Maryland	6006401
-25	MA	Massachusetts	6794422
-26	MI	Michigan	9922576
-27	MN	Minnesota	5489594
-28	MS	Mississippi	2992333
-29	MO	Missouri	6083672
-30	MT	Montana	1032949
-31	NE	Nebraska	1896190
-32	NV	Nevada	2890845
-33	NH	New Hampshire	1330608
-34	NJ	New Jersey	8958013
-35	NM	New Mexico	2085109
-36	NY	New York	19795791
-37	NC	North Carolina	10042802
-38	ND	North Dakota	756927
-39	OH	Ohio	11613423
-40	OK	Oklahoma	3911338
-41	OR	Oregon	4028977
-42	PA	Pennsylvania	12802503
-44	RI	Rhode Island	1056298
-45	SC	South Carolina	4896146
-46	SD	South Dakota	858469
-47	TN	Tennessee	6600299
-48	TX	Texas	27469114
-49	UT	Utah	2995919
-50	VT	Vermont	626042
-51	VA	Virginia	8382993
-53	WA	Washington	7170351
-54	WV	West Virginia	1844128
-55	WI	Wisconsin	5771337
-56	WY	Wyoming	586107
-60	AS	America Samoa	0
-64	FM	Federated States of Micronesia	0
-66	GU	Guam	0
-68	MH	Marshall Islands	0
-69	MP	Northern Mariana Islands	0
-70	PW	Palau	0
-72	PR	Puerto Rico	3474182
-74	UM	U.S. Minor Outlying Islands	0
-78	VI	Virgin Islands of the United States	0
+id	code	name	population	medianHouseholdIncome
+1	AL	Alabama	4858979	41415
+2	AK	Alaska	738432	69825
+4	AZ	Arizona	6828065	46709
+5	AR	Arkansas	2978204	38758
+6	CA	California	39144818	67458
+8	CO	Colorado	5456574	55387
+9	CT	Connecticut	3590886	65753
+10	DE	Delaware	945934	57954
+11	DC	District of Columbia	672228	65124
+12	FL	Florida	20271272	44299
+13	GA	Georgia	10214860	46007
+15	HI	Hawaii	1431603	62814
+16	ID	Idaho	1654930	43341
+17	IL	Illinois	12859995	53234
+18	IN	Indiana	6619680	46438
+19	IA	Iowa	3123899	49427
+20	KS	Kansas	2911641	48964
+21	KY	Kentucky	4425092	41141
+22	LA	Louisiana	4670724	41734
+23	ME	Maine	1329328	46033
+24	MD	Maryland	6006401	70004
+25	MA	Massachusetts	6794422	64859
+26	MI	Michigan	9922576	45981
+27	MN	Minnesota	5489594	61814
+28	MS	Mississippi	2992333	36919
+29	MO	Missouri	6083672	45247
+30	MT	Montana	1032949	44222
+31	NE	Nebraska	1896190	50296
+32	NV	Nevada	2890845	48927
+33	NH	New Hampshire	1330608	64712
+34	NJ	New Jersey	8958013	60287
+35	NM	New Mexico	2085109	41963
+36	NY	New York	19795791	55246
+37	NC	North Carolina	10042802	43916
+38	ND	North Dakota	756927	51704
+39	OH	Ohio	11613423	45749
+40	OK	Oklahoma	3911338	43225
+41	OR	Oregon	4028977	46816
+42	PA	Pennsylvania	12802503	50228
+44	RI	Rhode Island	1056298	53636
+45	SC	South Carolina	4896146	42367
+46	SD	South Dakota	858469	48321
+47	TN	Tennessee	6600299	41693
+48	TX	Texas	27469114	49392
+49	UT	Utah	2995919	55869
+50	VT	Vermont	626042	52776
+51	VA	Virginia	8382993	62881
+53	WA	Washington	7170351	57835
+54	WV	West Virginia	1844128	38482
+55	WI	Wisconsin	5771337	50395
+56	WY	Wyoming	586107	56322
+60	AS	America Samoa	0	0
+64	FM	Federated States of Micronesia	0	0
+66	GU	Guam	0	38973
+68	MH	Marshall Islands	0	0
+69	MP	Northern Mariana Islands	0	0
+70	PW	Palau	0	0
+72	PR	Puerto Rico	3474182	23168
+74	UM	U.S. Minor Outlying Islands	0	0
+78	VI	Virgin Islands of the United States	0	0
