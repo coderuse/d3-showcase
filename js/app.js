@@ -15,7 +15,7 @@
 
   var path = d3.geo.path().projection(projection);
   var pathVar = [];
-  var svg = d3.select('.chart').append('svg')
+  var svg = d3.select('.map').append('svg')
     .attr('width', width)
     .attr('height', height);
 
@@ -31,6 +31,52 @@
       opacity: 0,
       'font-size': 'medium'
     });
+    
+  function colorGenerator(minValue,maxValue,baseColor,step){
+      var mean = d3.mean([minValue,maxValue]);
+      var color = d3.hsl(baseColor);
+      return function(value){
+        return color.darker(step*(value-mean)/mean).toString();
+      };
+  }
+  
+  var chartWidth = 500;
+  var chartHeight = 200;
+  var chartSvg = d3.select('.charts').append('svg')
+      .attr('width', chartWidth)
+      .attr('height', chartHeight);
+      
+  var barChart = chartSvg.append('g')
+    .attr('class','bar-chart');
+  
+  function drawBarChart(config){
+    var values = config.data.map(function(datum){return datum[config.property];});
+    var barScale = d3.scale.ordinal()
+      .domain(config.data.map(function(datum){return datum.id;}))
+      .rangeBands([0,chartWidth],0.3);
+    var barWidth = barScale.rangeBand();
+    var valueScale = d3.scale.linear()
+      .domain([d3.min(values)-1000,d3.max(values)+1000])
+      .range([chartHeight,0]);
+    var barSet = barChart.selectAll('rect.bar').data(config.data,function(datum){return datum.id;});
+    barSet.exit().remove();
+    barSet.enter().append('rect').attr('class','bar');
+    barSet
+      .attr('x',function(datum){return barScale(datum.id);})
+      .attr('y',chartHeight)
+      .attr('width',barWidth)
+      .attr('height',0)
+      .attr('fill','steelblue')
+      .on('click',config.onBarClick);
+    barSet.append('title')
+        .text(function(datum){return datum.name;});
+    barSet
+      .transition().duration(1000).ease('ease-in')
+      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
+      .attr('y',function(datum){return valueScale(datum[config.property]);})
+      .attr('fill',config.colorScale);
+  }
+
 
   d3.json('data/us.json', function(error, us) {
 
@@ -41,29 +87,120 @@
 
     d3.tsv('data/us-state-names.tsv', function(stateMapping) {
 
-      var states = {};
+      var states = [];
+      var maxPopulationValue, minPopulationValue, maxUnInsuredValue, minUnInsuredValue;
       stateMapping.forEach(function(state) {
-        states[state.id] = state.name;
+        states.push({
+          id:parseInt(state.id),
+          name:state.name,
+          population:parseInt(state.population),
+          income:parseInt(state.medianHouseholdIncome),
+          unInsured:parseInt(state.unInsured)
+        });
+      });
+      
+      var getState = function(id){
+        return states.filter(function(state){return state.id === id;})[0];
+      };
+      
+      var getComparableStates = function(id,property){
+        var max, min, h1, h2, h3, l1, l2, l3, maxSet, minSet;
+        var outValues = [];
+        maxSet = states
+          .filter(function(state){return state[property]!==0 && (state[property] > getState(id)[property]);})
+          .sort(function(state1,state2){return state1[property] - state2[property];});
+        minSet = states
+          .filter(function(state){return state[property]!==0 && (state[property] < getState(id)[property]);})
+          .sort(function(state1,state2){return state2[property] - state1[property];});
+        if(maxSet[2]){outValues.push(maxSet[2]);}
+        if(maxSet[1]){outValues.push(maxSet[1]);}
+        if(maxSet[0]){outValues.push(maxSet[0]);}
+        outValues.push(getState(id));
+        if(minSet[0]){outValues.push(minSet[0]);}
+        if(minSet[1]){outValues.push(minSet[1]);}
+        if(minSet[2]){outValues.push(minSet[2]);}
+        return outValues;
+      };
+
+      maxPopulationValue = d3.max(
+        states
+          .map(function(state){return state.population;})
+          .filter(function(value){return value !== 0;})
+      );
+
+      minPopulationValue = d3.min(
+        states
+          .map(function(state){return state.population;})
+          .filter(function(value){return value !== 0;})
+      );
+      
+      maxUnInsuredValue = d3.max(
+        states
+          .map(function(state){return state.unInsured;})
+          .filter(function(value){return value!==0;})
+      );
+      
+      minUnInsuredValue = d3.min(
+        states
+          .map(function(state){return state.unInsured;})
+          .filter(function(value){return value !==0;})
+      );
+      
+      var blueShadesForPopulation = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75);
+      var redShadesForUnInsured = colorGenerator(minUnInsuredValue,maxUnInsuredValue,'red',1.75);
+      
+      var colorScale = function(state){
+        return redShadesForUnInsured(state.unInsured);
+      };
+      
+      var onBarClick = function(state){
+        goThroughState(data.find(function(datum){return datum.id==state.id;}));
+        d3.event.stopPropagation();
+      };
+      
+      drawBarChart({
+        data:states.filter(function(state){return state.income!==0;}),
+        property:'income',
+        colorScale:colorScale,
+        onBarClick:onBarClick
       });
 
       var gEl = g.selectAll('.state')
         .data(data)
-        .enter().append('g');
+        .enter().append('g')
+        .attr('class', 'state');
 
       gEl.append('path')
-        .attr('class', 'state')
         .attr('d', path)
-        .attr('class', 'abc')
+        .attr('fill',function(d){
+          if(getState(d.id).population === 0){
+            return 'red';
+          } else {
+            return blueShadesForPopulation(getState(d.id).population);
+          }
+        })
         .on("click", function(d) {
           if ((d3.select(this).style('opacity')) != 1) {
             transformStates(width / 2, height / 2, 1, true);
+            drawBarChart({
+              data:states.filter(function(state){return state.income!==0;}),
+              property:'income',
+              colorScale:colorScale,
+              onBarClick:onBarClick
+            });
           } else {
             goThroughState(d);
+            drawBarChart({
+              data:getComparableStates(d.id,'income'),
+              property:'income',
+              colorScale:colorScale,
+              onBarClick:onBarClick
+            });
           }
         })
         .on('mouseover', function(d) {
           tooltip.transition().style('opacity', 0.6);
-          tooltip.html(states[d.id])
+          tooltip.html(getState(d.id).name)
             .style({
               'left': (d3.event.pageX + 5) + 'px',
               'top': (d3.event.pageY - 20) + 'px'
@@ -82,7 +219,6 @@
       var centroid = path.centroid(d);
       x = centroid[0];
       y = centroid[1];
-      console.log(x, y);
       k = 3;
       centered = d;
       transformStates(x, y, k, false);

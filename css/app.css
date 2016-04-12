@@ -3,15 +3,10 @@ body {
   color: #333;
 }
 body .container-fluid {
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  margin-top: 50px;
 }
-body svg path {
+body svg path, body svg rect {
   cursor: pointer;
-  fill: #ccc;
   stroke: #fff;
   stroke-width: .5px;
 }
