@@ -59,22 +59,20 @@
       .domain([d3.min(values)-1000,d3.max(values)+1000])
       .range([chartHeight,0]);
     var barSet = barChart.selectAll('rect.bar').data(config.data,function(datum){return datum.id;});
-    barSet.exit()
-     .transition()
-    .duration(1000)
-    .ease("ease")
-    .remove();
+    barSet.exit().remove();
     barSet.enter().append('rect').attr('class','bar');
-    barSet 
-     .transition()
-    .duration(1000)
-    .ease("quad")
-     .attr('y',function(datum){return valueScale(datum[config.property]);})
-      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
+    barSet
       .attr('x',function(datum){return barScale(datum.id);})
+      .attr('y',chartHeight)
       .attr('width',barWidth)
-     .attr('stroke','black')
-      .attr('fill','steelblue')
+      .attr('height',0)
+      .attr('stroke','black')
+      .attr('fill','steelblue');
+    barSet
+      .transition().duration(1000).ease('linear')
+      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
+      .attr('y',function(datum){return valueScale(datum[config.property]);});
+
   }
 
 
@@ -105,27 +103,19 @@
       var getComparableStates = function(id,property){
         var max, min, h1, h2, h3, l1, l2, l3, maxSet, minSet;
         var outValues = [];
-        var values = states
-          .map(function(state){return state[property];})
-          .filter(function(value){return value!==0;});
-          // .sort(function(value1,value2){return value2-value1;});
-        max = states.filter(function(state){return state[property] === d3.max(values);})[0];
-        min = states.filter(function(state){return state[property] === d3.min(values);})[0];
         maxSet = states
           .filter(function(state){return state[property]!==0 && (state[property] > getState(id)[property]);})
           .sort(function(state1,state2){return state1[property] - state2[property];});
         minSet = states
           .filter(function(state){return state[property]!==0 && (state[property] < getState(id)[property]);})
           .sort(function(state1,state2){return state2[property] - state1[property];});
-        outValues.push(min);
-        if(minSet[2] && (minSet[2].id!==min.id)){outValues.push(minSet[2]);}
-        if(minSet[1] && (minSet[1].id!==min.id)){outValues.push(minSet[1]);}
-        if(minSet[0] && (minSet[0].id!==min.id)){outValues.push(minSet[0]);}
-        if(id !== min.id && id !== max.id){outValues.push(getState(id));}
-        if(maxSet[0] && (maxSet[0].id!==max.id)){outValues.push(maxSet[0]);}
-        if(maxSet[1] && (maxSet[1].id!==max.id)){outValues.push(maxSet[1]);}
-        if(maxSet[2] && (maxSet[2].id!==max.id)){outValues.push(maxSet[2]);}
-        outValues.push(max);
+        if(maxSet[2]){outValues.push(maxSet[2]);}
+        if(maxSet[1]){outValues.push(maxSet[1]);}
+        if(maxSet[0]){outValues.push(maxSet[0]);}
+        outValues.push(getState(id));
+        if(minSet[0]){outValues.push(minSet[0]);}
+        if(minSet[1]){outValues.push(minSet[1]);}
+        if(minSet[2]){outValues.push(minSet[2]);}
         return outValues;
       };
       
