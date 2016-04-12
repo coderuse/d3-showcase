@@ -50,7 +50,7 @@
     .attr('class','bar-chart');
   
   function drawBarChart(config){
-    var values = config.data.map(function(datum){return datum[config.property]});
+    var values = config.data.map(function(datum){return datum[config.property];});
     var barScale = d3.scale.ordinal()
       .domain(config.data.map(function(datum){return datum.id;}))
       .rangeBands([0,chartWidth],0.3);
@@ -59,15 +59,22 @@
       .domain([d3.min(values)-1000,d3.max(values)+1000])
       .range([chartHeight,0]);
     var barSet = barChart.selectAll('rect.bar').data(config.data,function(datum){return datum.id;});
-    barSet.exit().remove();
+    barSet.exit()
+     .transition()
+    .duration(1000)
+    .ease("ease")
+    .remove();
     barSet.enter().append('rect').attr('class','bar');
-    barSet
+    barSet 
+     .transition()
+    .duration(1000)
+    .ease("quad")
+     .attr('y',function(datum){return valueScale(datum[config.property]);})
+      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
       .attr('x',function(datum){return barScale(datum.id);})
       .attr('width',barWidth)
-      .attr('y',function(datum){return valueScale(datum[config.property]);})
-      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
-      .attr('stroke','black')
-      .attr('fill','blue');
+     .attr('stroke','black')
+      .attr('fill','steelblue')
   }
 
 
@@ -100,7 +107,7 @@
         var outValues = [];
         var values = states
           .map(function(state){return state[property];})
-          .filter(function(value){return value!==0;})
+          .filter(function(value){return value!==0;});
           // .sort(function(value1,value2){return value2-value1;});
         max = states.filter(function(state){return state[property] === d3.max(values);})[0];
         min = states.filter(function(state){return state[property] === d3.min(values);})[0];
@@ -120,7 +127,7 @@
         if(maxSet[2] && (maxSet[2].id!==max.id)){outValues.push(maxSet[2]);}
         outValues.push(max);
         return outValues;
-      }
+      };
       
       drawBarChart({
         data:states
@@ -162,11 +169,11 @@
             transformStates(width / 2, height / 2, 1, true);
           } else {
             goThroughState(d);
-          }
-          drawBarChart({
+             drawBarChart({
             data:getComparableStates(d.id,'income'),
             property:'income'
           });
+          }
         })
         .on('mouseover', function(d) {
           tooltip.transition().style('opacity', 0.6);
@@ -189,7 +196,6 @@
       var centroid = path.centroid(d);
       x = centroid[0];
       y = centroid[1];
-      console.log(x, y);
       k = 3;
       centered = d;
       transformStates(x, y, k, false);
