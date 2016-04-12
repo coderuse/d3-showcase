@@ -52,10 +52,10 @@ id	code	name	population	medianHouseholdIncome	unInsured
 56	WY	Wyoming	586107	56322	12
 60	AS	America Samoa	0	0	0
 64	FM	Federated States of Micronesia	0	0	0
-66	GU	Guam	0	38973	0
+66	GU	Guam	0	0	0
 68	MH	Marshall Islands	0	0	0
 69	MP	Northern Mariana Islands	0	0	0
 70	PW	Palau	0	0	0
-72	PR	Puerto Rico	3474182	23168	0
+72	PR	Puerto Rico	0	0	0
 74	UM	U.S. Minor Outlying Islands	0	0	0
 78	VI	Virgin Islands of the United States	0	0	0

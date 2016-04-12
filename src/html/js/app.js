@@ -66,13 +66,15 @@
       .attr('y',chartHeight)
       .attr('width',barWidth)
       .attr('height',0)
-      .attr('stroke','black')
-      .attr('fill','steelblue');
+      .attr('fill','steelblue')
+      .on('click',config.onBarClick);
+    barSet.append('title')
+        .text(function(datum){return datum.name;});
     barSet
-      .transition().duration(1000).ease('linear')
+      .transition().duration(1000).ease('ease-in')
       .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
-      .attr('y',function(datum){return valueScale(datum[config.property]);});
-
+      .attr('y',function(datum){return valueScale(datum[config.property]);})
+      .attr('fill',config.colorScale);
   }
 
 
@@ -86,13 +88,14 @@
     d3.tsv('data/us-state-names.tsv', function(stateMapping) {
 
       var states = [];
-      var maxPopulationValue, minPopulationValue;
+      var maxPopulationValue, minPopulationValue, maxUnInsuredValue, minUnInsuredValue;
       stateMapping.forEach(function(state) {
         states.push({
           id:parseInt(state.id),
           name:state.name,
           population:parseInt(state.population),
-          income:parseInt(state.medianHouseholdIncome)
+          income:parseInt(state.medianHouseholdIncome),
+          unInsured:parseInt(state.unInsured)
         });
       });
       
@@ -118,13 +121,6 @@
         if(minSet[2]){outValues.push(minSet[2]);}
         return outValues;
       };
-      
-      drawBarChart({
-        data:states
-          .filter(function(state){return state.income!==0;})
-          .sort(function(state1,state2){return state2.income - state1.income;}),
-        property:'income'
-      });
 
       maxPopulationValue = d3.max(
         states
@@ -138,7 +134,36 @@
           .filter(function(value){return value !== 0;})
       );
       
-      var blueShadesForState = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75); 
+      maxUnInsuredValue = d3.max(
+        states
+          .map(function(state){return state.unInsured;})
+          .filter(function(value){return value!==0;})
+      );
+      
+      minUnInsuredValue = d3.min(
+        states
+          .map(function(state){return state.unInsured;})
+          .filter(function(value){return value !==0;})
+      );
+      
+      var blueShadesForPopulation = colorGenerator(minPopulationValue,maxPopulationValue,'blue',1.75);
+      var redShadesForUnInsured = colorGenerator(minUnInsuredValue,maxUnInsuredValue,'red',1.75);
+      
+      var colorScale = function(state){
+        return redShadesForUnInsured(state.unInsured);
+      };
+      
+      var onBarClick = function(state){
+        goThroughState(data.find(function(datum){return datum.id==state.id;}));
+        d3.event.stopPropagation();
+      };
+      
+      drawBarChart({
+        data:states.filter(function(state){return state.income!==0;}),
+        property:'income',
+        colorScale:colorScale,
+        onBarClick:onBarClick
+      });
 
       var gEl = g.selectAll('.state')
         .data(data)
@@ -151,18 +176,26 @@
           if(getState(d.id).population === 0){
             return 'red';
           } else {
-            return blueShadesForState(getState(d.id).population);
+            return blueShadesForPopulation(getState(d.id).population);
           }
         })
         .on("click", function(d) {
           if ((d3.select(this).style('opacity')) != 1) {
             transformStates(width / 2, height / 2, 1, true);
+            drawBarChart({
+              data:states.filter(function(state){return state.income!==0;}),
+              property:'income',
+              colorScale:colorScale,
+              onBarClick:onBarClick
+            });
           } else {
             goThroughState(d);
-             drawBarChart({
-            data:getComparableStates(d.id,'income'),
-            property:'income'
-          });
+            drawBarChart({
+              data:getComparableStates(d.id,'income'),
+              property:'income',
+              colorScale:colorScale,
+              onBarClick:onBarClick
+            });
           }
         })
         .on('mouseover', function(d) {
