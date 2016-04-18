@@ -196,3 +196,4 @@ reports
 # Release folder
 release
 /src/html/css/app.css
+/src/html/renewal-gantt/css/*.css

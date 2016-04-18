@@ -5,4 +5,21 @@ $primary-color: #333;
 body {
   font: $font-size*3 $font-stack;
   color: $primary-color;
+  svg{
+    background-color: rgb(251, 251, 251);
+    rect{
+      &.task-name-button{
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
+    text{
+      &.task-name{
+        &:hover{
+          cursor:pointer;
+        }
+      }
+    }
+  }
 }

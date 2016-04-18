@@ -1,0 +1,314 @@
+[
+    {
+        "taskName":"PREPARATION",
+        "taskId":22345678,
+        "start":1,
+        "end":6,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"PLANNING",
+        "taskId":22345679,
+        "start":6,
+        "end":10,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"NEGOTIATION",
+        "taskId":22345680,
+        "start":10,
+        "end":12,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"PRESENTATION",
+        "taskId":22345681,
+        "start":12,
+        "end":15,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"BINDING",
+        "taskId":22345682,
+        "start":15,
+        "end":18,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"INVOICING",
+        "taskId":22345683,
+        "start":18,
+        "end":20,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"POLICY",
+        "taskId":22345684,
+        "start":20,
+        "end":26,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    },
+    {
+        "taskName":"CLOSURE",
+        "taskId":22345685,
+        "start":26,
+        "end":30,
+        "subTasks":[
+            {
+                "taskName":"PRISM Meeting",
+                "start":6,
+                "end":8
+            },
+            {
+                "taskName":"Send MOM",
+                "start":7,
+                "end":11
+            },
+            {
+                "taskName":"Update and send PRQ to client",
+                "start":11,
+                "end":16
+            },
+            {
+                "taskName":"Pre-Renewal Meeting",
+                "start":15,
+                "end":18
+            },
+            {
+                "taskName":"Send MOM",
+                "start":11,
+                "end":13
+            },
+            {
+                "taskName":"Chase Client for complete PRQ",
+                "taskId":223456786,
+                "start":18,
+                "end":20
+            }
+        ]
+    }
+]
