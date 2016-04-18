@@ -40,14 +40,12 @@ module.exports = function(grunt) {
     },
     copy: {
       release: {
-        files: [
-          {
-            expand: true,
-            cwd: 'src/html/',
-            src: ['**'],
-            dest: 'release/'
-          }
-        ]
+        files: [{
+          expand: true,
+          cwd: 'src/html/',
+          src: ['**'],
+          dest: 'release/'
+        }]
       }
     },
     sass: {
@@ -59,7 +57,8 @@ module.exports = function(grunt) {
         },
         files: {
           // target.css file: source.scss file
-          'src/html/css/app.css': 'src/sass/app.scss'
+          'src/html/css/app.css': 'src/sass/app.scss',
+          'src/html/renewal-gantt/css/app.css': 'src/sass/gantt.scss'
         }
       }
     },
@@ -67,7 +66,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc: '.jshintrc'
       },
-      customJS: ['src/html/js/**/*.js']
+      customJS: ['src/html/js/**/*.js', 'src/html/renewal-gantt/js/**/*.js']
     },
     watch: {
       styles: {
