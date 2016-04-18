@@ -8,6 +8,9 @@ body {
     .container-fluid{
         margin-top: 50px;
     }
+    .charts{
+        margin-top: 125px;
+    }
     svg{
         path,rect{
             cursor:pointer;
@@ -19,5 +22,13 @@ body {
   			stroke:#000;
   			stroke-width: .5px;
 		}
+        .bar-axis{
+            text{
+                font-size: 10px;
+            }
+            line,path{
+                fill: none;
+            }
+        }
     }
 }

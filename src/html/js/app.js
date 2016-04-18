@@ -42,6 +42,7 @@
   
   var chartWidth = 500;
   var chartHeight = 200;
+  var padding = 20;
   var chartSvg = d3.select('.charts').append('svg')
       .attr('width', chartWidth)
       .attr('height', chartHeight);
@@ -57,22 +58,32 @@
     var barWidth = barScale.rangeBand();
     var valueScale = d3.scale.linear()
       .domain([d3.min(values)-1000,d3.max(values)+1000])
-      .range([chartHeight,0]);
+      .range([chartHeight-padding,0]);
+    barChart.selectAll('g.bar-axis').remove();
+    if(config.showAxis){
+      var barAxis = d3.svg.axis().scale(barScale).tickFormat(function(id){
+        return config.data.find(function(datum){return datum.id == id;}).name;
+      });
+      barChart.append('g')
+        .attr('class','bar-axis')
+        .attr('transform', 'translate(0,'+(chartHeight-padding)+')')
+        .call(barAxis);
+    }
     var barSet = barChart.selectAll('rect.bar').data(config.data,function(datum){return datum.id;});
     barSet.exit().remove();
     barSet.enter().append('rect').attr('class','bar');
     barSet
       .attr('x',function(datum){return barScale(datum.id);})
-      .attr('y',chartHeight)
+      .attr('y',chartHeight-padding)
       .attr('width',barWidth)
       .attr('height',0)
-      .attr('fill','steelblue')
+      .attr('fill','red')
       .on('click',config.onBarClick);
     barSet.append('title')
         .text(function(datum){return datum.name;});
     barSet
       .transition().duration(1000).ease('ease-in')
-      .attr('height',function(datum){return chartHeight - valueScale(datum[config.property]);})
+      .attr('height',function(datum){return chartHeight - padding - valueScale(datum[config.property]);})
       .attr('y',function(datum){return valueScale(datum[config.property]);})
       .attr('fill',config.colorScale);
   }
@@ -100,7 +111,7 @@
       });
       
       var getState = function(id){
-        return states.filter(function(state){return state.id === id;})[0];
+        return states.find(function(state){return state.id === id;});
       };
       
       var getComparableStates = function(id,property){
@@ -194,7 +205,8 @@
               data:getComparableStates(d.id,'income'),
               property:'income',
               colorScale:colorScale,
-              onBarClick:onBarClick
+              onBarClick:onBarClick,
+              showAxis:true
             });
           }
         })
