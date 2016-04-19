@@ -1,5 +1,6 @@
 (function(w) {
   'use strict';
+  var d3 = w.d3, topojson = w.topojson;
 d3.json('data/us.json', function(error, us) {
 
     if (error) {
@@ -22,7 +23,7 @@ function drawCharts(data,stateMapping){
   stateMapping:stateMapping,
   barChartSvgWidth:500,
   barChartSvgHeight:200,
-}
+};
       var usChart = new usMapChart(obj);
       var elem = usChart.initialize('.map',obj.width,obj.height);
       usChart.createMap(elem,data);
@@ -39,7 +40,7 @@ var usMapChart = (function() {
       self.padding = 20;
       self.barChartSvgWidth = _obj.barChartSvgWidth;
       self.barChartSvgHeight = _obj.barChartSvgHeight;
-      self.centered;
+      // self.centered;
       self.projection = d3.geo.albersUsa()
                         .scale(800)
                         .translate([this.width / 2, this.height / 2]);
@@ -56,7 +57,7 @@ var usMapChart = (function() {
                   });
        
        var states =[];
-      self.maxPopulationValue, self.minPopulationValue, self.maxUnInsuredValue, self.minUnInsuredValue;
+      // self.maxPopulationValue, self.minPopulationValue, self.maxUnInsuredValue, self.minUnInsuredValue;
       _obj.stateMapping.forEach(function(state) {
         states.push({
           id:parseInt(state.id),
@@ -105,7 +106,7 @@ var usMapChart = (function() {
           property:'income',
           colorScale:self.colorScale,
         onBarClick:self.onBarClick});
-        console.log(_obj.data.find(function(datum){return datum.id==state.id;}))
+        console.log(_obj.data.find(function(datum){return datum.id==state.id;}));
         self.goThroughState(_obj.data.find(function(datum){return datum.id==state.id;}));
         d3.event.stopPropagation();
       };
@@ -119,7 +120,7 @@ var usMapChart = (function() {
         onBarClick:self.onBarClick});
           
 
-    };
+    }
        usMapChart.prototype.initialize = function (elem,width,height) {
             this.svg = d3.select(elem).append('svg')
             .attr('width',width)
@@ -190,7 +191,7 @@ var usMapChart = (function() {
         .style('opacity', '1');
     }
 
-  }
+  };
 
 usMapChart.prototype.getComparableStates = function(id,property){
         var max, min, h1, h2, h3, l1, l2, l3, maxSet, minSet, self=this;
@@ -250,7 +251,7 @@ usMapChart.prototype.getComparableStates = function(id,property){
             if(d3.select(this).attr('class')=='active'){
               barData = self.states.filter(function(state){return state.income!==0;});
             }else{
-              barData = self.getComparableStates(d.id,'income')
+              barData = self.getComparableStates(d.id,'income');
             }
             self.goThroughState(d);
              self.drawBarChart(self.svgForBarChart,{
@@ -312,9 +313,9 @@ usMapChart.prototype.drawBarChart = function(barChartElem,config){
       .attr('height',function(datum){return (self.barChartSvgHeight-self.padding) - valueScale(datum[config.property]);})
       .attr('y',function(datum){return valueScale(datum[config.property]);})
       .attr('fill',config.colorScale);
-  }
+  };
 
 
   return usMapChart;
-})()
+})();
 })(window);
