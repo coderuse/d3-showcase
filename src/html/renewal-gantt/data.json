@@ -6,35 +6,25 @@
         "end":6,
         "subTasks":[
             {
-                "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
-            },
-            {
-                "taskName":"Send MOM",
-                "start":7,
-                "end":11
-            },
-            {
                 "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
+                "start":1,
+                "end":3
             },
             {
                 "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
+                "start":2,
+                "end":4
             },
             {
                 "taskName":"Send MOM",
-                "start":11,
-                "end":13
+                "start":1,
+                "end":4
             },
             {
                 "taskName":"Chase Client for complete PRQ",
                 "taskId":223456786,
-                "start":18,
-                "end":20
+                "start":3,
+                "end":6
             }
         ]
     },
@@ -52,28 +42,13 @@
             {
                 "taskName":"Send MOM",
                 "start":7,
-                "end":11
-            },
-            {
-                "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
-            },
-            {
-                "taskName":"Send MOM",
-                "start":11,
-                "end":13
+                "end":10
             },
             {
                 "taskName":"Chase Client for complete PRQ",
                 "taskId":223456786,
-                "start":18,
-                "end":20
+                "start":6,
+                "end":10
             }
         ]
     },
@@ -85,34 +60,13 @@
         "subTasks":[
             {
                 "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
-            },
-            {
-                "taskName":"Send MOM",
-                "start":7,
+                "start":10,
                 "end":11
             },
             {
-                "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
-            },
-            {
                 "taskName":"Send MOM",
                 "start":11,
-                "end":13
-            },
-            {
-                "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
-                "start":18,
-                "end":20
+                "end":12
             }
         ]
     },
@@ -124,34 +78,23 @@
         "subTasks":[
             {
                 "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
+                "start":12,
+                "end":14
             },
             {
                 "taskName":"Send MOM",
-                "start":7,
-                "end":11
+                "start":13,
+                "end":15
             },
             {
                 "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
+                "start":12,
+                "end":14
             },
             {
                 "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
-            },
-            {
-                "taskName":"Send MOM",
-                "start":11,
-                "end":13
-            },
-            {
-                "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
-                "start":18,
-                "end":20
+                "start":12,
+                "end":15
             }
         ]
     },
@@ -163,34 +106,19 @@
         "subTasks":[
             {
                 "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
-            },
-            {
-                "taskName":"Send MOM",
-                "start":7,
-                "end":11
-            },
-            {
-                "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
                 "start":15,
-                "end":18
+                "end":17
             },
             {
                 "taskName":"Send MOM",
-                "start":11,
-                "end":13
+                "start":16,
+                "end":17
             },
             {
                 "taskName":"Chase Client for complete PRQ",
                 "taskId":223456786,
-                "start":18,
-                "end":20
+                "start":16,
+                "end":18
             }
         ]
     },
@@ -201,34 +129,14 @@
         "end":20,
         "subTasks":[
             {
-                "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
-            },
-            {
                 "taskName":"Send MOM",
-                "start":7,
-                "end":11
-            },
-            {
-                "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
-            },
-            {
-                "taskName":"Send MOM",
-                "start":11,
-                "end":13
+                "start":18,
+                "end":20
             },
             {
                 "taskName":"Chase Client for complete PRQ",
                 "taskId":223456786,
-                "start":18,
+                "start":19,
                 "end":20
             }
         ]
@@ -241,34 +149,18 @@
         "subTasks":[
             {
                 "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
+                "start":23,
+                "end":26
             },
             {
                 "taskName":"Send MOM",
-                "start":7,
-                "end":11
+                "start":21,
+                "end":26
             },
             {
                 "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
-            },
-            {
-                "taskName":"Send MOM",
-                "start":11,
-                "end":13
-            },
-            {
-                "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
-                "start":18,
-                "end":20
+                "start":20,
+                "end":24
             }
         ]
     },
@@ -280,34 +172,23 @@
         "subTasks":[
             {
                 "taskName":"PRISM Meeting",
-                "start":6,
-                "end":8
+                "start":26,
+                "end":28
             },
             {
                 "taskName":"Send MOM",
-                "start":7,
-                "end":11
-            },
-            {
-                "taskName":"Update and send PRQ to client",
-                "start":11,
-                "end":16
-            },
-            {
-                "taskName":"Pre-Renewal Meeting",
-                "start":15,
-                "end":18
+                "start":28,
+                "end":30
             },
             {
                 "taskName":"Send MOM",
-                "start":11,
-                "end":13
+                "start":27,
+                "end":38
             },
             {
-                "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
-                "start":18,
-                "end":20
+                "taskName":"Send MOM",
+                "start":27,
+                "end":30
             }
         ]
     }

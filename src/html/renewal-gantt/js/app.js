@@ -55,10 +55,6 @@
       constants.sidebar.width-constants.sidebar.margins.right
     ],constants.sidebar.columnPadding);
 
-  var gridColumnColorMapper = function(datum){
-    return (datum % 2 !== 0) ? '#FFFFFF' : '#EEEEEE';
-  };
-
   svg.append('g')
     .attr('class','grid')
     .selectAll('rect').data(d3.range(1, 31)).enter()
@@ -67,7 +63,7 @@
       .attr('y', constants.margins.top)
       .attr('width', gridXScale.rangeBand())
       .attr('height', constants.svg.height-constants.margins.bottom-constants.margins.top)
-      .attr('fill', gridColumnColorMapper);
+      .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});
       
   d3.json('data.json', function(error, data) {
     
@@ -142,10 +138,88 @@
     taskSet.append('line')
       .attr('class','separator')
       .attr('x1',constants.sidebar.margins.left)
-      .attr('y1',function(datum,index){return yScale(index)+(constants.tasks.padding/2+1)*yScale.rangeBand();})
+      .attr('y1',function(datum,index){return yScale(index)-(constants.tasks.padding/2)*yScale.rangeBand();})
       .attr('x2',constants.svg.width-constants.grid.margins.right)
-      .attr('y2',function(datum,index){return yScale(index)+yScale.rangeBand();})
+      .attr('y2',function(datum,index){return yScale(index)-(constants.tasks.padding/2)*yScale.rangeBand();})
       .attr('stroke','#EEEEEE');
+      
+    var translateTaskSet = function(){
+      var expandedInfo = [];
+      var translateValue;
+      taskSet.transition().duration(500).attr('transform',function(datum,taskIndex){
+        expandedInfo[taskIndex] = this.expanded ? datum.subTasks.length : 0;
+        translateValue = 20*d3.sum(expandedInfo.filter(function(value,index){return index<taskIndex;}));
+        return 'translate(0,'+translateValue+')';
+      });
+    };
+      
+    taskSet.on('click',function(datum,index){
+      var taskElement = d3.select(this);
+      if(this.expanded){
+        taskElement.select('.task-name-button').transition().duration(500).attr('fill','#EEEEEE');
+        taskElement.selectAll('.sub-tasks').remove();
+        this.expanded = false;
+      }else{
+        
+        taskElement.select('.task-name-button').attr('fill','#CBCBCB');
+        var subTasksGroupElement = taskElement.append('g').attr('class','sub-tasks');
+        var subTasksSet = subTasksGroupElement.selectAll('.sub-task').data(datum.subTasks);
+        subTasksSet.enter().append('g').attr('class','sub-task');
+
+        subTasksSet.append('text')
+          .attr('class','task-name')
+          .attr('x',sideBarXScale('taskName')+10)
+          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
+          .attr('font-size',10)
+          .attr('text-anchor','left')
+          .attr('fill','white')
+          .transition().duration(1000)
+          .attr('fill','black')
+          .text(function(datum){return datum.taskName;});
+          
+          
+        subTasksSet.append('text')
+          .attr('class','start')
+          .attr('x',sideBarXScale('start')+sideBarXScale.rangeBand()/2)
+          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
+          .attr('font-size',10)
+          .attr('text-anchor','middle')
+          .attr('fill','white')
+          .transition().duration(1000)
+          .attr('fill','black')
+          .text(function(datum){return datum.start;});
+          
+        subTasksSet.append('text')
+          .attr('class','end')
+          .attr('x',sideBarXScale('end')+sideBarXScale.rangeBand()/2)
+          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
+          .attr('font-size',10)
+          .attr('text-anchor','middle')
+          .attr('fill','white')
+          .transition().duration(1000)
+          .attr('fill','black')
+          .text(function(datum){return datum.end;});
+          
+        subTasksSet.append('rect')
+          .attr('class','time-line')
+          .attr('x',function(datum){return gridXScale(datum.start);})
+          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+subTaskIndex*20;})
+          .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
+          .attr('height',15)
+          .attr('rx',2.5)
+          .attr('ry',2.5)
+          .attr('fill','green')
+          .attr('fill-opacity',0);
+          
+        subTasksSet.selectAll('.time-line')
+          .transition().duration(1000 )
+          .attr('fill-opacity',1);
+          
+        this.expanded = true;
+      }
+
+      translateTaskSet();
+    });
       
   });
 
