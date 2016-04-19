@@ -101,6 +101,11 @@ var usMapChart = (function() {
       };
 
       self.onBarClick = function(state){
+        self.drawBarChart(self.svgForBarChart,{data:self.getComparableStates(state.id,'income'),
+          property:'income',
+          colorScale:self.colorScale,
+        onBarClick:self.onBarClick});
+        console.log(_obj.data.find(function(datum){return datum.id==state.id;}))
         self.goThroughState(_obj.data.find(function(datum){return datum.id==state.id;}));
         d3.event.stopPropagation();
       };
@@ -147,7 +152,11 @@ var usMapChart = (function() {
       this.g.selectAll('path:not(.active)')
         .transition()
         .duration(1000)
-        .style('opacity', '0.5');
+        .style('opacity', '0.5'); 
+        this.g.selectAll('path.active')
+        .transition()
+        .duration(1000)
+        .style('opacity', '1'); 
     } else {
       x = this.width / 2;
       y = this.height / 2;
@@ -162,10 +171,8 @@ var usMapChart = (function() {
 
   };
 
-  usMapChart.prototype.transformStates = function(x, y, k,d, state) {
+  usMapChart.prototype.transformStates = function(x, y, k, d, state) {
     var centered = this.centered;
-    // console.log(d);
-
     this.g.selectAll("path")
      .classed("active", centered && function(d) {
         return d === centered;
@@ -239,9 +246,15 @@ usMapChart.prototype.getComparableStates = function(id,property){
               onBarClick:self.onBarClick
             });
           } else {
+            var barData;
+            if(d3.select(this).attr('class')=='active'){
+              barData = self.states.filter(function(state){return state.income!==0;});
+            }else{
+              barData = self.getComparableStates(d.id,'income')
+            }
             self.goThroughState(d);
              self.drawBarChart(self.svgForBarChart,{
-            data:self.getComparableStates(d.id,'income'),
+            data:barData,
             property:'income',
             colorScale:self.colorScale,
               onBarClick:self.onBarClick
