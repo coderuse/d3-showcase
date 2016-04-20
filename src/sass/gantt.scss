@@ -8,6 +8,7 @@ body {
   .gantt{
     width:1080px;
     height: 600px;
+    overflow: auto;
   }
   svg{
     background-color: rgb(251, 251, 251);

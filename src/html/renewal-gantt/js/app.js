@@ -66,7 +66,7 @@
         .attr('width', gridXScale.rangeBand())
         .attr('height', svg.attr('height')-constants.margins.bottom-constants.margins.top)
         .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});    
-  }
+  };
   
   drawGrid();
       
