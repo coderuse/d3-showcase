@@ -54,16 +54,21 @@
       constants.sidebar.margins.left,
       constants.sidebar.width-constants.sidebar.margins.right
     ],constants.sidebar.columnPadding);
-
-  svg.append('g')
-    .attr('class','grid')
-    .selectAll('rect').data(d3.range(1, 31)).enter()
-    .append('rect')
-      .attr('x', gridXScale)
-      .attr('y', constants.margins.top)
-      .attr('width', gridXScale.rangeBand())
-      .attr('height', constants.svg.height-constants.margins.bottom-constants.margins.top)
-      .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});
+    
+  var gridElement = svg.append('g').attr('class','grid');
+  var drawGrid = function(){
+    var gridColumnSet = gridElement.selectAll('rect').data(d3.range(1, 31),function(datum){return datum;});
+    gridColumnSet.enter().append('rect');
+    gridColumnSet.exit().remove();
+    gridColumnSet
+        .attr('x', gridXScale)
+        .attr('y', constants.margins.top)
+        .attr('width', gridXScale.rangeBand())
+        .attr('height', svg.attr('height')-constants.margins.bottom-constants.margins.top)
+        .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});    
+  }
+  
+  drawGrid();
       
   d3.json('data.json', function(error, data) {
     
@@ -143,7 +148,7 @@
       .attr('y2',function(datum,index){return yScale(index)-(constants.tasks.padding/2)*yScale.rangeBand();})
       .attr('stroke','#EEEEEE');
       
-    var translateTaskSet = function(){
+    var resizeChart = function(){
       var expandedInfo = [];
       var translateValue;
       taskSet.transition().duration(500).attr('transform',function(datum,taskIndex){
@@ -151,6 +156,8 @@
         translateValue = 20*d3.sum(expandedInfo.filter(function(value,index){return index<taskIndex;}));
         return 'translate(0,'+translateValue+')';
       });
+      svg.attr('height',constants.svg.height+20*d3.sum(expandedInfo));
+      drawGrid();
     };
       
     taskSet.on('click',function(datum,index){
@@ -218,7 +225,7 @@
         this.expanded = true;
       }
 
-      translateTaskSet();
+      resizeChart();
     });
       
   });
