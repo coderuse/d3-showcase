@@ -36,48 +36,60 @@
       timeLineWidth:0.35
     }
   };
+  
+  var gridXScale, gridXScaleRange, sideBarXScale, sideBarXScaleRange, yScale;
 
   var svg = d3.select('.gantt').append('svg')
     .attr('width', constants.svg.width)
     .attr('height', constants.svg.height);
+    
+    
+  var createScales = function(){
+    
+    gridXScale = d3.scale.ordinal()
+      .domain(d3.range(1, constants.grid.columns+1))
+      .rangeBands([
+        constants.sidebar.width+constants.grid.margins.left,
+        constants.svg.width-constants.grid.margins.right
+      ]);
 
-  var gridXScale = d3.scale.ordinal()
-    .domain(d3.range(1, 31))
-    .rangeBands([
-      constants.sidebar.width+constants.grid.margins.left,
-      constants.svg.width-constants.grid.margins.right
-    ]);
-    
-  var sideBarXScale = d3.scale.ordinal()
-    .domain(['taskName','taskId','start','end'])
-    .rangeBands([
-      constants.sidebar.margins.left,
-      constants.sidebar.width-constants.sidebar.margins.right
-    ],constants.sidebar.columnPadding);
-    
-  var gridElement = svg.append('g').attr('class','grid');
-  var drawGrid = function(){
-    var gridColumnSet = gridElement.selectAll('rect').data(d3.range(1, 31),function(datum){return datum;});
-    gridColumnSet.enter().append('rect');
-    gridColumnSet.exit().remove();
-    gridColumnSet
-        .attr('x', gridXScale)
-        .attr('y', constants.margins.top)
-        .attr('width', gridXScale.rangeBand())
-        .attr('height', svg.attr('height')-constants.margins.bottom-constants.margins.top)
-        .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});    
-  };
-  
-  drawGrid();
-      
-  d3.json('data.json', function(error, data) {
-    
-    var yScale = d3.scale.ordinal()
-      .domain(d3.range(0,data.length))
+    gridXScaleRange = gridXScale.rangeBand();
+
+    sideBarXScale = d3.scale.ordinal()
+      .domain(['taskName','taskId','start','end'])
+      .rangeBands([
+        constants.sidebar.margins.left,
+        constants.sidebar.width-constants.sidebar.margins.right
+      ],constants.sidebar.columnPadding);
+
+    yScale = d3.scale.ordinal()
       .rangeBands([
         constants.svg.heading+constants.margins.top,
         constants.svg.height-constants.margins.bottom
       ],constants.tasks.padding);
+
+  };
+    
+  var gridElement = svg.append('g').attr('class','grid');
+  
+  var drawGrid = function(){
+    var gridColumnSet = gridElement.selectAll('.column').data(d3.range(1, constants.grid.columns+1),function(datum){return datum;});
+    gridColumnSet.enter().append('rect').attr('class','column');
+    gridColumnSet.exit().remove();
+    gridColumnSet
+      .attr('x', gridXScale)
+      .attr('y', constants.margins.top)
+      .attr('width', gridXScaleRange)
+      .attr('height', svg.attr('height')-constants.margins.bottom-constants.margins.top)
+      .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});    
+  };
+
+  createScales();
+  drawGrid();
+      
+  d3.json('data.json', function(error, data) {
+    
+    yScale.domain(d3.range(0,data.length));
       
     var taskSet = svg.append('g')
       .attr('class','tasks')
