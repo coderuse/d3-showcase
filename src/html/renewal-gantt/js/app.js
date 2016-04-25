@@ -230,19 +230,19 @@
   };
   
   var drawSubTaskTimeLines = function(subTasksSet){
-        subTasksSet.append('rect')
-          .attr('class','time-line')
-          .attr('x',function(datum){return gridXScale(datum.start);})
-          .attr('y',0)
-          .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
-          .attr('height',15)
-          .attr('rx',2.5)
-          .attr('ry',2.5)
-          .attr('fill','green')
-          .attr('fill-opacity',0);
-        subTasksSet.selectAll('.time-line')
-          .transition().duration(1000 )
-          .attr('fill-opacity',1);
+    subTasksSet.append('rect')
+      .attr('class','time-line')
+      .attr('x',function(datum){return gridXScale(datum.start);})
+      .attr('y',0)
+      .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
+      .attr('height',15)
+      .attr('rx',2.5)
+      .attr('ry',2.5)
+      .attr('fill','green')
+      .attr('fill-opacity',0);
+    subTasksSet.selectAll('.time-line')
+      .transition().duration(1000 )
+      .attr('fill-opacity',1);
   };
   
   var removeSubTaskGroupElement = function(taskElement){
@@ -274,8 +274,7 @@
         this.expanded = false;
         changeTaskButtonColor(taskElement,'#EEEEEE');
         removeSubTaskGroupElement(taskElement);
-      }
-      else{
+      } else{
         this.expanded = true;
         changeTaskButtonColor(taskElement,'#CBCBCB');
         addSubTaskElements(taskElement,datum.subTasks);
