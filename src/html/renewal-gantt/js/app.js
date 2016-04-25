@@ -239,8 +239,7 @@
       .attr('rx',2.5)
       .attr('ry',2.5)
       .attr('fill','green')
-      .attr('fill-opacity',0);
-    subTasksSet.selectAll('.time-line')
+      .attr('fill-opacity',0)
       .transition().duration(1000 )
       .attr('fill-opacity',1);
   };
