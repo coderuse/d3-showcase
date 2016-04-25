@@ -6,7 +6,6 @@ body {
   font: $font-size*3 $font-stack;
   color: $primary-color;
   .gantt{
-    width:1080px;
     height: 600px;
     overflow: auto;
   }
