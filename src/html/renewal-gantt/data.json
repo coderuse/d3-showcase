@@ -183,11 +183,6 @@
             {
                 "taskName":"Send MOM",
                 "start":27,
-                "end":38
-            },
-            {
-                "taskName":"Send MOM",
-                "start":27,
                 "end":30
             }
         ]
