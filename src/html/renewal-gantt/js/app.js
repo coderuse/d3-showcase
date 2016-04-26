@@ -90,7 +90,7 @@
   };
   
   var setSvgHeight = function(height){
-    var _expandedInfo = expandedInfo.map(function(array){return d3.sum(array);})
+    var _expandedInfo = expandedInfo.map(function(array){return d3.sum(array);});
     svg.attr('height',constants.svg.height+20*d3.sum(_expandedInfo));
   };
   
@@ -186,7 +186,7 @@
   
   var transformSubTaskElements = function(subTaskSet,taskIndex,duration){    
     subTaskSet.transition().duration(duration).attr('transform',function(datum,subTaskIndex){
-      var _expandedInfo = expandedInfo[taskIndex].filter(function(value,index){return index < subTaskIndex;})
+      var _expandedInfo = expandedInfo[taskIndex].filter(function(value,index){return index < subTaskIndex;});
       var _translateValue = 20*d3.sum(_expandedInfo);
       var translateValue = yScaleRange+_translateValue;
       return 'translate(0,'+translateValue+')';
@@ -299,7 +299,7 @@
           var subTaskElement = d3.select(this);
           if(subTaskDatum.subTasks){
             if(this.expanded){
-              this.expanded = false
+              this.expanded = false;
               expandedInfo[taskIndex][subTaskIndex] -= subTaskDatum.subTasks.length;
               removeSubTasksElement(subTaskElement);
             } else {
