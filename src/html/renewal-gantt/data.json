@@ -8,23 +8,80 @@
             {
                 "taskName":"Update and send PRQ to client",
                 "start":1,
-                "end":3
+                "end":3,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":1,
+                        "end":2
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":2,
+                        "end":3
+                    }
+                ]
             },
             {
                 "taskName":"Pre-Renewal Meeting",
                 "start":2,
-                "end":4
+                "end":4,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":2,
+                        "end":3
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":3,
+                        "end":4
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":2,
+                        "end":4
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":1,
-                "end":4
+                "end":4,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":1,
+                        "end":3
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":3,
+                        "end":4
+                    }
+                ]
             },
             {
                 "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
                 "start":3,
-                "end":6
+                "end":6,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":3,
+                        "end":4
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":3,
+                        "end":5
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":5,
+                        "end":6
+                    }
+                ]
             }
         ]
     },
@@ -37,18 +94,58 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":6,
-                "end":8
+                "end":8,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":6,
+                        "end":7
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":7,
+                        "end":8
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":7,
-                "end":10
+                "end":10,
+                "subTasks":[
+                    {
+                        "taskName":"PRISM Meeting",
+                        "start":7,
+                        "end":9
+                    },
+                    {
+                        "taskName":"Send MOM",
+                        "start":9,
+                        "end":10
+                    }
+                ]
             },
             {
                 "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
                 "start":6,
-                "end":10
+                "end":10,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":6,
+                        "end":8
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":8,
+                        "end":10
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":7,
+                        "end":9
+                    }
+                ]
             }
         ]
     },
@@ -61,12 +158,31 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":10,
-                "end":11
+                "end":11,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":10,
+                        "end":11
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":11,
-                "end":12
+                "end":12,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":11,
+                        "end":12
+                    },
+                    {
+                        "taskName":"subtask1",
+                        "start":11,
+                        "end":12
+                    }
+                ]
             }
         ]
     },
@@ -79,22 +195,85 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":12,
-                "end":14
+                "end":14,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":12,
+                        "end":13
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":12,
+                        "end":14
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":13,
+                        "end":14
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":13,
-                "end":15
+                "end":15,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":13,
+                        "end":15
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":14,
+                        "end":15
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":13,
+                        "end":14
+                    }
+                ]
             },
             {
                 "taskName":"Update and send PRQ to client",
                 "start":12,
-                "end":14
+                "end":14,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":12,
+                        "end":13
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":13,
+                        "end":14
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":12,
+                        "end":14
+                    }
+                ]
             },
             {
                 "taskName":"Pre-Renewal Meeting",
                 "start":12,
-                "end":15
+                "end":15,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":12,
+                        "end":13
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":13,
+                        "end":15
+                    }
+                ]
             }
         ]
     },
@@ -107,18 +286,48 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":15,
-                "end":17
+                "end":17,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":15,
+                        "end":16
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":16,
+                        "end":17
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":16,
-                "end":17
+                "end":17,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":16,
+                        "end":17
+                    }
+                ]
             },
             {
                 "taskName":"Chase Client for complete PRQ",
-                "taskId":223456786,
                 "start":16,
-                "end":18
+                "end":18,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":16,
+                        "end":17
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":17,
+                        "end":18
+                    }
+                ]
             }
         ]
     },
@@ -131,13 +340,37 @@
             {
                 "taskName":"Send MOM",
                 "start":18,
-                "end":20
+                "end":20,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":18,
+                        "end":19
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":19,
+                        "end":20
+                    }
+                ]
             },
             {
                 "taskName":"Chase Client for complete PRQ",
                 "taskId":223456786,
                 "start":19,
-                "end":20
+                "end":20,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":19,
+                        "end":20
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":19,
+                        "end":20
+                    }
+                ]
             }
         ]
     },
@@ -150,17 +383,68 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":23,
-                "end":26
+                "end":26,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":23,
+                        "end":25
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":24,
+                        "end":25
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":25,
+                        "end":26
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":21,
-                "end":26
+                "end":26,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":21,
+                        "end":22
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":23,
+                        "end":24
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":25,
+                        "end":26
+                    }
+                ]
             },
             {
                 "taskName":"Update and send PRQ to client",
                 "start":20,
-                "end":24
+                "end":24,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":23,
+                        "end":24
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":20,
+                        "end":21
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":22,
+                        "end":23
+                    }
+                ]
             }
         ]
     },
@@ -173,17 +457,58 @@
             {
                 "taskName":"PRISM Meeting",
                 "start":26,
-                "end":28
+                "end":28,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":26,
+                        "end":27
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":27,
+                        "end":28
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":28,
-                "end":30
+                "end":30,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":28,
+                        "end":29
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":29,
+                        "end":30
+                    }
+                ]
             },
             {
                 "taskName":"Send MOM",
                 "start":27,
-                "end":30
+                "end":30,
+                "subTasks":[
+                    {
+                        "taskName":"subtask1",
+                        "start":27,
+                        "end":28
+                    },
+                    {
+                        "taskName":"subtask2",
+                        "start":28,
+                        "end":29
+                    },
+                    {
+                        "taskName":"subtask3",
+                        "start":29,
+                        "end":30
+                    }
+                ]
             }
         ]
     }
