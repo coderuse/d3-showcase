@@ -1,19 +1,24 @@
 (function(w) {
   'use strict';
-  var d3 = w.d3, topojson = w.topojson;
+  var d3 = w.d3, topojson = w.topojson,usData = w.usData;
 d3.json('data/us.json', function(error, us) {
 
     if (error) {
       throw error;
     }
+    usData = us;
     var data = topojson.feature(us, us.objects.states).features;
-
-    d3.tsv('data/us-state-names.tsv', function(stateMapping) {
-      drawCharts(data,stateMapping);
+    var countyData = topojson.feature(us, us.objects.counties).features;
+   var countyMapping;
+     d3.tsv('data/county-data.tsv' , function(county){
+      countyMapping = county;
+    });
+      d3.tsv('data/us-state-names.tsv', function(stateMapping) {
+      drawCharts(data,stateMapping,countyData,countyMapping);
 });
 });
 
-function drawCharts(data,stateMapping){
+function drawCharts(data,stateMapping,countyData,countyMapping){
   var obj = {
   width:800,
   height:500,
@@ -21,12 +26,15 @@ function drawCharts(data,stateMapping){
   svgyPos:0,
   data:data,
   stateMapping:stateMapping,
+  countyData:countyData,
+  countyMapping:countyMapping,
   barChartSvgWidth:500,
   barChartSvgHeight:200,
 };
       var usChart = new usMapChart(obj);
       var elem = usChart.initialize('.map',obj.width,obj.height);
-      usChart.createMap(elem,data);
+      var dataElem = usChart.createMap(elem,data,'main');
+      usChart.attachEvents(dataElem);
 }
 
 
@@ -41,6 +49,8 @@ var usMapChart = (function() {
       self.barChartSvgWidth = _obj.barChartSvgWidth;
       self.barChartSvgHeight = _obj.barChartSvgHeight;
       // self.centered;
+      self.data = _obj.data;
+      self.countyData = _obj.countyData;
       self.projection = d3.geo.albersUsa()
                         .scale(800)
                         .translate([this.width / 2, this.height / 2]);
@@ -57,18 +67,30 @@ var usMapChart = (function() {
                   });
        
        var states =[];
+       var counties = [];
       // self.maxPopulationValue, self.minPopulationValue, self.maxUnInsuredValue, self.minUnInsuredValue;
       _obj.stateMapping.forEach(function(state) {
         states.push({
           id:parseInt(state.id),
           name:state.name,
+          stateCode:state.code,
           population:parseInt(state.population),
           income:parseInt(state.medianHouseholdIncome),
           unInsured:parseInt(state.unInsured)
         });
       });
+
+      _obj.countyMapping.forEach(function(county){
+          counties.push({
+            county:county.county,
+            stateCode:county.state,
+            population:county.population,
+            area:county.area
+          });
+      });
      self.states = states;
-     
+     self.counties = counties;
+
       self.maxPopulationValue = d3.max(
         self.states
           .map(function(state){return state.population;})
@@ -107,18 +129,20 @@ var usMapChart = (function() {
           colorScale:self.colorScale,
         onBarClick:self.onBarClick});
         console.log(_obj.data.find(function(datum){return datum.id==state.id;}));
-        self.goThroughState(_obj.data.find(function(datum){return datum.id==state.id;}));
+        self.goThroughState(_obj.data.find(function(datum){return datum.id==state.id;}),0.5);
         d3.event.stopPropagation();
       };
 
       self.svgForBarChart = self.initialize('.charts',self.barChartSvgWidth,self.barChartSvgHeight);
+      self.svgForCountyChart = self.initialize('.charts',self.barChartSvgWidth,400);
 
       self.drawBarChart(self.svgForBarChart,{data:self.states
           .filter(function(state){return state.income!==0;}),
           property:'income',
           colorScale:self.colorScale,
         onBarClick:self.onBarClick});
-          
+      
+
 
     }
        usMapChart.prototype.initialize = function (elem,width,height) {
@@ -140,24 +164,35 @@ var usMapChart = (function() {
         return this.states.filter(function(state){return state.id === id;})[0];
       };
 
-  usMapChart.prototype.goThroughState = function(d) {
-    var x, y, k, centered = this.centered;
+  usMapChart.prototype.goThroughState = function(d,opacitySate) {
+    var x, y, k,k2,  centered = this.centered;
 
     if (d && this.centered !== d) {
       var centroid = this.path.centroid(d);
       x = centroid[0];
       y = centroid[1];
       k = 3;
+
       this.centered = d;
       this.transformStates(x, y, k,d, false);
+      this.transformStatesForOtherSvg(x,y,2,d,false);
       this.g.selectAll('path:not(.active)')
         .transition()
         .duration(1000)
-        .style('opacity', '0.5'); 
+        .style('opacity', opacitySate); 
         this.g.selectAll('path.active')
         .transition()
         .duration(1000)
         .style('opacity', '1'); 
+        // this.svgForBarChart.selectAll('path:not(.sideActive)')
+        // .transition()
+        // .duration(1000)
+        // .style('display', 'none'); 
+        // this.svgForBarChart.selectAll('path.sideActive')
+        // .transition()
+        // .duration(1000)
+        // .style('display', 'block'); 
+
     } else {
       x = this.width / 2;
       y = this.height / 2;
@@ -167,7 +202,16 @@ var usMapChart = (function() {
         .transition()
         .duration(1000)
         .style('opacity', '1');
+        this.g.selectAll('path')
+        .transition()
+        .duration(1000)
+        .style('opacity', '1');
+         this.svgForBarChart.selectAll('path.side')
+        .transition()
+        .duration(1000)
+        .style('display', 'none');
       this.transformStates(x, y, k);
+      this.transformStatesForOtherSvg(this.barChartSvgWidth/2,400/2 ,1,undefined,true);
     }
 
   };
@@ -178,11 +222,14 @@ var usMapChart = (function() {
      .classed("active", centered && function(d) {
         return d === centered;
       });
+      this.svgForCountyChart.selectAll("path")
+     .classed("active", centered && function(d) {
+        return d === centered;
+      });
     this.g.transition()
       .duration(1000)
       .attr("transform", "translate(" + this.width / 2 + "," + this.height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
       .style("stroke-width", 1.5 / k + "px");
-
     if (state === true) {
       d3.select('path.active').classed("active", false);
       this.g.selectAll('path')
@@ -191,6 +238,21 @@ var usMapChart = (function() {
         .style('opacity', '1');
     }
 
+  };
+ usMapChart.prototype.transformStatesForOtherSvg = function(x, y, k, d, state) {
+    var centered = this.centered;
+   
+     this.svgForCountyChart.transition()
+      .duration(1000)
+      .attr("transform", "translate(" +  this.barChartSvgWidth /2 + "," + (400) / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
+      .style("stroke-width", 1.5 / k + "px");
+      if(d){
+         d3.select("#side"+d.id)
+      .classed('sideActive',true);
+      }
+      if (state === true) {
+      d3.select('path.sideActive').classed("sideActive", false);
+    }
   };
 
 usMapChart.prototype.getComparableStates = function(id,property){
@@ -221,62 +283,98 @@ usMapChart.prototype.getComparableStates = function(id,property){
       };
 
 
-    usMapChart.prototype.createMap = function (groupElem,data) {
+    usMapChart.prototype.createMap = function (groupElem,data,idPre) {
       var self=this;
        var gEl = groupElem.selectAll('.state')
         .data(data)
         .enter().append('g')
         .attr('class', 'state');
 
-      gEl.append('path')
+       gEl.append('path')
         .attr('d', this.path)
+        .attr('id',function(d){return idPre+d.id;})
+        .attr('class',idPre)
         .attr('fill',function(d){
-          if(self.getState(d.id).population === 0){
+          if(self.getState(d.id) && self.getState(d.id).population === 0){
             return 'red';
           } else {
-            return self.blueShadesForState(self.getState(d.id).population);
+            return self.getState(d.id)? self.blueShadesForState(self.getState(d.id).population):'green';
           }
-        })
-        .on("click", function(d) {
-          if ((d3.select(this).style('opacity')) != 1) {
+        });
+        return gEl;
+      };
+
+      usMapChart.prototype.attachEvents = function(gEl){
+        var self = this;
+        gEl.on("click", function(d) {
+          if ((d3.select(this).select('path').style('opacity')) != 1) {
             self.transformStates(self.width / 2, self.height / 2, 1,d, true);
+            self.transformStatesForOtherSvg(self.barChartSvgWidth / 2, 250, 1,undefined, true);
+
              self.drawBarChart(self.svgForBarChart,{
               data:self.states.filter(function(state){return state.income!==0;}),
               property:'income',
               colorScale:self.colorScale,
               onBarClick:self.onBarClick
             });
+
           } else {
+              // var grouEl = self.createMap(self.svgForCountyChart,self.countyData,'side');
+              self.svgForCountyChart.append("g")
+                  .attr("id", "counties")
+                  .selectAll("path")
+                  .data(self.countyData)
+                  .enter().append("path")
+                  .attr("d", self.path)
+                  .attr("class", "county-boundary")
+                  .attr('id','path'+d.id)
+                  .on("click", countyclicked);
+                  
+              self.svgForCountyChart.append("g")
+                  .attr("id", "states")
+                  .selectAll("path")
+                  .data(self.data)
+                  .enter().append("path")
+                  .attr("d", self.path)
+                  .attr("class", "state");
+                  // .on("click", clicked);
+
+      // .on("click", countyclicked);
+
             var barData;
-            if(d3.select(this).attr('class')=='active'){
+            if(d3.select(this).select('path').attr('class')=='active'){
               barData = self.states.filter(function(state){return state.income!==0;});
             }else{
               barData = self.getComparableStates(d.id,'income');
             }
-            self.goThroughState(d);
-             self.drawBarChart(self.svgForBarChart,{
-            data:barData,
-            property:'income',
-            colorScale:self.colorScale,
-              onBarClick:self.onBarClick
-          });
+                if(self.getState(d.id)){
+                       self.goThroughState(d,0.5);
+                       self.drawBarChart(self.svgForBarChart,{
+                                data:barData,
+                                property:'income',
+                                colorScale:self.colorScale,
+                                onBarClick:self.onBarClick
+                    });
+                   }
+
           }
         })
         .on('mouseover', function(d) {
-
-          self.tooltip.transition().style('opacity', 0.6);
-          self.tooltip.html(self.getState(d.id).name)
-            .style({
-              'left': (d3.event.pageX + 5) + 'px',
-              'top': (d3.event.pageY - 20) + 'px'
-            });
+            if(self.getState(d.id)){
+                self.tooltip.transition().style('opacity', 0.6);
+                self.tooltip.html(self.getState(d.id).name)
+                .style({
+                    'left': (d3.event.pageX + 5) + 'px',
+                    'top': (d3.event.pageY - 20) + 'px'
+                });
+              }
         })
         .on('mouseout', function() {
           self.tooltip.transition().style('opacity', 0);
         });
     };
 usMapChart.prototype.drawBarChart = function(barChartElem,config){
-  var self=this;
+    var self=this;
     var values = config.data.map(function(datum){return datum[config.property];});
     var barScale = d3.scale.ordinal()
       .domain(config.data.map(function(datum){return datum.id;}))
@@ -315,6 +413,10 @@ usMapChart.prototype.drawBarChart = function(barChartElem,config){
       .attr('fill',config.colorScale);
   };
 
+
+function countyclicked(d) {
+  alert(d.id);
+}
 
   return usMapChart;
 })();
