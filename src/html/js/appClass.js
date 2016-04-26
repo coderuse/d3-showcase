@@ -1,8 +1,9 @@
-
+(function(w) {
+"use strict";
 var width = 960,
     height = 500,
     centered;
-
+var d3 = w.d3, topojson = w.topojson;
 var projection = d3.geo.albersUsa()
     .scale(1070)
     .translate([width / 2, height / 2]);
@@ -115,17 +116,14 @@ function transformStates(x,y,k,state){
       .duration(2000)
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
       .style("stroke-width", 1.5 / k + "px");
-      if(state==true){
+      if(state===true){
         g.selectAll("path")
       .classed("active",false);
        g.selectAll('#states .state').style('fill','#aaa');
-
-      }else{
-
       }
       
 }
-var gElem,circles,circleAttributes;
+var gElem,circles,circleAttributes,jsonCircles;
 function createBubbles(arrInput){
 jsonCircles =arrInput;
 // var svg1 = d3.select("body .map").append("svg");
@@ -148,7 +146,7 @@ svg.selectAll('.circle-group').remove();
                       .transition()
                       .duration(function(){
                          return Math.floor(Math.random() * (5000 - 100 + 1)) + 100;
-                      })
+                      });
                       
                       circleAttributes.transition()
                        .duration(function(){
@@ -184,13 +182,13 @@ d3.tsv('data/county-data.tsv' , function(county){
      var min =  d3.min(
       county.map(function(co){return co.population;})
           .filter(function(value){return value !== 0;})
-      )
+      );
 
       var max =  d3.max(
       county.map(function(co){return co.population;})
           .filter(function(value){return value !== 0;})
-      )
- greenShadesForState = colorGenerator(min,max,'green',1.75)
+      );
+ greenShadesForState = colorGenerator(min,max,'green',1.75);
 
     });
 
@@ -201,14 +199,16 @@ function colorGenerator (minValue,maxValue,baseColor,step){
       return function(value){
         return color.darker(step*(value-mean)/mean).toString();
       };
-    };
+    }
 
-function radiusGenerator (minValue,maxValue,step){
+// function radiusGenerator (minValue,maxValue,step){
      
-      return function(value){
-        return ;
-      };
-    };
+//       return function(value){
+//         return ;
+//       };
+//     };
 function getCounty (id){
         return countyData;
-      };
+      }
+
+      })(window);
