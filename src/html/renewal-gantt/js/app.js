@@ -36,214 +36,258 @@
       timeLineWidth:0.35
     }
   };
+  
+  var gridXScale, gridXScaleRange, sideBarXScale, sideBarXScaleRange, yScale, yScaleRange, taskSet, subTasksSet;
+  var expandedInfo = [];
 
-  var svg = d3.select('.gantt').append('svg')
-    .attr('width', constants.svg.width)
-    .attr('height', constants.svg.height);
+  var svg = d3.select('.gantt').append('svg').attr('width', constants.svg.width).attr('height', constants.svg.height);
+  var gridElement = svg.append('g').attr('class','grid');
+  var tasksElement = svg.append('g').attr('class','tasks');
 
-  var gridXScale = d3.scale.ordinal()
-    .domain(d3.range(1, 31))
-    .rangeBands([
-      constants.sidebar.width+constants.grid.margins.left,
-      constants.svg.width-constants.grid.margins.right
-    ]);
-    
-  var sideBarXScale = d3.scale.ordinal()
-    .domain(['taskName','taskId','start','end'])
-    .rangeBands([
-      constants.sidebar.margins.left,
-      constants.sidebar.width-constants.sidebar.margins.right
-    ],constants.sidebar.columnPadding);
-
-  svg.append('g')
-    .attr('class','grid')
-    .selectAll('rect').data(d3.range(1, 31)).enter()
-    .append('rect')
-      .attr('x', gridXScale)
-      .attr('y', constants.margins.top)
-      .attr('width', gridXScale.rangeBand())
-      .attr('height', constants.svg.height-constants.margins.bottom-constants.margins.top)
-      .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});
-      
-  d3.json('data.json', function(error, data) {
-    
-    var yScale = d3.scale.ordinal()
-      .domain(d3.range(0,data.length))
+  var createScales = function(length){
+    gridXScale = d3.scale.ordinal()
+      .domain(d3.range(1, constants.grid.columns+1))
+      .rangeBands([
+        constants.sidebar.width+constants.grid.margins.left,
+        constants.svg.width-constants.grid.margins.right
+      ]);
+    gridXScaleRange = gridXScale.rangeBand();
+    sideBarXScale = d3.scale.ordinal()
+      .domain(['taskName','taskId','start','end'])
+      .rangeBands([
+        constants.sidebar.margins.left,
+        constants.sidebar.width-constants.sidebar.margins.right
+      ],constants.sidebar.columnPadding);
+    sideBarXScaleRange = sideBarXScale.rangeBand();
+    yScale = d3.scale.ordinal()
+      .domain(d3.range(0,length))
       .rangeBands([
         constants.svg.heading+constants.margins.top,
         constants.svg.height-constants.margins.bottom
       ],constants.tasks.padding);
-      
-    var taskSet = svg.append('g')
-      .attr('class','tasks')
-      .selectAll('task').data(data,function(datum,index){return index;});
+    yScaleRange = yScale.rangeBand();
+  };
 
+  var drawGrid = function(){
+    var gridColumnSet = gridElement
+      .selectAll('.column')
+      .data(d3.range(1, constants.grid.columns+1),function(datum){return datum;});
+    gridColumnSet.enter().append('rect').attr('class','column');
+    gridColumnSet.exit().remove();
+    gridColumnSet
+      .attr('x', gridXScale)
+      .attr('y', constants.margins.top)
+      .attr('width', gridXScaleRange)
+      .attr('height', svg.attr('height')-constants.margins.bottom-constants.margins.top)
+      .attr('fill', function(datum){return (datum % 2 === 0) ? '#FFFFFF' : '#EEEEEE';});    
+  };
+  
+  var createTaskElements = function(data){
+    taskSet = tasksElement.selectAll('task').data(data,function(datum,index){return index;});
     taskSet.exit().remove();
-
-    taskSet.enter().append('g')
-      .attr('class','task');
-
+    taskSet.enter().append('g').attr('class','task');
+  };
+  
+  var setSvgHeight = function(height){
+    svg.attr('height',constants.svg.height+20*d3.sum(expandedInfo));
+  };
+  
+  var transformTaskElements = function(taskSet){
+    var translateValue, _translateValue;
+    var translateMapper = function(datum,index){
+      expandedInfo[index] = this.expanded ? datum.subTasks.length : 0;
+      _translateValue = 20*d3.sum(expandedInfo.filter(function(value,taskIndex){
+        return taskIndex < index;
+      }));
+      translateValue = yScale(index) + _translateValue;
+      return 'translate(0,'+translateValue+')';
+    };
+    taskSet.transition().duration(500).attr('transform',translateMapper);
+  };
+  
+  var drawTaskNameButtons = function(taskSet){
     taskSet.append('rect')
       .attr('class','task-name-button')
       .attr('x',sideBarXScale('taskName'))
-      .attr('y',function(datum,index){return yScale(index);})
-      .attr('width',sideBarXScale.rangeBand())
-      .attr('height',yScale.rangeBand())
+      .attr('y',0)
+      .attr('width',sideBarXScaleRange)
+      .attr('height',yScaleRange)
       .attr('rx',5)
       .attr('ry',5)
       .attr('fill','#EEEEEE');
-      
+  };
+  
+  var drawTaskNameTexts = function(taskSet){
     taskSet.append('text')
       .attr('class','task-name')
-      .attr('x',function(datum){return sideBarXScale('taskName')+sideBarXScale.rangeBand()/2;})
-      .attr('y',function(datum,index){return yScale(index)+yScale.rangeBand()/2+5;})
+      .attr('x',sideBarXScale('taskName')+sideBarXScaleRange/2)
+      .attr('y',yScaleRange/2+5)
       .attr('text-anchor','middle')
       .attr('font-size',10)
       .text(function(datum){return datum.taskName;});
-      
+  };
+  
+  var drawTaskIdTexts = function(taskSet){
     taskSet.append('text')
       .attr('class','task-id')
-      .attr('x',function(datum){return sideBarXScale('taskId')+sideBarXScale.rangeBand()/2;})
-      .attr('y',function(datum,index){return yScale(index)+yScale.rangeBand()/2+5;})
+      .attr('x',sideBarXScale('taskId')+sideBarXScaleRange/2)
+      .attr('y',yScaleRange/2+5)
       .attr('text-anchor','middle')
       .attr('font-size',10)
       .text(function(datum){return datum.taskId;});
-      
+  };
+  
+  var drawStartTexts = function(taskSet){
     taskSet.append('text')
       .attr('class','start')
-      .attr('x',function(datum){return sideBarXScale('start')+sideBarXScale.rangeBand()/2;})
-      .attr('y',function(datum,index){return yScale(index)+yScale.rangeBand()/2+5;})
+      .attr('x',sideBarXScale('start')+sideBarXScaleRange/2)
+      .attr('y',yScaleRange/2+5)
       .attr('text-anchor','middle')
       .attr('font-size',10)
       .text(function(datum){return datum.start;});
-      
+  };
+  
+  var drawEndTexts = function(taskSet){
     taskSet.append('text')
       .attr('class','end')
-      .attr('x',function(datum){return sideBarXScale('end')+sideBarXScale.rangeBand()/2;})
-      .attr('y',function(datum,index){return yScale(index)+yScale.rangeBand()/2+5;})
+      .attr('x',sideBarXScale('end')+sideBarXScaleRange/2)
+      .attr('y',yScaleRange/2+5)
       .attr('text-anchor','middle')
       .attr('font-size',10)
       .text(function(datum){return datum.end;});
-      
+  };
+  
+  var drawTimeLines = function(taskSet){
     taskSet.append('rect')
       .attr('class','time-line')
       .attr('x',function(datum){return gridXScale(datum.start);})
-      .attr('y',function(datum,index){return yScale(index);})
+      .attr('y',0)
       .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
-      .attr('height',yScale.rangeBand()*constants.tasks.timeLineWidth)
+      .attr('height',yScaleRange*constants.tasks.timeLineWidth)
       .attr('rx',2.5)
       .attr('ry',2.5)
       .attr('fill','orange');
-      
+  };
+  
+  var drawLineSeparators = function(taskSet){
     taskSet.append('line')
       .attr('class','separator')
       .attr('x1',constants.sidebar.margins.left)
-      .attr('y1',function(datum,index){return yScale(index)-(constants.tasks.padding/2)*yScale.rangeBand();})
+      .attr('y1',-(constants.tasks.padding/2)*yScaleRange)
       .attr('x2',constants.svg.width-constants.grid.margins.right)
-      .attr('y2',function(datum,index){return yScale(index)-(constants.tasks.padding/2)*yScale.rangeBand();})
+      .attr('y2',-(constants.tasks.padding/2)*yScaleRange)
       .attr('stroke','#EEEEEE');
-      
-    var translateTaskSet = function(){
-      var expandedInfo = [];
-      var translateValue;
-      taskSet.transition().duration(500).attr('transform',function(datum,taskIndex){
-        expandedInfo[taskIndex] = this.expanded ? datum.subTasks.length : 0;
-        translateValue = 20*d3.sum(expandedInfo.filter(function(value,index){return index<taskIndex;}));
-        return 'translate(0,'+translateValue+')';
-      });
-    };
-      
+  };
+  
+  var changeTaskButtonColor = function(taskElement,color){
+    taskElement.select('.task-name-button').transition().duration(500).attr('fill',color);
+  };
+  
+  var transformSubTaskElements = function(subTasksSet){
+    subTasksSet.attr('transform',function(datum,index){
+      var translateValue = yScaleRange+index*20;
+      return 'translate(0,'+translateValue+')';
+    });
+  };
+  
+  var drawSubTaskNameTexts = function(subTasksSet){
+    subTasksSet.append('text')
+      .attr('class','task-name')
+      .attr('x',sideBarXScale('taskName')+10)
+      .attr('y',10)
+      .attr('font-size',10)
+      .attr('text-anchor','left')
+      .attr('fill','white')
+      .transition().duration(1000)
+      .attr('fill','black')
+      .text(function(datum){return datum.taskName;});
+  };
+  
+  var drawSubTaskNameStartTexts = function(subTasksSet){
+    subTasksSet.append('text')
+      .attr('class','start')
+      .attr('x',sideBarXScale('start')+sideBarXScaleRange/2)
+      .attr('y',10)
+      .attr('font-size',10)
+      .attr('text-anchor','middle')
+      .attr('fill','white')
+      .transition().duration(1000)
+      .attr('fill','black')
+      .text(function(datum){return datum.start;});
+  };
+  
+  var drawSubTaskNameEndTexts = function(subTasksSet){
+    subTasksSet.append('text')
+      .attr('class','start')
+      .attr('x',sideBarXScale('end')+sideBarXScaleRange/2)
+      .attr('y',10)
+      .attr('font-size',10)
+      .attr('text-anchor','middle')
+      .attr('fill','white')
+      .transition().duration(1000)
+      .attr('fill','black')
+      .text(function(datum){return datum.end;});
+  };
+  
+  var drawSubTaskTimeLines = function(subTasksSet){
+    subTasksSet.append('rect')
+      .attr('class','time-line')
+      .attr('x',function(datum){return gridXScale(datum.start);})
+      .attr('y',0)
+      .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
+      .attr('height',15)
+      .attr('rx',2.5)
+      .attr('ry',2.5)
+      .attr('fill','green')
+      .attr('fill-opacity',0)
+      .transition().duration(1000 )
+      .attr('fill-opacity',1);
+  };
+  
+  var removeSubTaskGroupElement = function(taskElement){
+    taskElement.selectAll('.sub-tasks').remove();
+  };
+  
+  var addSubTaskElements = function(taskElement,data){
+    var subTasksGroupElement = taskElement.append('g').attr('class','sub-tasks');
+    subTasksSet = subTasksGroupElement.selectAll('.sub-task').data(data);
+    subTasksSet.enter().append('g').attr('class','sub-task');
+  };
+  
+  d3.json('data.json', function(error, data) {
+    createScales(data.length);
+    createTaskElements(data);
+    transformTaskElements(taskSet);
+    setSvgHeight();
+    drawGrid();
+    drawTaskNameButtons(taskSet);
+    drawTaskNameTexts(taskSet);
+    drawTaskIdTexts(taskSet);
+    drawStartTexts(taskSet);
+    drawEndTexts(taskSet);
+    drawTimeLines(taskSet);
+    drawLineSeparators(taskSet);
     taskSet.on('click',function(datum,index){
       var taskElement = d3.select(this);
       if(this.expanded){
-        taskElement.select('.task-name-button').transition().duration(500).attr('fill','#EEEEEE');
-        taskElement.selectAll('.sub-tasks').remove();
         this.expanded = false;
-      }else{
-        
-        taskElement.select('.task-name-button').attr('fill','#CBCBCB');
-        var subTasksGroupElement = taskElement.append('g').attr('class','sub-tasks');
-        var subTasksSet = subTasksGroupElement.selectAll('.sub-task').data(datum.subTasks);
-        subTasksSet.enter().append('g').attr('class','sub-task');
-
-        subTasksSet.append('text')
-          .attr('class','task-name')
-          .attr('x',sideBarXScale('taskName')+10)
-          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
-          .attr('font-size',10)
-          .attr('text-anchor','left')
-          .attr('fill','white')
-          .transition().duration(1000)
-          .attr('fill','black')
-          .text(function(datum){return datum.taskName;});
-          
-          
-        subTasksSet.append('text')
-          .attr('class','start')
-          .attr('x',sideBarXScale('start')+sideBarXScale.rangeBand()/2)
-          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
-          .attr('font-size',10)
-          .attr('text-anchor','middle')
-          .attr('fill','white')
-          .transition().duration(1000)
-          .attr('fill','black')
-          .text(function(datum){return datum.start;});
-          
-        subTasksSet.append('text')
-          .attr('class','end')
-          .attr('x',sideBarXScale('end')+sideBarXScale.rangeBand()/2)
-          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+10+subTaskIndex*20;})
-          .attr('font-size',10)
-          .attr('text-anchor','middle')
-          .attr('fill','white')
-          .transition().duration(1000)
-          .attr('fill','black')
-          .text(function(datum){return datum.end;});
-          
-        subTasksSet.append('rect')
-          .attr('class','time-line')
-          .attr('x',function(datum){return gridXScale(datum.start);})
-          .attr('y',function(datum,subTaskIndex){return yScale(index)+yScale.rangeBand()+subTaskIndex*20;})
-          .attr('width',function(datum){return gridXScale(datum.end) - gridXScale(datum.start);})
-          .attr('height',15)
-          .attr('rx',2.5)
-          .attr('ry',2.5)
-          .attr('fill','green')
-          .attr('fill-opacity',0);
-          
-        subTasksSet.selectAll('.time-line')
-          .transition().duration(1000 )
-          .attr('fill-opacity',1);
-          
+        changeTaskButtonColor(taskElement,'#EEEEEE');
+        removeSubTaskGroupElement(taskElement);
+      } else{
         this.expanded = true;
+        changeTaskButtonColor(taskElement,'#CBCBCB');
+        addSubTaskElements(taskElement,datum.subTasks);
+        transformSubTaskElements(subTasksSet);
+        drawSubTaskNameTexts(subTasksSet);
+        drawSubTaskNameStartTexts(subTasksSet);
+        drawSubTaskNameEndTexts(subTasksSet);
+        drawSubTaskTimeLines(subTasksSet);
       }
-
-      translateTaskSet();
+      transformTaskElements(taskSet);
+      setSvgHeight();
+      drawGrid();
     });
-      
   });
 
 
 }(window));
-
-
-  // var curMonth = (new d()).getMonth();
-  // var curYear = (new d()).getFullYear();
-  // var dateFormat = d3.time.format('%d/%m');
-  // var days = d3.time.days(new d(curYear, curMonth, 1), new d(curYear, curMonth + 1, 1)).map(dateFormat);
-  
-  
-    // Write the dates
-  // svg.selectAll('text').data(days).enter().append('text')
-  //   .text(function(d) {
-  //     return d;
-  //   })
-  //   .style("fill", "black")
-  //   .style("font-size", "25px")
-  //   .attr('x', function(d, i) {
-  //     return xScale(i);
-  //   })
-  //   .attr('y', 0)
-  //   .attr('width', xScale.rangeBand())
-  //   .attr('text-anchor', 'middle');
-  //   //.attr('transform', 'rotate(90)');

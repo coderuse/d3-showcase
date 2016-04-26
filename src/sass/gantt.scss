@@ -5,6 +5,10 @@ $primary-color: #333;
 body {
   font: $font-size*3 $font-stack;
   color: $primary-color;
+  .gantt{
+    height: 600px;
+    overflow: auto;
+  }
   svg{
     background-color: rgb(251, 251, 251);
     rect{
