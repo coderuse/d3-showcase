@@ -265,6 +265,48 @@
     return subTaskSet;
   };
   
+  var drawHeading = function(){
+    var headingGroup = svg.append('g').attr('class','heading');
+    headingGroup.attr('transform','translate(0,60)')
+    headingGroup.append('text')
+      .attr('x',sideBarXScale('taskName')+sideBarXScaleRange/2)
+      .attr('y',0)
+      .attr('font-size',15)
+      .attr('text-anchor','middle')
+      .text('PHASE');
+    headingGroup.append('text')
+      .attr('x',sideBarXScale('taskId')+sideBarXScaleRange/2)
+      .attr('y',0)
+      .attr('font-size',15)
+      .attr('text-anchor','middle')
+      .text('TASK ID');
+    headingGroup.append('text')
+      .attr('x',sideBarXScale('start')+sideBarXScaleRange/2)
+      .attr('y',0)
+      .attr('font-size',15)
+      .attr('text-anchor','middle')
+      .text('START');
+    headingGroup.append('text')
+      .attr('x',sideBarXScale('end')+sideBarXScaleRange/2)
+      .attr('y',0)
+      .attr('font-size',15)
+      .attr('text-anchor','middle')
+      .text('END');
+    var gridHeadingTextSet = headingGroup.selectAll('.day').data(d3.range(1, constants.grid.columns+1));
+    gridHeadingTextSet.enter().append('text').attr('class','day');
+    gridHeadingTextSet
+      .attr('x',datum=>gridXScale(datum)+gridXScaleRange/2+5)
+      .attr('y',0)
+      .attr('text-anchor','start')
+      .attr('font-size',10)
+      .attr('transform',function(datum){
+        const x = gridXScale(datum)+gridXScaleRange/2+5;
+        const y = 0;
+        return 'rotate(270,'+x+','+y+')';
+      })
+      .text(datum=>datum);
+  };
+  
   d3.json('data.json', function(error, data) {
     createScales(data.length);
     var taskSet = createTaskElements(data);
@@ -278,6 +320,7 @@
     drawEndTexts(taskSet);
     drawTimeLines(taskSet);
     drawLineSeparators(taskSet);
+    drawHeading();
     taskSet.on('click',function(taskDatum,taskIndex){
       var taskElement = d3.select(this);
       if(this.expanded){
