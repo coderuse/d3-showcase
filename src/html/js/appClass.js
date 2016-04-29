@@ -55,10 +55,10 @@ for (var i=0; i<counties.length; i++)
 			 break;
 		 }
 	 }
-	 if(flag==0){
+	 if(flag===0){
 		counties[i].population=10000;
 		counties[i].countyname="dummycounty";
-		counties[i].statename="dummystate"	
+		counties[i].statename="dummystate"	;
 	 }
 	 if(countyObj.hasOwnProperty(stateId))
 	 {
@@ -74,27 +74,26 @@ for (var i=0; i<counties.length; i++)
 	 else
 	 {
 		  countyObj[stateId]={maxPop:counties[i].population,minPop:counties[i].population,counties:[]};
-	//	  countyObj[stateId].counties=[];
 		  countyObj[stateId].counties.push(counties[i]);
 	 }
 	 
 }
-setColorCodes("green",1.5);
-
-function setColorCodes(baseColor,step){
-	var stateCodes=Object.keys(countyObj);
-	var mean=0,value=0;
-	for(i=0;i<stateCodes.length;i++){
-		
-		mean=parseInt((parseInt(countyObj[stateCodes[i]].minPop)+parseInt(countyObj[stateCodes[i]].maxPop))/2);
-		
-		for(j=0;j<countyObj[stateCodes[i]].counties.length;j++){
-			value=countyObj[stateCodes[i]].counties[j].population;
-	//		console.log("value: "+value+" mean:"+mean);
-			countyObj[stateCodes[i]].counties[j].colorCode=d3.hsl(baseColor).darker(step*(value-mean)/mean).toString();
-		}
+function setColorCodes(stateId){
+	var colorRange=['yellow','red'];var value=0;
+	var mean=parseInt((parseInt(countyObj[stateId].minPop)+parseInt(countyObj[stateId].maxPop))/2);
+	var colorScale=setColorCodeforCounty(countyObj[stateId].minPop,countyObj[stateId].maxPop,colorRange);
+	for(var j=0;j<countyObj[stateId].counties.length;j++){
+			value=countyObj[stateId].counties[j].population;
+			countyObj[stateId].counties[j].colorCode=colorScale(value);
 	}
 }
+function setColorCodeforCounty(min,max,colorRange){
+	return d3.scale.linear()
+					  .domain([min,max])
+					  .range(colorRange);
+	
+}
+
 
 //console.log(countyObj);
  g.append("g")
@@ -116,6 +115,8 @@ function setColorCodes(baseColor,step){
       .on("click", function(d){
         //console.log((d3.select(this).style('fill')));
           if((d3.select(this).style('fill')!=='rgb(255, 255, 255)')){
+			//	console.log(d);
+			  setColorCodes(d.id);
               clicked(d); 
           }else{
             transformStates(width/2,height/2,1,true);
@@ -212,7 +213,6 @@ svg.selectAll('.circle-group').remove();
                         })
                        .attr('r',function(d){
                      
-						  filterF(d.id);
                         return 3;
                        });
                 
@@ -224,34 +224,4 @@ svg.selectAll('.circle-group').remove();
 function countyclicked(d) {
  // console.log(d.id);
 }
-
-function filterF(id){
-  //    countyData = county;
-//  console.log("county:");
-//	  console.log(countyObj);
-//	  console.log(countyObj[parseInt(id/1000)]);
-    
- //greenShadesForState = colorGenerator(min,max,'green',1.75);
-
-};
-
-var greenShadesForState,countyData;
-function colorGenerator (minValue,maxValue,baseColor,step){
-      var mean = d3.mean([minValue,maxValue]);
-      var color = d3.hsl(baseColor);
-      return function(value){
-        return color.darker(step*(value-mean)/mean).toString();
-      };
-    }
-
-// function radiusGenerator (minValue,maxValue,step){
-     
-//       return function(value){
-//         return ;
-//       };
-//     };
-function getCounty (id){
-        return countyData;
-      }
-
       })(window);
