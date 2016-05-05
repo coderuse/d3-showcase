@@ -18,9 +18,7 @@ body {
             stroke-width: .5px;
         }
 		.active {
-  			fill: orange;
-  			stroke:#000;
-  			stroke-width: .5px;
+  			fill: #fff;
 		}
         .bar-axis{
             text{
@@ -40,9 +38,7 @@ body {
           fill: #aaa;
         }
 
-        #states .active {
-          display:none;
-        }
+      
 
         #state-borders {
           fill: none;
@@ -59,8 +55,75 @@ body {
           stroke-width: .5px;
         }
 
-        .county-boundary:hover, .state:hover {
-          fill: orange;
+        .circles:hover{
+          opacity:0.7;
+          stroke:#2a2337;
+          stroke-width:1px;
         }
 
+}
+
+/* Chart popup */
+
+div.nytg-popup {
+  border: 1px solid #bbbbbb;
+  color: black;
+  background-color: white;
+  position: absolute;
+  font-family: Arial, Helvetical, sans-serif;
+  padding: 10px;
+  max-width: 160px;/* */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.nytg-popup-title {
+  font-size: 12px;
+  font-weight: bold;
+  padding-bottom: 4px;
+  text-align:center;
+}
+
+.nytg-popup table {
+  margin-top: 4px;
+  border-collapse:collapse;
+  border-top: 1px solid #ccc;
+  width: 100%;
+}
+
+.nytg-popup td {
+  text-align: center;
+}
+
+.nytg-popup td.row1 {
+  padding-top:6px;
+  padding-bottom:0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nytg-popup td.row2 {
+  /*(padding-left: 10px*/
+  font-size: 11px;
+  color: #666;
+}
+
+.nytg-popup td.col2 {
+  padding-left: 10px;
+}
+
+
+.nytg-popup .nytg-popup-label {
+  color: #000;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.nytg-popup .nytg-popup-value {
+  font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+}
+
+.nytg-popup-line {
+  line-height: 15px;
 }

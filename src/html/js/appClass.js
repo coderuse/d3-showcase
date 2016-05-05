@@ -32,13 +32,21 @@ var countyObj = {};
 var populationJson;
 d3.tsv('data/CountyPopulation.tsv' , function(countyArray){
 	populationJson=countyArray;
-//	console.log(populationJson);
 });
-
+function setColorCodeforCounty(min,max,colorRange){
+  return d3.scale.linear()
+            .domain([min,max])
+            .range(colorRange);
+  
+}
+function setRadiusforCounty(min,max){
+  return d3.scale.linear()
+            .domain([min,max])
+            .range([4,12]);
+  
+}
 d3.json("data/us.json", function(error, us) {
-//console.log(Object.keys(us.objects.counties));
 var counties = topojson.feature(us, us.objects.counties).features;
-//console.log(counties.length);
 var stateId;var flag=0;
 
 for (var i=0; i<counties.length; i++) 
@@ -52,6 +60,7 @@ for (var i=0; i<counties.length; i++)
 			 counties[i].population=populationJson[j].Population;
 			 counties[i].countyname=populationJson[i].CountyName;
 			 counties[i].statename=populationJson[i].StateName;
+       counties[i].landArea=populationJson[i].LandArea;
 			 break;
 		 }
 	 }
@@ -59,43 +68,47 @@ for (var i=0; i<counties.length; i++)
 		counties[i].population=10000;
 		counties[i].countyname="dummycounty";
 		counties[i].statename="dummystate"	;
+    counties[i].landArea=200;
 	 }
 	 if(countyObj.hasOwnProperty(stateId))
 	 {
 		  countyObj[stateId].counties.push(counties[i]);	
-		  
+
 		  if(parseInt(countyObj[stateId].maxPop)<parseInt(counties[i].population)){
 			  countyObj[stateId].maxPop=counties[i].population;
 		  }
 		  else if(parseInt(countyObj[stateId].minPop)>parseInt(counties[i].population)){
 			  countyObj[stateId].minPop=counties[i].population;
-		  }		  
+		  }		
+      if(parseInt(countyObj[stateId].maxArea)<parseInt(counties[i].landArea)){
+        countyObj[stateId].maxArea=counties[i].landArea;
+      }
+      else if(parseInt(countyObj[stateId].minArea)>parseInt(counties[i].landArea)){
+        countyObj[stateId].minArea=counties[i].landArea;
+      }     
 	 }
 	 else
 	 {
-		  countyObj[stateId]={maxPop:counties[i].population,minPop:counties[i].population,counties:[]};
+		  countyObj[stateId]={maxPop:counties[i].population,minPop:counties[i].population,
+        counties:[],maxArea:counties[i].landArea,minArea:counties[i].landArea};
 		  countyObj[stateId].counties.push(counties[i]);
 	 }
 	 
 }
-function setColorCodes(stateId){
-	var colorRange=['yellow','red'];var value=0;
-	var mean=parseInt((parseInt(countyObj[stateId].minPop)+parseInt(countyObj[stateId].maxPop))/2);
-	var colorScale=setColorCodeforCounty(countyObj[stateId].minPop,countyObj[stateId].maxPop,colorRange);
+function setColorCodesRadius(stateId){
+	var colorRange=['steelblue','red'];var valueCode=0,valueRadius=0;
+	var meanPop=parseInt((parseInt(countyObj[stateId].minPop)+parseInt(countyObj[stateId].maxPop))/2);
+  var meanRad=parseInt((parseInt(countyObj[stateId].minArea)+parseInt(countyObj[stateId].maxArea))/2);
+	var colorScale=setColorCodeforCounty(countyObj[stateId].minPop,meanPop,colorRange);
+  var radiusScale=setRadiusforCounty(countyObj[stateId].minArea,countyObj[stateId].maxArea);
 	for(var j=0;j<countyObj[stateId].counties.length;j++){
-			value=countyObj[stateId].counties[j].population;
-			countyObj[stateId].counties[j].colorCode=colorScale(value);
+			valueCode=countyObj[stateId].counties[j].population;
+			countyObj[stateId].counties[j].colorCode=colorScale(valueCode);
+      valueRadius=countyObj[stateId].counties[j].landArea;
+      countyObj[stateId].counties[j].radius=radiusScale(valueRadius);
 	}
 }
-function setColorCodeforCounty(min,max,colorRange){
-	return d3.scale.linear()
-					  .domain([min,max])
-					  .range(colorRange);
-	
-}
 
-
-//console.log(countyObj);
  g.append("g")
       .attr("id", "counties")
     .selectAll("path")
@@ -115,8 +128,7 @@ function setColorCodeforCounty(min,max,colorRange){
       .on("click", function(d){
         //console.log((d3.select(this).style('fill')));
           if((d3.select(this).style('fill')!=='rgb(255, 255, 255)')){
-			//	console.log(d);
-			  setColorCodes(d.id);
+  			  setColorCodesRadius(d.id);
               clicked(d); 
           }else{
             transformStates(width/2,height/2,1,true);
@@ -153,7 +165,9 @@ function clicked(d) {
   g.selectAll("path")
       .classed("active", centered && function(d) { return d === centered; });
     g.selectAll('#states :not(.active)').style('fill','#fff');
-
+g.selectAll('#states .state.active').transition()
+      .duration(2000)
+.style('fill','#fff');
 }
 function transformStates(x,y,k,state){
 
@@ -167,6 +181,7 @@ function transformStates(x,y,k,state){
       .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + k + ")translate(" + -x + "," + -y + ")")
       .style("stroke-width", 1.5 / k + "px");
       if(state===true){
+        gElem.remove();
         g.selectAll("path")
       .classed("active",false);
        g.selectAll('#states .state').style('fill','#aaa');
@@ -176,29 +191,31 @@ function transformStates(x,y,k,state){
 var gElem,circles,circleAttributes,jsonCircles;
 function createBubbles(arrInput){
 jsonCircles =arrInput;
-//console.log(jsonCircles);
-// var svg1 = d3.select("body .map").append("svg");
 svg.selectAll('.circle-group').remove();
  gElem = svg.append('g').attr('class','circle-group');
    circles = gElem.append('g').selectAll("circle")
                       .data(jsonCircles);
                       circles.exit().remove();
                       circles.enter()
-                      .append("circle");
+                      .append("circle")
+                      .attr('class','circles');
   circleAttributes = circles
                       .transition()
                       .duration(function(){
                          return Math.floor(Math.random() * (5000 - 100 + 1)) + 100;
                       })
-                      .attr("cx",function() { return Math.floor(Math.random() * (1000 - 10 + 1)) + 10; })
-                      .attr("cy",function() { return Math.floor(Math.random() * (500 - 10 + 1)) + 10; })
+                      .attr("cx",function(d) { var centroid = path.centroid(d);
+                           var x = centroid[0];
+                           return x;
+                         })
+                      .attr("cy",function() { return 10; })
                       .attr("r", 5)
                       .style("fill", function(d){return d.colorCode;});
                       
                       
                       circleAttributes.transition()
                        .duration(function(){
-                         return Math.floor(Math.random() * (5000 - 100 + 1)) + 100;
+                         return Math.floor(Math.random() * (2000 - 100 + 1)) + 100;
                       })
                       .ease("bounce")
                        .attr('cx',function(d){
@@ -213,7 +230,21 @@ svg.selectAll('.circle-group').remove();
                         })
                        .attr('r',function(d){
                      
-                        return 3;
+                        return d.radius;
+                       });
+                       circles.on('mouseenter',function(d){
+                        console.log(d);
+                        console.log(d3.select(this)[0][0].getBoundingClientRect().top);
+                        d3.select('.nytg-popup').style('top',d3.select(this)[0][0].getBoundingClientRect().top-100+'px');
+                        d3.select('.nytg-popup').style('left',d3.select(this)[0][0].getBoundingClientRect().left-30+'px');
+                        d3.select('.nytg-popup').style('display','block');
+                        d3.select('.nytg-popup-title').text(d.countyname);
+                        d3.select('#countyCode').text(d.id);
+                        d3.select('#countyState').text(d.statename);
+                        d3.select('#countyArea').text(d.landArea);
+                        d3.select('#countyPopulation').text(d.population);
+                       }).on('mouseleave',function(d) {
+                        d3.select('.nytg-popup').style('display','none');
                        });
                 
                        
