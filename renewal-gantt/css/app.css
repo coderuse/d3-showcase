@@ -1,0 +1,17 @@
+body {
+  font: 3.6em sans-serif;
+  color: #333;
+}
+body .gantt {
+  height: 600px;
+  overflow: auto;
+}
+body svg {
+  background-color: #fbfbfb;
+}
+body svg rect.task-name-button:hover {
+  cursor: pointer;
+}
+body svg text.task-name:hover {
+  cursor: pointer;
+}

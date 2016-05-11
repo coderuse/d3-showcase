@@ -1,0 +1,3195 @@
+Id	CountyName	StateName	Population	LandArea
+1001	Autauga County	 Alabama	54590	604.49	
+1003	Baldwin County	 Alabama	183226	2027.08	
+1005	Barbour County	 Alabama	27469	904.59	
+1007	Bibb County	 Alabama	22769	625.5	
+1009	Blount County	 Alabama	57466	650.65	
+1011	Bullock County	 Alabama	10779	626.11	
+1013	Butler County	 Alabama	20730	777.99	
+1015	Calhoun County	 Alabama	117834	612.35	
+1017	Chambers County	 Alabama	34228	603.15	
+1019	Cherokee County	 Alabama	25917	600	
+1021	Chilton County	 Alabama	43611	700.8	
+1023	Choctaw County	 Alabama	13838	920.91	
+1025	Clarke County	 Alabama	25768	1252.6	
+1027	Clay County	 Alabama	13828	606.05	
+1029	Cleburne County	 Alabama	14905	561.06	
+1031	Coffee County	 Alabama	49966	680.52	
+1033	Colbert County	 Alabama	54451	623.66	
+1035	Conecuh County	 Alabama	13188	852.58	
+1037	Coosa County	 Alabama	11305	666.41	
+1039	Covington County	 Alabama	37803	1043.95	
+1041	Crenshaw County	 Alabama	13971	610.91	
+1043	Cullman County	 Alabama	80403	754.86	
+1045	Dale County	 Alabama	50129	562.72	
+1047	Dallas County	 Alabama	43572	993.46	
+1049	DeKalb County	 Alabama	70949	778.71	
+1051	Elmore County	 Alabama	79330	657.26	
+1053	Escambia County	 Alabama	38122	953.04	
+1055	Etowah County	 Alabama	104317	548.81	
+1057	Fayette County	 Alabama	17219	629.38	
+1059	Franklin County	 Alabama	31664	646.55	
+1061	Geneva County	 Alabama	26769	578.96	
+1063	Greene County	 Alabama	9067	659.99	
+1065	Hale County	 Alabama	15750	656.52	
+1067	Henry County	 Alabama	17275	568.38	
+1069	Houston County	 Alabama	101459	581.71	
+1071	Jackson County	 Alabama	53279	1126.82	
+1073	Jefferson County	 Alabama	658464	1123.87	
+1075	Lamar County	 Alabama	14513	605.51	
+1077	Lauderdale County	 Alabama	92528	718.84	
+1079	Lawrence County	 Alabama	34148	718.13	
+1081	Lee County	 Alabama	140938	615.61	
+1083	Limestone County	 Alabama	83313	607.12	
+1085	Lowndes County	 Alabama	11304	725.09	
+1087	Macon County	 Alabama	21214	613.29	
+1089	Madison County	 Alabama	334661	812.89	
+1091	Marengo County	 Alabama	20909	982.92	
+1093	Marion County	 Alabama	30641	743.62	
+1095	Marshall County	 Alabama	93070	623.21	
+1097	Mobile County	 Alabama	412297	1644.14	
+1099	Monroe County	 Alabama	22993	1034.62	
+1101	Montgomery County	 Alabama	229376	799.81	
+1103	Morgan County	 Alabama	119330	599.09	
+1105	Perry County	 Alabama	10525	724.13	
+1107	Pickens County	 Alabama	19646	890.1	
+1109	Pike County	 Alabama	32750	672.15	
+1111	Randolph County	 Alabama	22843	584.15	
+1113	Russell County	 Alabama	53938	647.44	
+1115	St. Clair County	 Alabama	83530	653.66	
+1117	Shelby County	 Alabama	195237	809.6	
+1119	Sumter County	 Alabama	13669	913.35	
+1121	Talladega County	 Alabama	82194	760.32	
+1123	Tallapoosa County	 Alabama	41534	766.3	
+1125	Tuscaloosa County	 Alabama	194254	1352.03	
+1127	Walker County	 Alabama	67016	805.36	
+1129	Washington County	 Alabama	17407	1088.62	
+1131	Wilcox County	 Alabama	11706	907.54	
+1133	Winston County	 Alabama	24432	631.9	
+2013	Aleutians East Borough	 Alaska	3114	15011.77	
+2016	Aleutians West Census Area	 Alaska	5507	14114.7	
+2020	Anchorage Municipality	 Alaska	291470	1961.51	
+2050	Bethel Census Area	 Alaska	17184	45954.59	
+2060	Bristol Bay Borough	 Alaska	929	917.61	
+2068	Denali Borough	 Alaska	1917	0	
+2070	Dillingham Census Area	 Alaska	4887	20613.12	
+2090	Fairbanks North Star Borough	 Alaska	97523	7443.68	
+2100	Haines Borough	 Alaska	2500	2754.1	
+2105	Hoonah-Angoon Census Area	 Alaska	2153	17500.23	
+2110	Juneau City and Borough	 Alaska	31636	3081.12	
+2122	Kenai Peninsula Borough	 Alaska	55474	21664.33	
+2130	Ketchikan Gateway Borough	 Alaska	13525	1743.55	
+2150	Kodiak Island Borough	 Alaska	13710	11845.9	
+2164	Lake and Peninsula Borough	 Alaska	1551	29008.24	
+2170	Matanuska-Susitna Borough	 Alaska	89319	25232.41	
+2180	Nome Census Area	 Alaska	9580	28276.17	
+2185	North Slope Borough	 Alaska	9317	93823.1	
+2188	Northwest Arctic Borough	 Alaska	7601	40660.96	
+2195	Petersburg Census Area	 Alaska	3822	8973.77	
+2198	Prince of Wales-Hyder Census Area	 Alaska	5603	12566.41	
+2220	Sitka City and Borough	 Alaska	8909	4849.75	
+2230	Skagway Municipality	 Alaska	1050	0	
+2240	Southeast Fairbanks Census Area	 Alaska	7039	26235.44	
+2261	Valdez-Cordova Census Area	 Alaska	9614	43515.67	
+2270	Wade Hampton Census Area	 Alaska	7556	19680.08	
+2275	Wrangell City and Borough	 Alaska	2368	0	
+2282	Yakutat City and Borough	 Alaska	644	0	
+2290	Yukon-Koyukuk Census Area	 Alaska	5637	158995.95	
+4001	Apache County	 Arizona	71618	11219.17	
+4003	Cochise County	 Arizona	131118	6219.32	
+4005	Coconino County	 Arizona	134011	18662.57	
+4007	Gila County	 Arizona	53436	4796.14	
+4009	Graham County	 Arizona	37115	4641.47	
+4011	Greenlee County	 Arizona	8592	1848.55	
+4012	La Paz County	 Arizona	20460	4513.66	
+4013	Maricopa County	 Arizona	3841819	9224.86	
+4015	Mohave County	 Arizona	201216	13470.5	
+4017	Navajo County	 Arizona	107415	9960.22	
+4019	Pima County	 Arizona	981048	9189.44	
+4021	Pinal County	 Arizona	368374	5374.49	
+4023	Santa Cruz County	 Arizona	47057	1238.22	
+4025	Yavapai County	 Arizona	211280	8128.33	
+4027	Yuma County	 Arizona	196420	5519.32	
+5001	Arkansas County	 Arkansas	19029	1033.85	
+5003	Ashley County	 Arkansas	21811	939.16	
+5005	Baxter County	 Arkansas	41387	586.78	
+5007	Benton County	 Arkansas	222028	876.82	
+5009	Boone County	 Arkansas	37032	601.86	
+5011	Bradley County	 Arkansas	11510	654.43	
+5013	Calhoun County	 Arkansas	5373	632.59	
+5015	Carroll County	 Arkansas	27321	642.33	
+5017	Chicot County	 Arkansas	11759	690.93	
+5019	Clark County	 Arkansas	23050	882.68	
+5021	Clay County	 Arkansas	15981	641.47	
+5023	Cleburne County	 Arkansas	25849	591.95	
+5025	Cleveland County	 Arkansas	8685	598.84	
+5027	Columbia County	 Arkansas	24644	766.94	
+5029	Conway County	 Arkansas	21203	566.71	
+5031	Craighead County	 Arkansas	96709	713.03	
+5033	Crawford County	 Arkansas	61670	604.24	
+5035	Crittenden County	 Arkansas	50618	636.73	
+5037	Cross County	 Arkansas	17891	622.38	
+5039	Dallas County	 Arkansas	8122	668.21	
+5041	Desha County	 Arkansas	12922	819.57	
+5043	Drew County	 Arkansas	18615	835.71	
+5045	Faulkner County	 Arkansas	113730	664.05	
+5047	Franklin County	 Arkansas	18110	619.72	
+5049	Fulton County	 Arkansas	12301	620.36	
+5051	Garland County	 Arkansas	96249	734.61	
+5053	Grant County	 Arkansas	17852	633.06	
+5055	Greene County	 Arkansas	42224	579.69	
+5057	Hempstead County	 Arkansas	22548	741.42	
+5059	Hot Spring County	 Arkansas	33011	622.2	
+5061	Howard County	 Arkansas	13790	595.24	
+5063	Independence County	 Arkansas	36572	771.64	
+5065	Izard County	 Arkansas	13614	584.07	
+5067	Jackson County	 Arkansas	17885	641.5	
+5069	Jefferson County	 Arkansas	76836	913.75	
+5071	Johnson County	 Arkansas	25554	682.78	
+5073	Lafayette County	 Arkansas	7618	545.11	
+5075	Lawrence County	 Arkansas	17314	592.39	
+5077	Lee County	 Arkansas	10430	619.5	
+5079	Lincoln County	 Arkansas	14167	572.21	
+5081	Little River County	 Arkansas	13068	564.9	
+5083	Logan County	 Arkansas	22352	731.55	
+5085	Lonoke County	 Arkansas	68274	802.48	
+5087	Madison County	 Arkansas	15674	837.13	
+5089	Marion County	 Arkansas	16712	640.38	
+5091	Miller County	 Arkansas	43449	637.53	
+5093	Mississippi County	 Arkansas	46388	919.8	
+5095	Monroe County	 Arkansas	8145	621.46	
+5097	Montgomery County	 Arkansas	9453	800.34	
+5099	Nevada County	 Arkansas	9003	620.83	
+5101	Newton County	 Arkansas	8286	823.24	
+5103	Ouachita County	 Arkansas	25894	739.7	
+5105	Perry County	 Arkansas	10413	560.51	
+5107	Phillips County	 Arkansas	21646	727.34	
+5109	Pike County	 Arkansas	11261	613.93	
+5111	Poinsett County	 Arkansas	24506	763.44	
+5113	Polk County	 Arkansas	20535	862.47	
+5115	Pope County	 Arkansas	61853	830.84	
+5117	Prairie County	 Arkansas	8659	675.81	
+5119	Pulaski County	 Arkansas	383185	807.91	
+5121	Randolph County	 Arkansas	17992	656.08	
+5123	St. Francis County	 Arkansas	28089	642.44	
+5125	Saline County	 Arkansas	107498	730.5	
+5127	Scott County	 Arkansas	11170	898.15	
+5129	Searcy County	 Arkansas	8146	668.56	
+5131	Sebastian County	 Arkansas	125795	546.07	
+5133	Sevier County	 Arkansas	16978	581.38	
+5135	Sharp County	 Arkansas	17278	606.39	
+5137	Stone County	 Arkansas	12480	609.47	
+5139	Union County	 Arkansas	41594	1055.36	
+5141	Van Buren County	 Arkansas	17223	724.36	
+5143	Washington County	 Arkansas	204057	956.07	
+5145	White County	 Arkansas	77007	1042.43	
+5147	Woodruff County	 Arkansas	7262	594.09	
+5149	Yell County	 Arkansas	22033	948.89	
+6001	Alameda County	 California	1515136	821.26	
+6003	Alpine County	 California	1197	743.23	
+6005	Amador County	 California	37764	604.26	
+6007	Butte County	 California	220101	1677.22	
+6009	Calaveras County	 California	45507	1036.92	
+6011	Colusa County	 California	21329	1156.32	
+6013	Contra Costa County	 California	1052047	802.18	
+6015	Del Norte County	 California	28496	1229.84	
+6017	El Dorado County	 California	180441	1791.29	
+6019	Fresno County	 California	930517	6017.89	
+6021	Glenn County	 California	28078	1327.25	
+6023	Humboldt County	 California	134317	4052.52	
+6025	Imperial County	 California	173487	4482.08	
+6027	Inyo County	 California	18474	10227.75	
+6029	Kern County	 California	839153	8162.03	
+6031	Kings County	 California	151982	1391.58	
+6033	Lake County	 California	64360	1329.59	
+6035	Lassen County	 California	34628	4720.61	
+6037	Los Angeles County	 California	9840024	4752.32	
+6039	Madera County	 California	150615	2153.39	
+6041	Marin County	 California	252759	828.22	
+6043	Mariposa County	 California	18193	1462.89	
+6045	Mendocino County	 California	87577	3878.5	
+6047	Merced County	 California	256398	1972.02	
+6049	Modoc County	 California	9545	4203.62	
+6051	Mono County	 California	14181	3131.89	
+6053	Monterey County	 California	416199	3771.11	
+6055	Napa County	 California	136644	788.34	
+6057	Nevada County	 California	98521	974.54	
+6059	Orange County	 California	3021840	947.91	
+6061	Placer County	 California	350074	1500.24	
+6063	Plumas County	 California	19926	2613.75	
+6065	Riverside County	 California	2192982	7303.81	
+6067	Sacramento County	 California	1422348	995.65	
+6069	San Benito County	 California	55467	1390.81	
+6071	San Bernardino County	 California	2041029	20106.39	
+6073	San Diego County	 California	3100500	4525.92	
+6075	San Francisco County	 California	807755	231.89	
+6077	San Joaquin County	 California	687036	1426.37	
+6079	San Luis Obispo County	 California	270121	3615.73	
+6081	San Mateo County	 California	721183	741.07	
+6083	Santa Barbara County	 California	423594	3789.56	
+6085	Santa Clara County	 California	1788393	1304.53	
+6087	Santa Cruz County	 California	262340	607.72	
+6089	Shasta County	 California	177693	3847.61	
+6091	Sierra County	 California	3163	962.03	
+6093	Siskiyou County	 California	44673	6347.81	
+6095	Solano County	 California	414209	906.85	
+6097	Sonoma County	 California	483456	1768.35	
+6099	Stanislaus County	 California	515115	1514.8	
+6101	Sutter County	 California	94615	608.86	
+6103	Tehama County	 California	63200	2962.3	
+6105	Trinity County	 California	13693	3207.79	
+6107	Tulare County	 California	441877	4839.41	
+6109	Tuolumne County	 California	55205	2274.52	
+6111	Ventura County	 California	822794	2208.36	
+6113	Yolo County	 California	200873	1022.87	
+6115	Yuba County	 California	72244	643.55	
+8001	Adams County	 Colorado	442996	1197.83	
+8003	Alamosa County	 Colorado	15750	723.59	
+8005	Arapahoe County	 Colorado	574357	805.47	
+8007	Archuleta County	 Colorado	12109	1354.65	
+8009	Baca County	 Colorado	3783	2557.24	
+8011	Bent County	 Colorado	6192	1541.25	
+8013	Boulder County	 Colorado	297218	751.4	
+8014	Broomfield County	 Colorado	55913	0	
+8015	Chaffee County	 Colorado	17879	1015.07	
+8017	Cheyenne County	 Colorado	2095	1781.5	
+8019	Clear Creek County	 Colorado	9059	396.47	
+8021	Conejos County	 Colorado	8241	1290.99	
+8023	Costilla County	 Colorado	3556	1230.55	
+8025	Crowley County	 Colorado	5747	800.38	
+8027	Custer County	 Colorado	4208	739.95	
+8029	Delta County	 Colorado	30710	1148.61	
+8031	Denver County	 Colorado	604356	154.88	
+8033	Dolores County	 Colorado	1806	1068.14	
+8035	Douglas County	 Colorado	286883	842.81	
+8037	Eagle County	 Colorado	51850	1691.89	
+8039	Elbert County	 Colorado	23058	1851.01	
+8041	El Paso County	 Colorado	622816	2129.71	
+8043	Fremont County	 Colorado	47006	1534.06	
+8045	Garfield County	 Colorado	56330	2956.08	
+8047	Gilpin County	 Colorado	5358	150.26	
+8049	Grand County	 Colorado	14608	1869.7	
+8051	Gunnison County	 Colorado	15385	3259.94	
+8053	Hinsdale County	 Colorado	790	1123.22	
+8055	Huerfano County	 Colorado	6730	1593.36	
+8057	Jackson County	 Colorado	1397	1621.05	
+8059	Jefferson County	 Colorado	536095	778.2	
+8061	Kiowa County	 Colorado	1393	1785.87	
+8063	Kit Carson County	 Colorado	8210	2161.71	
+8065	Lake County	 Colorado	7372	383.93	
+8067	La Plata County	 Colorado	51443	1700.03	
+8069	Larimer County	 Colorado	300870	2634	
+8071	Las Animas County	 Colorado	15385	4775.74	
+8073	Lincoln County	 Colorado	5443	2586.56	
+8075	Logan County	 Colorado	22541	1844.96	
+8077	Mesa County	 Colorado	146562	3341.28	
+8079	Mineral County	 Colorado	702	877.82	
+8081	Moffat County	 Colorado	13547	4751.21	
+8083	Montezuma County	 Colorado	25424	2040.08	
+8085	Montrose County	 Colorado	40994	2242.71	
+8087	Morgan County	 Colorado	28200	1293.97	
+8089	Otero County	 Colorado	18791	1269.81	
+8091	Ouray County	 Colorado	4445	542.26	
+8093	Park County	 Colorado	16168	2210.82	
+8095	Phillips County	 Colorado	4380	687.78	
+8097	Pitkin County	 Colorado	17000	973.28	
+8099	Prowers County	 Colorado	12539	1644.46	
+8101	Pueblo County	 Colorado	159072	2397.86	
+8103	Rio Blanco County	 Colorado	6728	3223.1	
+8105	Rio Grande County	 Colorado	11925	913.13	
+8107	Routt County	 Colorado	23385	2368.19	
+8109	Saguache County	 Colorado	6189	3170.46	
+8111	San Juan County	 Colorado	747	388.31	
+8113	San Miguel County	 Colorado	7432	1288.54	
+8115	Sedgwick County	 Colorado	2389	549.64	
+8117	Summit County	 Colorado	27753	619.29	
+8119	Teller County	 Colorado	23163	558.99	
+8121	Washington County	 Colorado	4796	2524.29	
+8123	Weld County	 Colorado	253552	4021.76	
+8125	Yuma County	 Colorado	10032	2369.22	
+9001	Fairfield County	 Connecticut	918892	837.01	
+9003	Hartford County	 Connecticut	893504	750.61	
+9005	Litchfield County	 Connecticut	189277	944.63	
+9007	Middlesex County	 Connecticut	165639	439.07	
+9009	New Haven County	 Connecticut	860995	862.06	
+9011	New London County	 Connecticut	273723	771.71	
+9013	Tolland County	 Connecticut	152137	417.03	
+9015	Windham County	 Connecticut	118046	521.51	
+10001	Kent County	 Delaware	162785	800.14	
+10003	New Castle County	 Delaware	539665	493.53	
+10005	Sussex County	 Delaware	197681	1195.7	
+11001	District of Columbia	 District of Columbia	605759	68.36	
+12001	Alachua County	 Florida	247973	969.18	
+12003	Baker County	 Florida	27010	588.92	
+12005	Bay County	 Florida	168957	1033.35	
+12007	Bradford County	 Florida	28404	300.06	
+12009	Brevard County	 Florida	544019	1557.25	
+12011	Broward County	 Florida	1761993	1319.74	
+12013	Calhoun County	 Florida	14639	574.38	
+12015	Charlotte County	 Florida	160380	859.28	
+12017	Citrus County	 Florida	140805	773.24	
+12019	Clay County	 Florida	190891	643.73	
+12021	Collier County	 Florida	323548	2305.09	
+12023	Columbia County	 Florida	67546	801.12	
+12027	DeSoto County	 Florida	34628	639.55	
+12029	Dixie County	 Florida	16301	863.71	
+12031	Duval County	 Florida	866431	918.28	
+12033	Escambia County	 Florida	298864	893.94	
+12035	Flagler County	 Florida	95987	570.79	
+12037	Franklin County	 Florida	11545	1026.45	
+12039	Gadsden County	 Florida	46823	528.51	
+12041	Gilchrist County	 Florida	16880	355.49	
+12043	Glades County	 Florida	12952	986.19	
+12045	Gulf County	 Florida	15796	755.78	
+12047	Hamilton County	 Florida	14728	519.35	
+12049	Hardee County	 Florida	27347	638.38	
+12051	Hendry County	 Florida	38669	1189.89	
+12053	Hernando County	 Florida	172784	589.12	
+12055	Highlands County	 Florida	98734	1106.36	
+12057	Hillsborough County	 Florida	1238365	1266.36	
+12059	Holmes County	 Florida	19971	488.75	
+12061	Indian River County	 Florida	138203	616.97	
+12063	Jackson County	 Florida	49589	954.67	
+12065	Jefferson County	 Florida	14564	636.68	
+12067	Lafayette County	 Florida	8668	547.96	
+12069	Lake County	 Florida	297995	1156.51	
+12071	Lee County	 Florida	624155	1212	
+12073	Leon County	 Florida	276506	701.83	
+12075	Levy County	 Florida	40541	1412.41	
+12077	Liberty County	 Florida	8300	843.22	
+12079	Madison County	 Florida	19187	715.89	
+12081	Manatee County	 Florida	324834	892.84	
+12083	Marion County	 Florida	331987	1663.1	
+12085	Martin County	 Florida	146497	752.86	
+12086	Miami-Dade County	 Florida	2512219	2429.59	
+12087	Monroe County	 Florida	73475	3737.42	
+12089	Nassau County	 Florida	73303	725.9	
+12091	Okaloosa County	 Florida	183400	1082.09	
+12093	Okeechobee County	 Florida	39779	891.98	
+12095	Orange County	 Florida	1153795	1004.31	
+12097	Osceola County	 Florida	272355	1506.49	
+12099	Palm Beach County	 Florida	1324085	2386.53	
+12101	Pasco County	 Florida	465276	868.02	
+12103	Pinellas County	 Florida	917389	607.75	
+12105	Polk County	 Florida	604562	2010.19	
+12107	Putnam County	 Florida	74224	827.22	
+12109	St. Johns County	 Florida	191495	821.47	
+12111	St. Lucie County	 Florida	278246	688.13	
+12113	Santa Rosa County	 Florida	153086	1155.31	
+12115	Sarasota County	 Florida	380479	725.27	
+12117	Seminole County	 Florida	423389	344.9	
+12119	Sumter County	 Florida	94240	580.35	
+12121	Suwannee County	 Florida	42287	691.94	
+12123	Taylor County	 Florida	22561	1232.05	
+12125	Union County	 Florida	15400	249.72	
+12127	Volusia County	 Florida	495581	1432.51	
+12129	Wakulla County	 Florida	30449	735.78	
+12131	Walton County	 Florida	55349	1238.13	
+12133	Washington County	 Florida	24732	615.84	
+13001	Appling County	 Georgia	18279	512.15	
+13003	Atkinson County	 Georgia	8355	344.12	
+13005	Bacon County	 Georgia	11124	285.94	
+13007	Baker County	 Georgia	3483	349.19	
+13009	Baldwin County	 Georgia	46378	267.52	
+13011	Banks County	 Georgia	18250	233.88	
+13013	Barrow County	 Georgia	69136	162.85	
+13015	Bartow County	 Georgia	99872	470.56	
+13017	Ben Hill County	 Georgia	17612	254.04	
+13019	Berrien County	 Georgia	19131	457.81	
+13021	Bibb County	 Georgia	155560	255.17	
+13023	Bleckley County	 Georgia	13009	219.14	
+13025	Brantley County	 Georgia	18279	447.44	
+13027	Brooks County	 Georgia	16066	497.81	
+13029	Bryan County	 Georgia	30616	454.54	
+13031	Bulloch County	 Georgia	70360	688.92	
+13033	Burke County	 Georgia	23242	835.06	
+13035	Butts County	 Georgia	23671	190.02	
+13037	Calhoun County	 Georgia	6581	283.59	
+13039	Camden County	 Georgia	50435	782.52	
+13043	Candler County	 Georgia	11007	248.85	
+13045	Carroll County	 Georgia	110750	503.86	
+13047	Catoosa County	 Georgia	64226	162.67	
+13049	Charlton County	 Georgia	12954	783.01	
+13051	Chatham County	 Georgia	266344	646.32	
+13053	Chattahoochee County	 Georgia	11917	251.19	
+13055	Chattooga County	 Georgia	25905	313.97	
+13057	Cherokee County	 Georgia	215014	434.03	
+13059	Clarke County	 Georgia	117762	121.29	
+13061	Clay County	 Georgia	3174	217.01	
+13063	Clayton County	 Georgia	262066	144.29	
+13065	Clinch County	 Georgia	6800	824.24	
+13067	Cobb County	 Georgia	691820	344.54	
+13069	Coffee County	 Georgia	42566	602.67	
+13071	Colquitt County	 Georgia	45531	556.59	
+13073	Columbia County	 Georgia	124665	307.8	
+13075	Cook County	 Georgia	17073	233.24	
+13077	Coweta County	 Georgia	127212	446.01	
+13079	Crawford County	 Georgia	12701	326.48	
+13081	Crisp County	 Georgia	23460	281.21	
+13083	Dade County	 Georgia	16598	174.1	
+13085	Dawson County	 Georgia	22246	213.95	
+13087	Decatur County	 Georgia	27815	623.2	
+13089	DeKalb County	 Georgia	694671	270.94	
+13091	Dodge County	 Georgia	21509	503.2	
+13093	Dooly County	 Georgia	14528	397.15	
+13095	Dougherty County	 Georgia	94591	334.67	
+13097	Douglas County	 Georgia	132124	200.27	
+13099	Early County	 Georgia	10928	516.31	
+13101	Echols County	 Georgia	4024	420.83	
+13103	Effingham County	 Georgia	52203	482.89	
+13105	Elbert County	 Georgia	20103	374.57	
+13107	Emanuel County	 Georgia	22600	690.4	
+13109	Evans County	 Georgia	10935	186.9	
+13111	Fannin County	 Georgia	23554	391.46	
+13113	Fayette County	 Georgia	106525	199.27	
+13115	Floyd County	 Georgia	96204	518.5	
+13117	Forsyth County	 Georgia	177103	247.38	
+13119	Franklin County	 Georgia	22070	266.38	
+13121	Fulton County	 Georgia	929535	534.59	
+13123	Gilmer County	 Georgia	28232	431.85	
+13125	Glascock County	 Georgia	3082	144.46	
+13127	Glynn County	 Georgia	79628	583.07	
+13129	Gordon County	 Georgia	55192	357.63	
+13131	Grady County	 Georgia	25068	460.37	
+13133	Greene County	 Georgia	15988	406.28	
+13135	Gwinnett County	 Georgia	810624	436.74	
+13137	Habersham County	 Georgia	43038	279.21	
+13139	Hall County	 Georgia	180831	429.21	
+13141	Hancock County	 Georgia	9422	478.8	
+13143	Haralson County	 Georgia	28627	283.19	
+13145	Harris County	 Georgia	31870	472.97	
+13147	Hart County	 Georgia	25277	256.43	
+13149	Heard County	 Georgia	11756	301.11	
+13151	Henry County	 Georgia	203185	324.49	
+13153	Houston County	 Georgia	140699	379.87	
+13155	Irwin County	 Georgia	9646	362.75	
+13157	Jackson County	 Georgia	60268	343.02	
+13159	Jasper County	 Georgia	13786	373.6	
+13161	Jeff Davis County	 Georgia	14972	335.46	
+13163	Jefferson County	 Georgia	16817	529.6	
+13165	Jenkins County	 Georgia	8477	352.48	
+13167	Johnson County	 Georgia	9981	306.54	
+13169	Jones County	 Georgia	28638	395.41	
+13171	Lamar County	 Georgia	18151	185.81	
+13173	Lanier County	 Georgia	10066	199.84	
+13175	Laurens County	 Georgia	48264	818.56	
+13177	Lee County	 Georgia	28449	362.03	
+13179	Liberty County	 Georgia	64663	602.58	
+13181	Lincoln County	 Georgia	7962	257.31	
+13183	Long County	 Georgia	14488	403.53	
+13185	Lowndes County	 Georgia	109730	510.66	
+13187	Lumpkin County	 Georgia	30040	284.89	
+13189	McDuffie County	 Georgia	21762	266.32	
+13191	McIntosh County	 Georgia	14119	574.76	
+13193	Macon County	 Georgia	14552	405.99	
+13195	Madison County	 Georgia	27988	285.6	
+13197	Marion County	 Georgia	8615	367.53	
+13199	Meriwether County	 Georgia	21966	505.39	
+13201	Miller County	 Georgia	6094	283.74	
+13205	Mitchell County	 Georgia	23510	513.84	
+13207	Monroe County	 Georgia	26376	397.83	
+13209	Montgomery County	 Georgia	9054	247.34	
+13211	Morgan County	 Georgia	17919	354.62	
+13213	Murray County	 Georgia	39635	346.9	
+13215	Muscogee County	 Georgia	191278	221.02	
+13217	Newton County	 Georgia	100047	279.21	
+13219	Oconee County	 Georgia	32814	186.15	
+13221	Oglethorpe County	 Georgia	14745	442.2	
+13223	Paulding County	 Georgia	141846	315.09	
+13225	Peach County	 Georgia	27531	151.47	
+13227	Pickens County	 Georgia	29445	232.8	
+13229	Pierce County	 Georgia	18631	343.67	
+13231	Pike County	 Georgia	17765	219.45	
+13233	Polk County	 Georgia	41350	312.16	
+13235	Pulaski County	 Georgia	11801	249.87	
+13237	Putnam County	 Georgia	21184	360.66	
+13239	Quitman County	 Georgia	2542	160.93	
+13241	Rabun County	 Georgia	16297	377.01	
+13243	Randolph County	 Georgia	7596	430.92	
+13245	Richmond County	 Georgia	200337	328.5	
+13247	Rockdale County	 Georgia	85008	132.13	
+13249	Schley County	 Georgia	4963	167.83	
+13251	Screven County	 Georgia	14574	655.66	
+13253	Seminole County	 Georgia	8815	256.58	
+13255	Spalding County	 Georgia	63979	199.61	
+13257	Stephens County	 Georgia	26003	184.24	
+13259	Stewart County	 Georgia	5991	463.26	
+13261	Sumter County	 Georgia	32425	492.58	
+13263	Talbot County	 Georgia	6772	394.77	
+13265	Taliaferro County	 Georgia	1674	195.48	
+13267	Tattnall County	 Georgia	25023	488.27	
+13269	Taylor County	 Georgia	8700	379.65	
+13271	Telfair County	 Georgia	16312	444.12	
+13273	Terrell County	 Georgia	9365	337.65	
+13275	Thomas County	 Georgia	44715	552.13	
+13277	Tift County	 Georgia	40430	268.88	
+13279	Toombs County	 Georgia	27270	368.67	
+13281	Towns County	 Georgia	10491	171.87	
+13283	Treutlen County	 Georgia	6851	202.22	
+13285	Troup County	 Georgia	67146	445.99	
+13287	Turner County	 Georgia	8834	289.87	
+13289	Twiggs County	 Georgia	8984	362.92	
+13291	Union County	 Georgia	21344	329.19	
+13293	Upson County	 Georgia	27061	327.67	
+13295	Walker County	 Georgia	68463	446.74	
+13297	Walton County	 Georgia	83771	330.07	
+13299	Ware County	 Georgia	36099	906.62	
+13301	Warren County	 Georgia	5788	286.76	
+13303	Washington County	 Georgia	21092	684.43	
+13305	Wayne County	 Georgia	30157	648.85	
+13307	Webster County	 Georgia	2773	210.27	
+13309	Wheeler County	 Georgia	7572	300.16	
+13311	White County	 Georgia	27141	242.18	
+13313	Whitfield County	 Georgia	102152	290.68	
+13315	Wilcox County	 Georgia	9142	383.32	
+13317	Wilkes County	 Georgia	10398	474.03	
+13319	Wilkinson County	 Georgia	9577	452.03	
+13321	Worth County	 Georgia	21746	574.61	
+15001	Hawaii County	 Hawaii	185399	5086.97	
+15003	Honolulu County	 Hawaii	955215	2126.98	
+15005	Kalawao County	 Hawaii	66	52.33	
+15007	Kauai County	 Hawaii	67113	1266.45	
+15009	Maui County	 Hawaii	154937	2398.87	
+16001	Ada County	 Idaho	394961	1060.38	
+16003	Adams County	 Idaho	3976	1370.11	
+16005	Bannock County	 Idaho	82584	1147.5	
+16007	Bear Lake County	 Idaho	5977	1049.49	
+16009	Benewah County	 Idaho	9247	784.01	
+16011	Bingham County	 Idaho	45312	2120.34	
+16013	Blaine County	 Idaho	21323	2661.14	
+16015	Boise County	 Idaho	7014	1906.81	
+16017	Bonner County	 Idaho	40806	1919.62	
+16019	Bonneville County	 Idaho	104177	1900.74	
+16021	Boundary County	 Idaho	10857	1278.2	
+16023	Butte County	 Idaho	2828	2233.66	
+16025	Camas County	 Idaho	1276	1079.06	
+16027	Canyon County	 Idaho	189396	603.52	
+16029	Caribou County	 Idaho	6872	1798.73	
+16031	Cassia County	 Idaho	22813	2580.45	
+16033	Clark County	 Idaho	780	1765.28	
+16035	Clearwater County	 Idaho	8679	2488.26	
+16037	Custer County	 Idaho	4338	4936.92	
+16039	Elmore County	 Idaho	26655	3100.69	
+16041	Franklin County	 Idaho	12739	668.4	
+16043	Fremont County	 Idaho	13123	1895.67	
+16045	Gem County	 Idaho	16768	565.77	
+16047	Gooding County	 Idaho	15327	733.89	
+16049	Idaho County	 Idaho	16215	8502.78	
+16051	Jefferson County	 Idaho	25940	1105.62	
+16053	Jerome County	 Idaho	22140	601.91	
+16055	Kootenai County	 Idaho	139083	1315.77	
+16057	Latah County	 Idaho	37365	1076.94	
+16059	Lemhi County	 Idaho	7892	4569.68	
+16061	Lewis County	 Idaho	3818	479.83	
+16063	Lincoln County	 Idaho	5167	1205.92	
+16065	Madison County	 Idaho	37311	473.39	
+16067	Minidoka County	 Idaho	19909	763.03	
+16069	Nez Perce County	 Idaho	39226	856.4	
+16071	Oneida County	 Idaho	4236	1201.69	
+16073	Owyhee County	 Idaho	11479	7697.11	
+16075	Payette County	 Idaho	22614	410.19	
+16077	Power County	 Idaho	7717	1442.69	
+16079	Shoshone County	 Idaho	12797	2635.6	
+16081	Teton County	 Idaho	10007	450.6	
+16083	Twin Falls County	 Idaho	77122	1928.57	
+16085	Valley County	 Idaho	9793	3733.85	
+16087	Washington County	 Idaho	10144	1473.6	
+17001	Adams County	 Illinois	67098	871.32	
+17003	Alexander County	 Illinois	8147	252.55	
+17005	Bond County	 Illinois	17762	382.67	
+17007	Boone County	 Illinois	54141	281.96	
+17009	Brown County	 Illinois	6913	307.26	
+17011	Bureau County	 Illinois	34798	873.36	
+17013	Calhoun County	 Illinois	5065	283.71	
+17015	Carroll County	 Illinois	15338	465.81	
+17017	Cass County	 Illinois	13570	383.76	
+17019	Champaign County	 Illinois	200931	997.56	
+17021	Christian County	 Illinois	34805	715.71	
+17023	Clark County	 Illinois	16353	504.91	
+17025	Clay County	 Illinois	13828	469.87	
+17027	Clinton County	 Illinois	37793	503.5	
+17029	Coles County	 Illinois	53683	510.1	
+17031	Cook County	 Illinois	5197677	1634.89	
+17033	Crawford County	 Illinois	19777	445.77	
+17035	Cumberland County	 Illinois	11044	347.02	
+17037	DeKalb County	 Illinois	104820	635.02	
+17039	De Witt County	 Illinois	16562	405.18	
+17041	Douglas County	 Illinois	19908	417.44	
+17043	DuPage County	 Illinois	918608	336.87	
+17045	Edgar County	 Illinois	18513	624.22	
+17047	Edwards County	 Illinois	6691	222.67	
+17049	Effingham County	 Illinois	34258	479.93	
+17051	Fayette County	 Illinois	22082	725.39	
+17053	Ford County	 Illinois	14045	486.44	
+17055	Franklin County	 Illinois	39518	431.42	
+17057	Fulton County	 Illinois	36989	882.66	
+17059	Gallatin County	 Illinois	5592	328.42	
+17061	Greene County	 Illinois	13828	546.37	
+17063	Grundy County	 Illinois	49870	430.44	
+17065	Hamilton County	 Illinois	8430	435.86	
+17067	Hancock County	 Illinois	19063	814.58	
+17069	Hardin County	 Illinois	4315	181.54	
+17071	Henderson County	 Illinois	7275	395.15	
+17073	Henry County	 Illinois	50378	825.64	
+17075	Iroquois County	 Illinois	29689	1118.11	
+17077	Jackson County	 Illinois	59992	602.54	
+17079	Jasper County	 Illinois	9707	498.06	
+17081	Jefferson County	 Illinois	38908	583.74	
+17083	Jersey County	 Illinois	22939	377.05	
+17085	Jo Daviess County	 Illinois	22663	618.79	
+17087	Johnson County	 Illinois	12653	348.89	
+17089	Kane County	 Illinois	514891	524.12	
+17091	Kankakee County	 Illinois	113170	681.49	
+17093	Kendall County	 Illinois	114226	322.69	
+17095	Knox County	 Illinois	52698	719.74	
+17097	Lake County	 Illinois	701282	1368.05	
+17099	LaSalle County	 Illinois	113688	1148.12	
+17101	Lawrence County	 Illinois	16778	373.97	
+17103	Lee County	 Illinois	35778	729.34	
+17105	Livingston County	 Illinois	38903	1045.49	
+17107	Logan County	 Illinois	30278	619.04	
+17109	McDonough County	 Illinois	32568	590.06	
+17111	McHenry County	 Illinois	308163	611.18	
+17113	McLean County	 Illinois	169689	1186.33	
+17115	Macon County	 Illinois	110558	585.4	
+17117	Macoupin County	 Illinois	47712	867.65	
+17119	Madison County	 Illinois	268586	740.39	
+17121	Marion County	 Illinois	39319	575.73	
+17123	Marshall County	 Illinois	12567	398.53	
+17125	Mason County	 Illinois	14636	563.41	
+17127	Massac County	 Illinois	15370	242.13	
+17129	Menard County	 Illinois	12728	315.4	
+17131	Mercer County	 Illinois	16421	568.91	
+17133	Monroe County	 Illinois	33003	397.73	
+17135	Montgomery County	 Illinois	29977	709.79	
+17137	Morgan County	 Illinois	35544	572.29	
+17139	Moultrie County	 Illinois	14844	344.48	
+17141	Ogle County	 Illinois	53378	763.33	
+17143	Peoria County	 Illinois	186399	630.91	
+17145	Perry County	 Illinois	22287	446.84	
+17147	Piatt County	 Illinois	16679	440.35	
+17149	Pike County	 Illinois	16436	848.92	
+17151	Pope County	 Illinois	4399	374.65	
+17153	Pulaski County	 Illinois	6107	203.34	
+17155	Putnam County	 Illinois	5968	172.25	
+17157	Randolph County	 Illinois	33353	597.29	
+17159	Richland County	 Illinois	16181	362.03	
+17161	Rock Island County	 Illinois	147504	451.19	
+17163	St. Clair County	 Illinois	268873	673.99	
+17165	Saline County	 Illinois	24975	386.99	
+17167	Sangamon County	 Illinois	197474	877.11	
+17169	Schuyler County	 Illinois	7499	441.43	
+17171	Scott County	 Illinois	5322	252.79	
+17173	Shelby County	 Illinois	22316	768.09	
+17175	Stark County	 Illinois	5983	288.23	
+17177	Stephenson County	 Illinois	47532	564.78	
+17179	Tazewell County	 Illinois	135201	657.94	
+17181	Union County	 Illinois	17799	422.15	
+17183	Vermilion County	 Illinois	81463	902.18	
+17185	Wabash County	 Illinois	11935	227.78	
+17187	Warren County	 Illinois	17723	543.21	
+17189	Washington County	 Illinois	14692	564.15	
+17191	Wayne County	 Illinois	16727	715.6	
+17193	White County	 Illinois	14686	501.72	
+17195	Whiteside County	 Illinois	58400	697.06	
+17197	Will County	 Illinois	677669	849.45	
+17199	Williamson County	 Illinois	66335	444.4	
+17201	Winnebago County	 Illinois	294433	519.33	
+17203	Woodford County	 Illinois	38736	542.78	
+18001	Adams County	 Indiana	34343	339.95	
+18003	Allen County	 Indiana	355940	660.14	
+18005	Bartholomew County	 Indiana	77297	409.38	
+18007	Benton County	 Indiana	8816	406.42	
+18009	Blackford County	 Indiana	12742	165.42	
+18011	Boone County	 Indiana	56823	423.31	
+18013	Brown County	 Indiana	15181	316.65	
+18015	Carroll County	 Indiana	20105	375.06	
+18017	Cass County	 Indiana	38875	414.95	
+18019	Clark County	 Indiana	110100	376.23	
+18021	Clay County	 Indiana	26908	360.42	
+18023	Clinton County	 Indiana	33179	405.3	
+18025	Crawford County	 Indiana	10702	308.87	
+18027	Daviess County	 Indiana	31604	436.89	
+18029	Dearborn County	 Indiana	49904	307.08	
+18031	Decatur County	 Indiana	25772	373.44	
+18033	DeKalb County	 Indiana	42218	363.87	
+18035	Delaware County	 Indiana	117459	395.95	
+18037	Dubois County	 Indiana	41995	435.25	
+18039	Elkhart County	 Indiana	198214	467.87	
+18041	Fayette County	 Indiana	24220	215.14	
+18043	Floyd County	 Indiana	74601	148.33	
+18045	Fountain County	 Indiana	17212	397.95	
+18047	Franklin County	 Indiana	23108	391.36	
+18049	Fulton County	 Indiana	20762	371.39	
+18051	Gibson County	 Indiana	33437	499.08	
+18053	Grant County	 Indiana	69886	414.84	
+18055	Greene County	 Indiana	33032	545.95	
+18057	Hamilton County	 Indiana	276098	402.75	
+18059	Hancock County	 Indiana	69778	306.75	
+18061	Harrison County	 Indiana	39102	486.91	
+18063	Hendricks County	 Indiana	145880	408.9	
+18065	Henry County	 Indiana	49381	394.93	
+18067	Howard County	 Indiana	82914	293.94	
+18069	Huntington County	 Indiana	37144	387.95	
+18071	Jackson County	 Indiana	42414	513.79	
+18073	Jasper County	 Indiana	33369	561.26	
+18075	Jay County	 Indiana	21353	383.84	
+18077	Jefferson County	 Indiana	32501	362.97	
+18079	Jennings County	 Indiana	28373	378.38	
+18081	Johnson County	 Indiana	140033	321.58	
+18083	Knox County	 Indiana	38392	524.08	
+18085	Kosciusko County	 Indiana	77328	554.36	
+18087	LaGrange County	 Indiana	37284	386.73	
+18089	Lake County	 Indiana	495230	626.38	
+18091	LaPorte County	 Indiana	111335	613.09	
+18093	Lawrence County	 Indiana	46131	452.1	
+18095	Madison County	 Indiana	131244	452.94	
+18097	Marion County	 Indiana	904535	403.11	
+18099	Marshall County	 Indiana	47045	449.95	
+18101	Martin County	 Indiana	10300	340.55	
+18103	Miami County	 Indiana	36850	377.38	
+18105	Monroe County	 Indiana	138048	411.34	
+18107	Montgomery County	 Indiana	38207	505.39	
+18109	Morgan County	 Indiana	69033	409.41	
+18111	Newton County	 Indiana	14199	403.56	
+18113	Noble County	 Indiana	47547	417.63	
+18115	Ohio County	 Indiana	6093	87.48	
+18117	Orange County	 Indiana	19828	408.23	
+18119	Owen County	 Indiana	21583	387.85	
+18121	Parke County	 Indiana	17251	450.12	
+18123	Perry County	 Indiana	19408	386.36	
+18125	Pike County	 Indiana	12849	341.1	
+18127	Porter County	 Indiana	164386	521.64	
+18129	Posey County	 Indiana	25840	419.47	
+18131	Pulaski County	 Indiana	13395	434.59	
+18133	Putnam County	 Indiana	37995	482.61	
+18135	Randolph County	 Indiana	26101	453.27	
+18137	Ripley County	 Indiana	28702	447.95	
+18139	Rush County	 Indiana	17349	408.65	
+18141	St. Joseph County	 Indiana	266785	460.97	
+18143	Scott County	 Indiana	24044	192.74	
+18145	Shelby County	 Indiana	44435	413.14	
+18147	Spencer County	 Indiana	20948	401.26	
+18149	Starke County	 Indiana	23310	312.33	
+18151	Steuben County	 Indiana	34116	322.5	
+18153	Sullivan County	 Indiana	21379	454.08	
+18155	Switzerland County	 Indiana	10509	223.54	
+18157	Tippecanoe County	 Indiana	173317	503.12	
+18159	Tipton County	 Indiana	15917	260.43	
+18161	Union County	 Indiana	7449	165.26	
+18163	Vanderburgh County	 Indiana	179610	235.76	
+18165	Vermillion County	 Indiana	16224	259.95	
+18167	Vigo County	 Indiana	107805	410.5	
+18169	Wabash County	 Indiana	32804	421.1	
+18171	Warren County	 Indiana	8490	366.63	
+18173	Warrick County	 Indiana	59643	390.87	
+18175	Washington County	 Indiana	28162	516.57	
+18177	Wayne County	 Indiana	68797	404.38	
+18179	Wells County	 Indiana	27677	370.43	
+18181	White County	 Indiana	24612	508.82	
+18183	Whitley County	 Indiana	33234	337.91	
+19001	Adair County	 Iowa	7628	570.33	
+19003	Adams County	 Iowa	4027	425.42	
+19005	Allamakee County	 Iowa	14285	658.75	
+19007	Appanoose County	 Iowa	12858	516.39	
+19009	Audubon County	 Iowa	6077	443.6	
+19011	Benton County	 Iowa	26044	718.52	
+19013	Black Hawk County	 Iowa	130843	571.96	
+19015	Boone County	 Iowa	26324	573.54	
+19017	Bremer County	 Iowa	24294	439.64	
+19019	Buchanan County	 Iowa	20988	573.38	
+19021	Buena Vista County	 Iowa	20215	580.1	
+19023	Butler County	 Iowa	14899	581.6	
+19025	Calhoun County	 Iowa	9936	572.33	
+19027	Carroll County	 Iowa	20751	570.27	
+19029	Cass County	 Iowa	13865	565.03	
+19031	Cedar County	 Iowa	18446	582.01	
+19033	Cerro Gordo County	 Iowa	44083	575.18	
+19035	Cherokee County	 Iowa	12011	577.38	
+19037	Chickasaw County	 Iowa	12409	505.53	
+19039	Clarke County	 Iowa	9286	431.75	
+19041	Clay County	 Iowa	16649	572.56	
+19043	Clayton County	 Iowa	18056	792.85	
+19045	Clinton County	 Iowa	49074	710.26	
+19047	Crawford County	 Iowa	17100	715.04	
+19049	Dallas County	 Iowa	66997	591.77	
+19051	Davis County	 Iowa	8718	504.93	
+19053	Decatur County	 Iowa	8382	533.36	
+19055	Delaware County	 Iowa	17721	579.08	
+19057	Des Moines County	 Iowa	40268	429.83	
+19059	Dickinson County	 Iowa	16778	403.71	
+19061	Dubuque County	 Iowa	93776	616.63	
+19063	Emmet County	 Iowa	10263	402.4	
+19065	Fayette County	 Iowa	20894	731.47	
+19067	Floyd County	 Iowa	16204	501.33	
+19069	Franklin County	 Iowa	10650	583.06	
+19071	Fremont County	 Iowa	7373	516.79	
+19073	Greene County	 Iowa	9304	571.16	
+19075	Grundy County	 Iowa	12431	502.58	
+19077	Guthrie County	 Iowa	10915	593.09	
+19079	Hamilton County	 Iowa	15614	577.47	
+19081	Hancock County	 Iowa	11320	573.18	
+19083	Hardin County	 Iowa	17479	569.99	
+19085	Harrison County	 Iowa	14838	700.99	
+19087	Henry County	 Iowa	20242	436.71	
+19089	Howard County	 Iowa	9568	473.8	
+19091	Humboldt County	 Iowa	9818	435.75	
+19093	Ida County	 Iowa	7113	432.26	
+19095	Iowa County	 Iowa	16320	587.39	
+19097	Jackson County	 Iowa	19807	649.81	
+19099	Jasper County	 Iowa	36823	732.97	
+19101	Jefferson County	 Iowa	16791	436.76	
+19103	Johnson County	 Iowa	131627	623.41	
+19105	Jones County	 Iowa	20686	576.74	
+19107	Keokuk County	 Iowa	10480	579.99	
+19109	Kossuth County	 Iowa	15510	974.46	
+19111	Lee County	 Iowa	35741	538.8	
+19113	Linn County	 Iowa	211954	724.62	
+19115	Louisa County	 Iowa	11448	417.67	
+19117	Lucas County	 Iowa	8913	434.21	
+19119	Lyon County	 Iowa	11623	587.68	
+19121	Madison County	 Iowa	15630	562.33	
+19123	Mahaska County	 Iowa	22432	573.45	
+19125	Marion County	 Iowa	33388	570.58	
+19127	Marshall County	 Iowa	40568	573.07	
+19129	Mills County	 Iowa	15028	439.7	
+19131	Mitchell County	 Iowa	10761	469.42	
+19133	Monona County	 Iowa	9242	698.89	
+19135	Monroe County	 Iowa	7979	434.14	
+19137	Montgomery County	 Iowa	10710	424.84	
+19139	Muscatine County	 Iowa	42729	449.09	
+19141	O'Brien County	 Iowa	14302	573.3	
+19143	Osceola County	 Iowa	6413	399.52	
+19145	Page County	 Iowa	15902	535.38	
+19147	Palo Alto County	 Iowa	9402	569.45	
+19149	Plymouth County	 Iowa	24911	864.02	
+19151	Pocahontas County	 Iowa	7307	579.17	
+19153	Polk County	 Iowa	431811	591.94	
+19155	Pottawattamie County	 Iowa	92793	960.01	
+19157	Poweshiek County	 Iowa	18888	586.22	
+19159	Ringgold County	 Iowa	5123	538.96	
+19161	Sac County	 Iowa	10307	578.42	
+19163	Scott County	 Iowa	165432	468.2	
+19165	Shelby County	 Iowa	12158	591.4	
+19167	Sioux County	 Iowa	33776	768.65	
+19169	Story County	 Iowa	89734	573.73	
+19171	Tama County	 Iowa	17746	722.42	
+19173	Taylor County	 Iowa	6292	534.85	
+19175	Union County	 Iowa	12525	425.98	
+19177	Van Buren County	 Iowa	7565	490.59	
+19179	Wapello County	 Iowa	35449	436.02	
+19181	Warren County	 Iowa	46239	573.24	
+19183	Washington County	 Iowa	21765	570.81	
+19185	Wayne County	 Iowa	6372	527.12	
+19187	Webster County	 Iowa	37895	718.1	
+19189	Winnebago County	 Iowa	10800	401.59	
+19191	Winneshiek County	 Iowa	21033	689.93	
+19193	Woodbury County	 Iowa	101948	877.43	
+19195	Worth County	 Iowa	7581	401.73	
+19197	Wright County	 Iowa	13173	582.58	
+20001	Allen County	 Kansas	13364	505.24	
+20003	Anderson County	 Kansas	8066	584.35	
+20005	Atchison County	 Kansas	16854	435.06	
+20007	Barber County	 Kansas	4867	1136.27	
+20009	Barton County	 Kansas	27556	900.5	
+20011	Bourbon County	 Kansas	15060	638.88	
+20013	Brown County	 Kansas	9962	572.23	
+20015	Butler County	 Kansas	65647	1446.49	
+20017	Chase County	 Kansas	2788	778.06	
+20019	Chautauqua County	 Kansas	3654	644.87	
+20021	Cherokee County	 Kansas	21521	591.02	
+20023	Cheyenne County	 Kansas	2724	1020.89	
+20025	Clark County	 Kansas	2198	977.27	
+20027	Clay County	 Kansas	8547	655.46	
+20029	Cloud County	 Kansas	9479	718.51	
+20031	Coffey County	 Kansas	8553	654.63	
+20033	Comanche County	 Kansas	1893	789.75	
+20035	Cowley County	 Kansas	36259	1132.67	
+20037	Crawford County	 Kansas	39133	595.11	
+20039	Decatur County	 Kansas	2939	894.23	
+20041	Dickinson County	 Kansas	19766	852.66	
+20043	Doniphan County	 Kansas	7931	397.1	
+20045	Douglas County	 Kansas	111073	474.5	
+20047	Edwards County	 Kansas	3021	622.13	
+20049	Elk County	 Kansas	2856	650.41	
+20051	Ellis County	 Kansas	28525	900.52	
+20053	Ellsworth County	 Kansas	6477	723.47	
+20055	Finney County	 Kansas	36608	1302.69	
+20057	Ford County	 Kansas	33725	1099.35	
+20059	Franklin County	 Kansas	25916	576.7	
+20061	Geary County	 Kansas	34110	403.95	
+20063	Gove County	 Kansas	2771	1071.55	
+20065	Graham County	 Kansas	2617	898.72	
+20067	Grant County	 Kansas	7817	575.1	
+20069	Gray County	 Kansas	5982	869.39	
+20071	Greeley County	 Kansas	1234	778.05	
+20073	Greenwood County	 Kansas	6654	1152.66	
+20075	Hamilton County	 Kansas	2656	997.66	
+20077	Harper County	 Kansas	5998	803	
+20079	Harvey County	 Kansas	34572	540.54	
+20081	Haskell County	 Kansas	4222	577.75	
+20083	Hodgeman County	 Kansas	1949	860.29	
+20085	Jackson County	 Kansas	13401	657.9	
+20087	Jefferson County	 Kansas	19036	556.98	
+20089	Jewell County	 Kansas	3085	914.51	
+20091	Johnson County	 Kansas	546046	480.18	
+20093	Kearny County	 Kansas	3952	871.57	
+20095	Kingman County	 Kansas	7876	866.75	
+20097	Kiowa County	 Kansas	2503	722.67	
+20099	Labette County	 Kansas	21574	653.36	
+20101	Lane County	 Kansas	1666	717.48	
+20103	Leavenworth County	 Kansas	76286	468.36	
+20105	Lincoln County	 Kansas	3240	719.97	
+20107	Linn County	 Kansas	9613	606.35	
+20109	Logan County	 Kansas	2766	1073.17	
+20111	Lyon County	 Kansas	34103	855.21	
+20113	McPherson County	 Kansas	29208	901.29	
+20115	Marion County	 Kansas	12565	953.59	
+20117	Marshall County	 Kansas	10083	904.41	
+20119	Meade County	 Kansas	4504	979.72	
+20121	Miami County	 Kansas	32546	590.2	
+20123	Mitchell County	 Kansas	6359	718.65	
+20125	Montgomery County	 Kansas	35167	651.45	
+20127	Morris County	 Kansas	5917	702.9	
+20129	Morton County	 Kansas	3207	729.99	
+20131	Nemaha County	 Kansas	10170	719.43	
+20133	Neosho County	 Kansas	16501	578.09	
+20135	Ness County	 Kansas	3102	1075.07	
+20137	Norton County	 Kansas	5658	881.42	
+20139	Osage County	 Kansas	16300	719.29	
+20141	Osborne County	 Kansas	3852	894.31	
+20143	Ottawa County	 Kansas	6099	721.94	
+20145	Pawnee County	 Kansas	6945	754.6	
+20147	Phillips County	 Kansas	5579	894.84	
+20149	Pottawatomie County	 Kansas	21620	862.12	
+20151	Pratt County	 Kansas	9670	735.79	
+20153	Rawlins County	 Kansas	2555	1069.79	
+20155	Reno County	 Kansas	64346	1271.33	
+20157	Republic County	 Kansas	4965	720.36	
+20159	Rice County	 Kansas	10077	728.33	
+20161	Riley County	 Kansas	71927	622.15	
+20163	Rooks County	 Kansas	5205	895.4	
+20165	Rush County	 Kansas	3262	718.45	
+20167	Russell County	 Kansas	6926	899.03	
+20169	Saline County	 Kansas	55493	721.32	
+20171	Scott County	 Kansas	4872	717.7	
+20173	Sedgwick County	 Kansas	497062	1009.48	
+20175	Seward County	 Kansas	23013	640.55	
+20177	Shawnee County	 Kansas	177688	556.35	
+20179	Sheridan County	 Kansas	2562	896.66	
+20181	Sherman County	 Kansas	6036	1056.08	
+20183	Smith County	 Kansas	3835	896.56	
+20185	Stafford County	 Kansas	4398	794.77	
+20187	Stanton County	 Kansas	2200	680.12	
+20189	Stevens County	 Kansas	5633	727.78	
+20191	Sumner County	 Kansas	24000	1184.86	
+20193	Thomas County	 Kansas	7854	1074.97	
+20195	Trego County	 Kansas	2977	899.09	
+20197	Wabaunsee County	 Kansas	7048	799.86	
+20199	Wallace County	 Kansas	1508	914.12	
+20201	Washington County	 Kansas	5806	898.88	
+20203	Wichita County	 Kansas	2239	718.59	
+20205	Wilson County	 Kansas	9368	575.04	
+20207	Woodson County	 Kansas	3311	505.5	
+20209	Wyandotte County	 Kansas	157274	155.7	
+21001	Adair County	 Kentucky	18651	412.25	
+21003	Allen County	 Kentucky	20007	352.06	
+21005	Anderson County	 Kentucky	21442	204.3	
+21007	Ballard County	 Kentucky	8268	273.62	
+21009	Barren County	 Kentucky	42229	499.95	
+21011	Bath County	 Kentucky	11665	283.96	
+21013	Bell County	 Kentucky	28613	361.36	
+21015	Boone County	 Kentucky	119406	256.98	
+21017	Bourbon County	 Kentucky	20004	291.68	
+21019	Boyd County	 Kentucky	49358	161.83	
+21021	Boyle County	 Kentucky	28445	182.71	
+21023	Bracken County	 Kentucky	8488	208.91	
+21025	Breathitt County	 Kentucky	13922	495.32	
+21027	Breckinridge County	 Kentucky	20068	585.55	
+21029	Bullitt County	 Kentucky	74431	300.21	
+21031	Butler County	 Kentucky	12748	431.54	
+21033	Caldwell County	 Kentucky	12977	348.2	
+21035	Calloway County	 Kentucky	37198	410.81	
+21037	Campbell County	 Kentucky	90119	159.44	
+21039	Carlisle County	 Kentucky	5081	199.03	
+21041	Carroll County	 Kentucky	10851	137.28	
+21043	Carter County	 Kentucky	27594	412.17	
+21045	Casey County	 Kentucky	15984	445.75	
+21047	Christian County	 Kentucky	73722	724.05	
+21049	Clark County	 Kentucky	35555	255.18	
+21051	Clay County	 Kentucky	21833	471.09	
+21053	Clinton County	 Kentucky	10244	205.55	
+21055	Crittenden County	 Kentucky	9321	370.97	
+21057	Cumberland County	 Kentucky	6857	310.87	
+21059	Daviess County	 Kentucky	96711	476.3	
+21061	Edmonson County	 Kentucky	12141	308.03	
+21063	Elliott County	 Kentucky	7774	235.22	
+21065	Estill County	 Kentucky	14647	255.72	
+21067	Fayette County	 Kentucky	296766	285.53	
+21069	Fleming County	 Kentucky	14415	351.49	
+21071	Floyd County	 Kentucky	39454	395.49	
+21073	Franklin County	 Kentucky	49399	212.13	
+21075	Fulton County	 Kentucky	6758	230.56	
+21077	Gallatin County	 Kentucky	8513	104.68	
+21079	Garrard County	 Kentucky	16892	233.89	
+21081	Grant County	 Kentucky	24683	260.75	
+21083	Graves County	 Kentucky	37200	556.5	
+21085	Grayson County	 Kentucky	25772	510.86	
+21087	Green County	 Kentucky	11309	288.8	
+21089	Greenup County	 Kentucky	36922	354.53	
+21091	Hancock County	 Kentucky	8588	198.93	
+21093	Hardin County	 Kentucky	104513	629.89	
+21095	Harlan County	 Kentucky	29210	467.98	
+21097	Harrison County	 Kentucky	18781	309.89	
+21099	Hart County	 Kentucky	18278	417.93	
+21101	Henderson County	 Kentucky	46254	467.26	
+21103	Henry County	 Kentucky	15428	291.13	
+21105	Hickman County	 Kentucky	4869	252.95	
+21107	Hopkins County	 Kentucky	46891	554.25	
+21109	Jackson County	 Kentucky	13475	346.59	
+21111	Jefferson County	 Kentucky	741285	398.6	
+21113	Jessamine County	 Kentucky	48591	174.47	
+21115	Johnson County	 Kentucky	23339	263.96	
+21117	Kenton County	 Kentucky	159926	164.97	
+21119	Knott County	 Kentucky	16368	353.03	
+21121	Knox County	 Kentucky	31874	387.72	
+21123	Larue County	 Kentucky	14175	263.74	
+21125	Laurel County	 Kentucky	58891	443.77	
+21127	Lawrence County	 Kentucky	15889	420.16	
+21129	Lee County	 Kentucky	7831	211.23	
+21131	Leslie County	 Kentucky	11318	404.37	
+21133	Letcher County	 Kentucky	24336	339.13	
+21135	Lewis County	 Kentucky	13889	495.73	
+21137	Lincoln County	 Kentucky	24671	336.77	
+21139	Livingston County	 Kentucky	9479	342.22	
+21141	Logan County	 Kentucky	26786	557.13	
+21143	Lyon County	 Kentucky	8336	256.47	
+21145	McCracken County	 Kentucky	65558	268.1	
+21147	McCreary County	 Kentucky	18204	430.67	
+21149	McLean County	 Kentucky	9554	256.19	
+21151	Madison County	 Kentucky	83174	443.14	
+21153	Magoffin County	 Kentucky	13229	309.46	
+21155	Marion County	 Kentucky	19872	346.89	
+21157	Marshall County	 Kentucky	31393	340.33	
+21159	Martin County	 Kentucky	12934	230.83	
+21161	Mason County	 Kentucky	17495	246.62	
+21163	Meade County	 Kentucky	28979	324.24	
+21165	Menifee County	 Kentucky	6331	206.04	
+21167	Mercer County	 Kentucky	21283	253.13	
+21169	Metcalfe County	 Kentucky	10074	290.98	
+21171	Monroe County	 Kentucky	10925	332.13	
+21173	Montgomery County	 Kentucky	26517	198.82	
+21175	Morgan County	 Kentucky	13898	383.76	
+21177	Muhlenberg County	 Kentucky	31399	479.47	
+21179	Nelson County	 Kentucky	43500	424.1	
+21181	Nicholas County	 Kentucky	7092	196.86	
+21183	Ohio County	 Kentucky	23975	596.75	
+21185	Oldham County	 Kentucky	60357	196.56	
+21187	Owen County	 Kentucky	10870	354.18	
+21189	Owsley County	 Kentucky	4764	198.1	
+21191	Pendleton County	 Kentucky	14771	281.37	
+21193	Perry County	 Kentucky	28617	342.64	
+21195	Pike County	 Kentucky	64887	788.89	
+21197	Powell County	 Kentucky	12638	180.21	
+21199	Pulaski County	 Kentucky	63045	677.09	
+21201	Robertson County	 Kentucky	2251	100.11	
+21203	Rockcastle County	 Kentucky	17090	318.08	
+21205	Rowan County	 Kentucky	23351	286.27	
+21207	Russell County	 Kentucky	17562	282.84	
+21209	Scott County	 Kentucky	47211	285.31	
+21211	Shelby County	 Kentucky	42286	385.67	
+21213	Simpson County	 Kentucky	17323	236.21	
+21215	Spencer County	 Kentucky	17135	191.81	
+21217	Taylor County	 Kentucky	24514	277.06	
+21219	Todd County	 Kentucky	12472	377	
+21221	Trigg County	 Kentucky	14282	481.12	
+21223	Trimble County	 Kentucky	8829	156.24	
+21225	Union County	 Kentucky	14992	363.44	
+21227	Warren County	 Kentucky	113787	547.72	
+21229	Washington County	 Kentucky	11701	301.54	
+21231	Wayne County	 Kentucky	20819	484.22	
+21233	Webster County	 Kentucky	13618	335.7	
+21235	Whitley County	 Kentucky	35756	445.17	
+21237	Wolfe County	 Kentucky	7298	222.88	
+21239	Woodford County	 Kentucky	24847	192	
+22001	Acadia Parish	 Louisiana	61611	657.65	
+22003	Allen Parish	 Louisiana	25740	765.72	
+22005	Ascension Parish	 Louisiana	107647	302.91	
+22007	Assumption Parish	 Louisiana	23321	364.59	
+22009	Avoyelles Parish	 Louisiana	41925	865.74	
+22011	Beauregard Parish	 Louisiana	35662	1166.06	
+22013	Bienville Parish	 Louisiana	14312	821.83	
+22015	Bossier Parish	 Louisiana	117742	867.01	
+22017	Caddo Parish	 Louisiana	254970	937.01	
+22019	Calcasieu Parish	 Louisiana	192307	1094.42	
+22021	Caldwell Parish	 Louisiana	10118	540.77	
+22023	Cameron Parish	 Louisiana	6934	1931.76	
+22025	Catahoula Parish	 Louisiana	10409	739.5	
+22027	Claiborne Parish	 Louisiana	17059	767.52	
+22029	Concordia Parish	 Louisiana	20624	748.74	
+22031	De Soto Parish	 Louisiana	26695	894.55	
+22033	East Baton Rouge Parish	 Louisiana	439662	470.59	
+22035	East Carroll Parish	 Louisiana	7738	442.49	
+22037	East Feliciana Parish	 Louisiana	20252	455.72	
+22039	Evangeline Parish	 Louisiana	33989	679.64	
+22041	Franklin Parish	 Louisiana	20714	635.48	
+22043	Grant Parish	 Louisiana	22049	664.6	
+22045	Iberia Parish	 Louisiana	73527	1030.94	
+22047	Iberville Parish	 Louisiana	33386	652.88	
+22049	Jackson Parish	 Louisiana	16210	580.38	
+22051	Jefferson Parish	 Louisiana	432706	642.42	
+22053	Jefferson Davis Parish	 Louisiana	31529	658.62	
+22055	Lafayette Parish	 Louisiana	221602	270.32	
+22057	Lafourche Parish	 Louisiana	96453	1472.3	
+22059	LaSalle Parish	 Louisiana	14840	662.42	
+22061	Lincoln Parish	 Louisiana	46543	472.3	
+22063	Livingston Parish	 Louisiana	128192	702.89	
+22065	Madison Parish	 Louisiana	12113	650.59	
+22067	Morehouse Parish	 Louisiana	27893	805.26	
+22069	Natchitoches Parish	 Louisiana	39434	1299.38	
+22071	Orleans Parish	 Louisiana	341407	350.23	
+22073	Ouachita Parish	 Louisiana	153752	632.76	
+22075	Plaquemines Parish	 Louisiana	23220	2428.73	
+22077	Pointe Coupee Parish	 Louisiana	22821	590.74	
+22079	Rapides Parish	 Louisiana	131655	1362.04	
+22081	Red River Parish	 Louisiana	9068	402.1	
+22083	Richland Parish	 Louisiana	20785	564.55	
+22085	Sabine Parish	 Louisiana	24265	1011.59	
+22087	St. Bernard Parish	 Louisiana	35947	1793.84	
+22089	St. Charles Parish	 Louisiana	52663	410.18	
+22091	St. Helena Parish	 Louisiana	11106	409.49	
+22093	St. James Parish	 Louisiana	21978	257.81	
+22095	St. John the Baptist Parish	 Louisiana	45741	347.86	
+22097	St. Landry Parish	 Louisiana	83774	938.88	
+22099	St. Martin Parish	 Louisiana	52343	816.51	
+22101	St. Mary Parish	 Louisiana	54285	1118.93	
+22103	St. Tammany Parish	 Louisiana	234283	1124.13	
+22105	Tangipahoa Parish	 Louisiana	121209	823.19	
+22107	Tensas Parish	 Louisiana	5189	641.25	
+22109	Terrebonne Parish	 Louisiana	111666	2080.08	
+22111	Union Parish	 Louisiana	22633	905.36	
+22113	Vermilion Parish	 Louisiana	58041	1538.42	
+22115	Vernon Parish	 Louisiana	51542	1341.61	
+22117	Washington Parish	 Louisiana	47025	676.01	
+22119	Webster Parish	 Louisiana	41156	615.13	
+22121	West Baton Rouge Parish	 Louisiana	23748	203.64	
+22123	West Carroll Parish	 Louisiana	11587	360.35	
+22125	West Feliciana Parish	 Louisiana	15575	426.05	
+22127	Winn Parish	 Louisiana	15233	956.98	
+23001	Androscoggin County	 Maine	107766	497.25	
+23003	Aroostook County	 Maine	71757	6829.18	
+23005	Cumberland County	 Maine	282143	1217.01	
+23007	Franklin County	 Maine	30704	1744.46	
+23009	Hancock County	 Maine	54470	2351.18	
+23011	Kennebec County	 Maine	122022	951.24	
+23013	Knox County	 Maine	39848	1142.07	
+23015	Lincoln County	 Maine	34440	699.97	
+23017	Oxford County	 Maine	57814	2175.44	
+23019	Penobscot County	 Maine	153742	3556.42	
+23021	Piscataquis County	 Maine	17432	4377.71	
+23023	Sagadahoc County	 Maine	35394	370.29	
+23025	Somerset County	 Maine	52098	4095.73	
+23027	Waldo County	 Maine	38761	852.81	
+23029	Washington County	 Maine	32832	3255.14	
+23031	York County	 Maine	197861	1271.44	
+24001	Allegany County	 Maryland	74645	429.74	
+24003	Anne Arundel County	 Maryland	538473	587.91	
+24005	Baltimore County	 Maryland	807318	682.08	
+24009	Calvert County	 Maryland	88774	345.11	
+24011	Caroline County	 Maryland	32947	326.07	
+24013	Carroll County	 Maryland	167249	452.43	
+24015	Cecil County	 Maryland	101109	417.89	
+24017	Charles County	 Maryland	147107	643.27	
+24019	Dorchester County	 Maryland	32570	982.97	
+24021	Frederick County	 Maryland	234268	667.4	
+24023	Garrett County	 Maryland	30079	656.08	
+24025	Harford County	 Maryland	245396	526.74	
+24027	Howard County	 Maryland	288676	253.56	
+24029	Kent County	 Maryland	20184	414.32	
+24031	Montgomery County	 Maryland	974824	506.22	
+24033	Prince George's County	 Maryland	865443	499.42	
+24035	Queen Anne's County	 Maryland	47894	509.82	
+24037	St. Mary's County	 Maryland	105528	764.54	
+24039	Somerset County	 Maryland	26402	610.81	
+24041	Talbot County	 Maryland	37746	476.81	
+24043	Washington County	 Maryland	147882	467.57	
+24045	Wicomico County	 Maryland	98940	399.81	
+24047	Worcester County	 Maryland	51398	694.78	
+24510	Baltimore city	 Maryland	620644	92.08	
+25001	Barnstable County	 Massachusetts	216021	1305.52	
+25003	Berkshire County	 Massachusetts	130866	946.34	
+25005	Bristol County	 Massachusetts	548739	691.26	
+25007	Dukes County	 Massachusetts	16581	491	
+25009	Essex County	 Massachusetts	744961	828.69	
+25011	Franklin County	 Massachusetts	71489	724.81	
+25013	Hampden County	 Massachusetts	464072	634.17	
+25015	Hampshire County	 Massachusetts	158850	545.47	
+25017	Middlesex County	 Massachusetts	1507558	847.63	
+25019	Nantucket County	 Massachusetts	10194	303.28	
+25021	Norfolk County	 Massachusetts	672078	443.97	
+25023	Plymouth County	 Massachusetts	495407	1093.48	
+25025	Suffolk County	 Massachusetts	724502	120.07	
+25027	Worcester County	 Massachusetts	799277	1579.11	
+26001	Alcona County	 Michigan	10943	1790.56	
+26003	Alger County	 Michigan	9531	5044.37	
+26005	Allegan County	 Michigan	111589	1833.51	
+26007	Alpena County	 Michigan	29602	1695.05	
+26009	Antrim County	 Michigan	23634	601.94	
+26011	Arenac County	 Michigan	15952	680.75	
+26013	Baraga County	 Michigan	8808	1069.12	
+26015	Barry County	 Michigan	59249	576.93	
+26017	Bay County	 Michigan	107633	630.98	
+26019	Benzie County	 Michigan	17554	859.72	
+26021	Berrien County	 Michigan	156759	1581.47	
+26023	Branch County	 Michigan	44920	519.52	
+26025	Calhoun County	 Michigan	136063	718.49	
+26027	Cass County	 Michigan	52412	508.51	
+26029	Charlevoix County	 Michigan	26057	1390.87	
+26031	Cheboygan County	 Michigan	26195	885.26	
+26033	Chippewa County	 Michigan	38919	2698	
+26035	Clare County	 Michigan	30924	575.25	
+26037	Clinton County	 Michigan	75274	574.6	
+26039	Crawford County	 Michigan	14119	563.41	
+26041	Delta County	 Michigan	37075	1991.75	
+26043	Dickinson County	 Michigan	26286	777.2	
+26045	Eaton County	 Michigan	107861	579.07	
+26047	Emmet County	 Michigan	32799	882.33	
+26049	Genesee County	 Michigan	425337	649.37	
+26051	Gladwin County	 Michigan	25736	516.46	
+26053	Gogebic County	 Michigan	16297	1476.54	
+26055	Grand Traverse County	 Michigan	87483	601.17	
+26057	Gratiot County	 Michigan	42340	571.64	
+26059	Hillsdale County	 Michigan	46617	607.18	
+26061	Houghton County	 Michigan	36519	1501.63	
+26063	Huron County	 Michigan	33001	2137.25	
+26065	Ingham County	 Michigan	281323	560.98	
+26067	Ionia County	 Michigan	64149	580.26	
+26069	Iosco County	 Michigan	25880	1890.72	
+26071	Iron County	 Michigan	11837	1211.16	
+26073	Isabella County	 Michigan	70186	577.78	
+26075	Jackson County	 Michigan	160257	723.82	
+26077	Kalamazoo County	 Michigan	250704	580.23	
+26079	Kalkaska County	 Michigan	17231	570.79	
+26081	Kent County	 Michigan	605244	872.21	
+26083	Keweenaw County	 Michigan	2168	6060.49	
+26085	Lake County	 Michigan	11543	574.64	
+26087	Lapeer County	 Michigan	88626	663.12	
+26089	Leelanau County	 Michigan	21677	2533.36	
+26091	Lenawee County	 Michigan	99878	761.38	
+26093	Livingston County	 Michigan	181678	585.46	
+26095	Luce County	 Michigan	6590	1911.9	
+26097	Mackinac County	 Michigan	11144	2100.59	
+26099	Macomb County	 Michigan	841769	569.81	
+26101	Manistee County	 Michigan	24753	1280.9	
+26103	Marquette County	 Michigan	67178	3426.9	
+26105	Mason County	 Michigan	28672	1241.98	
+26107	Mecosta County	 Michigan	42947	571.14	
+26109	Menominee County	 Michigan	24041	1338.13	
+26111	Midland County	 Michigan	83744	527.92	
+26113	Missaukee County	 Michigan	14945	573.85	
+26115	Monroe County	 Michigan	151944	680.1	
+26117	Montcalm County	 Michigan	63357	721.02	
+26119	Montmorency County	 Michigan	9709	562.46	
+26121	Muskegon County	 Michigan	171755	1459.29	
+26123	Newaygo County	 Michigan	48517	861.45	
+26125	Oakland County	 Michigan	1207097	908.07	
+26127	Oceana County	 Michigan	26636	1306.83	
+26129	Ogemaw County	 Michigan	21674	574.67	
+26131	Ontonagon County	 Michigan	6703	3741.37	
+26133	Osceola County	 Michigan	23486	573.15	
+26135	Oscoda County	 Michigan	8709	571.6	
+26137	Otsego County	 Michigan	24175	526	
+26139	Ottawa County	 Michigan	264835	1632.12	
+26141	Presque Isle County	 Michigan	13368	2573.22	
+26143	Roscommon County	 Michigan	24447	579.86	
+26145	Saginaw County	 Michigan	200017	815.82	
+26147	St. Clair County	 Michigan	162978	832.55	
+26149	St. Joseph County	 Michigan	61314	521.18	
+26151	Sanilac County	 Michigan	43096	1590.64	
+26153	Schoolcraft County	 Michigan	8455	1883.79	
+26155	Shiawassee County	 Michigan	70402	540.78	
+26157	Tuscola County	 Michigan	55616	913.83	
+26159	Van Buren County	 Michigan	76149	1090.28	
+26161	Washtenaw County	 Michigan	346010	722.59	
+26163	Wayne County	 Michigan	1822469	672.26	
+26165	Wexford County	 Michigan	32694	575.88	
+27001	Aitkin County	 Minnesota	16166	1995.39	
+27003	Anoka County	 Minnesota	331649	446.28	
+27005	Becker County	 Minnesota	32600	1445.17	
+27007	Beltrami County	 Minnesota	44652	3055.7	
+27009	Benton County	 Minnesota	38560	413.02	
+27011	Big Stone County	 Minnesota	5250	527.92	
+27013	Blue Earth County	 Minnesota	63991	765.93	
+27015	Brown County	 Minnesota	25772	618.62	
+27017	Carlton County	 Minnesota	35304	875.28	
+27019	Carver County	 Minnesota	91355	376.23	
+27021	Cass County	 Minnesota	28519	2414.31	
+27023	Chippewa County	 Minnesota	12327	587.85	
+27025	Chisago County	 Minnesota	53526	442.53	
+27027	Clay County	 Minnesota	58937	1052.78	
+27029	Clearwater County	 Minnesota	8672	1029.85	
+27031	Cook County	 Minnesota	5206	3339.29	
+27033	Cottonwood County	 Minnesota	11665	648.94	
+27035	Crow Wing County	 Minnesota	62521	1156.62	
+27037	Dakota County	 Minnesota	399443	586.36	
+27039	Dodge County	 Minnesota	20071	439.64	
+27041	Douglas County	 Minnesota	36167	719.97	
+27043	Faribault County	 Minnesota	14546	721.64	
+27045	Fillmore County	 Minnesota	20880	862.19	
+27047	Freeborn County	 Minnesota	31188	722.66	
+27049	Goodhue County	 Minnesota	46144	780.47	
+27051	Grant County	 Minnesota	6016	575.21	
+27053	Hennepin County	 Minnesota	1158039	606.43	
+27055	Houston County	 Minnesota	19001	568.95	
+27057	Hubbard County	 Minnesota	20372	999.44	
+27059	Isanti County	 Minnesota	38004	451.9	
+27061	Itasca County	 Minnesota	45052	2927.91	
+27063	Jackson County	 Minnesota	10273	719.51	
+27065	Kanabec County	 Minnesota	16255	533.41	
+27067	Kandiyohi County	 Minnesota	42150	862.01	
+27069	Kittson County	 Minnesota	4547	1103.54	
+27071	Koochiching County	 Minnesota	13293	3154.35	
+27073	Lac qui Parle County	 Minnesota	7240	778.09	
+27075	Lake County	 Minnesota	10849	2991.14	
+27077	Lake of the Woods County	 Minnesota	4039	1775.08	
+27079	Le Sueur County	 Minnesota	27744	473.9	
+27081	Lincoln County	 Minnesota	5876	548.47	
+27083	Lyon County	 Minnesota	25714	721.49	
+27085	McLeod County	 Minnesota	36527	505.7	
+27087	Mahnomen County	 Minnesota	5442	583.02	
+27089	Marshall County	 Minnesota	9475	1812.83	
+27091	Martin County	 Minnesota	20727	729.59	
+27093	Meeker County	 Minnesota	23262	645.11	
+27095	Mille Lacs County	 Minnesota	26004	681.8	
+27097	Morrison County	 Minnesota	33173	1153.37	
+27099	Mower County	 Minnesota	39115	711.74	
+27101	Murray County	 Minnesota	8690	719.56	
+27103	Nicollet County	 Minnesota	32689	466.98	
+27105	Nobles County	 Minnesota	21349	722.36	
+27107	Norman County	 Minnesota	6796	876.85	
+27109	Olmsted County	 Minnesota	144507	654.53	
+27111	Otter Tail County	 Minnesota	57381	2225.03	
+27113	Pennington County	 Minnesota	13950	618.36	
+27115	Pine County	 Minnesota	29564	1434.68	
+27117	Pipestone County	 Minnesota	9536	466.17	
+27119	Polk County	 Minnesota	31426	1997.89	
+27121	Pope County	 Minnesota	10978	717.33	
+27123	Ramsey County	 Minnesota	510885	170.16	
+27125	Red Lake County	 Minnesota	4100	432.52	
+27127	Redwood County	 Minnesota	16006	881.28	
+27129	Renville County	 Minnesota	15653	987.27	
+27131	Rice County	 Minnesota	64171	516.14	
+27133	Rock County	 Minnesota	9620	482.86	
+27135	Roseau County	 Minnesota	15665	1678.48	
+27137	St. Louis County	 Minnesota	200150	6860.53	
+27139	Scott County	 Minnesota	130689	368.57	
+27141	Sherburne County	 Minnesota	88558	451	
+27143	Sibley County	 Minnesota	15189	600.39	
+27145	Stearns County	 Minnesota	150307	1389.99	
+27147	Steele County	 Minnesota	36524	432.18	
+27149	Stevens County	 Minnesota	9712	575.27	
+27151	Swift County	 Minnesota	9764	752.39	
+27153	Todd County	 Minnesota	24783	979.39	
+27155	Traverse County	 Minnesota	3549	586	
+27157	Wabasha County	 Minnesota	21636	549.85	
+27159	Wadena County	 Minnesota	13808	543.02	
+27161	Waseca County	 Minnesota	19089	432.82	
+27163	Washington County	 Minnesota	238721	423.19	
+27165	Watonwan County	 Minnesota	11177	439.93	
+27167	Wilkin County	 Minnesota	6584	751.67	
+27169	Winona County	 Minnesota	51481	641.63	
+27171	Wright County	 Minnesota	124737	714.42	
+27173	Yellow Medicine County	 Minnesota	10357	763.42	
+28001	Adams County	 Mississippi	32391	486.28	
+28003	Alcorn County	 Mississippi	37027	401.38	
+28005	Amite County	 Mississippi	13139	731.7	
+28007	Attala County	 Mississippi	19454	737.15	
+28009	Benton County	 Mississippi	8725	408.67	
+28011	Bolivar County	 Mississippi	34239	905.82	
+28013	Calhoun County	 Mississippi	14903	588	
+28015	Carroll County	 Mississippi	10553	634.59	
+28017	Chickasaw County	 Mississippi	17458	504.3	
+28019	Choctaw County	 Mississippi	8506	419.84	
+28021	Claiborne County	 Mississippi	9681	501.44	
+28023	Clarke County	 Mississippi	16688	693.46	
+28025	Clay County	 Mississippi	20633	416.05	
+28027	Coahoma County	 Mississippi	26099	583.18	
+28029	Copiah County	 Mississippi	29324	779.45	
+28031	Covington County	 Mississippi	19571	414.97	
+28033	DeSoto County	 Mississippi	161536	496.82	
+28035	Forrest County	 Mississippi	75378	470.2	
+28037	Franklin County	 Mississippi	8055	566.78	
+28039	George County	 Mississippi	22579	483.65	
+28041	Greene County	 Mississippi	14352	718.73	
+28043	Grenada County	 Mississippi	21886	449.41	
+28045	Hancock County	 Mississippi	44044	552.56	
+28047	Harrison County	 Mississippi	188110	976.18	
+28049	Hinds County	 Mississippi	246335	877.41	
+28051	Holmes County	 Mississippi	19207	764.24	
+28053	Humphreys County	 Mississippi	9399	431.2	
+28055	Issaquena County	 Mississippi	1556	441.4	
+28057	Itawamba County	 Mississippi	23362	540.46	
+28059	Jackson County	 Mississippi	139430	1043.36	
+28061	Jasper County	 Mississippi	17033	677.49	
+28063	Jefferson County	 Mississippi	7743	527.24	
+28065	Jefferson Davis County	 Mississippi	12364	409.14	
+28067	Jones County	 Mississippi	67868	699.79	
+28069	Kemper County	 Mississippi	10391	767.05	
+28071	Lafayette County	 Mississippi	47586	679.33	
+28073	Lamar County	 Mississippi	55580	500.52	
+28075	Lauderdale County	 Mississippi	80204	715.33	
+28077	Lawrence County	 Mississippi	12832	435.76	
+28079	Leake County	 Mississippi	23563	585.43	
+28081	Lee County	 Mississippi	83235	453.17	
+28083	Leflore County	 Mississippi	32196	606.4	
+28085	Lincoln County	 Mississippi	34850	588.22	
+28087	Lowndes County	 Mississippi	59584	516.48	
+28089	Madison County	 Mississippi	95481	742.03	
+28091	Marion County	 Mississippi	26810	548.61	
+28093	Marshall County	 Mississippi	37019	709.86	
+28095	Monroe County	 Mississippi	36912	772.1	
+28097	Montgomery County	 Mississippi	10866	407.9	
+28099	Neshoba County	 Mississippi	29682	571.69	
+28101	Newton County	 Mississippi	21687	579.62	
+28103	Noxubee County	 Mississippi	11511	700.09	
+28105	Oktibbeha County	 Mississippi	47486	461.94	
+28107	Panola County	 Mississippi	34675	705.19	
+28109	Pearl River County	 Mississippi	55886	818.98	
+28111	Perry County	 Mississippi	12217	650.24	
+28113	Pike County	 Mississippi	40300	410.81	
+28115	Pontotoc County	 Mississippi	29962	501.02	
+28117	Prentiss County	 Mississippi	25384	418.28	
+28119	Quitman County	 Mississippi	8171	406.52	
+28121	Rankin County	 Mississippi	142136	806.16	
+28123	Scott County	 Mississippi	28207	610.43	
+28125	Sharkey County	 Mississippi	4835	434.92	
+28127	Simpson County	 Mississippi	27476	590.57	
+28129	Smith County	 Mississippi	16425	637.32	
+28131	Stone County	 Mississippi	17657	448.09	
+28133	Sunflower County	 Mississippi	29230	707.26	
+28135	Tallahatchie County	 Mississippi	15262	652.13	
+28137	Tate County	 Mississippi	28580	410.98	
+28139	Tippah County	 Mississippi	22095	460	
+28141	Tishomingo County	 Mississippi	19573	444.57	
+28143	Tunica County	 Mississippi	10716	480.82	
+28145	Union County	 Mississippi	27175	416.91	
+28147	Walthall County	 Mississippi	15405	404.47	
+28149	Warren County	 Mississippi	48419	618.82	
+28151	Washington County	 Mississippi	51010	761.31	
+28153	Wayne County	 Mississippi	20754	813.54	
+28155	Webster County	 Mississippi	10162	423.38	
+28157	Wilkinson County	 Mississippi	9778	687.71	
+28159	Winston County	 Mississippi	19160	610.15	
+28161	Yalobusha County	 Mississippi	12647	495.03	
+28163	Yazoo County	 Mississippi	28220	934.2	
+29001	Adair County	 Missouri	25542	569.35	
+29003	Andrew County	 Missouri	17205	436.53	
+29005	Atchison County	 Missouri	5664	547.39	
+29007	Audrain County	 Missouri	25617	696.83	
+29009	Barry County	 Missouri	35680	790.96	
+29011	Barton County	 Missouri	12428	596.78	
+29013	Bates County	 Missouri	17003	851.45	
+29015	Benton County	 Missouri	19021	752.55	
+29017	Bollinger County	 Missouri	12389	621.21	
+29019	Boone County	 Missouri	163266	691.19	
+29021	Buchanan County	 Missouri	89162	414.6	
+29023	Butler County	 Missouri	42792	699.01	
+29025	Caldwell County	 Missouri	9302	429.75	
+29027	Callaway County	 Missouri	44157	847.26	
+29029	Camden County	 Missouri	43731	708.9	
+29031	Cape Girardeau County	 Missouri	75690	586.33	
+29033	Carroll County	 Missouri	9279	702.35	
+29035	Carter County	 Missouri	6225	509.06	
+29037	Cass County	 Missouri	99394	702.73	
+29039	Cedar County	 Missouri	13941	498.54	
+29041	Chariton County	 Missouri	7759	768.3	
+29043	Christian County	 Missouri	77474	564.09	
+29045	Clark County	 Missouri	7082	511.93	
+29047	Clay County	 Missouri	222048	409.16	
+29049	Clinton County	 Missouri	20687	423.5	
+29051	Cole County	 Missouri	75813	399.11	
+29053	Cooper County	 Missouri	17542	570.25	
+29055	Crawford County	 Missouri	24753	743.82	
+29057	Dade County	 Missouri	7811	506.34	
+29059	Dallas County	 Missouri	16825	542.87	
+29061	Daviess County	 Missouri	8341	569.12	
+29063	DeKalb County	 Missouri	12878	425.8	
+29065	Dent County	 Missouri	15595	754.56	
+29067	Douglas County	 Missouri	13690	814.67	
+29069	Dunklin County	 Missouri	31970	547.14	
+29071	Franklin County	 Missouri	101440	929.64	
+29073	Gasconade County	 Missouri	15160	524.53	
+29075	Gentry County	 Missouri	6773	491.84	
+29077	Greene County	 Missouri	275671	677.84	
+29079	Grundy County	 Missouri	10256	438.01	
+29081	Harrison County	 Missouri	8901	726.5	
+29083	Henry County	 Missouri	22234	732.61	
+29085	Hickory County	 Missouri	9554	411.77	
+29087	Holt County	 Missouri	4840	469.09	
+29089	Howard County	 Missouri	10160	470.58	
+29091	Howell County	 Missouri	40330	928.39	
+29093	Iron County	 Missouri	10563	552.09	
+29095	Jackson County	 Missouri	672784	616.16	
+29097	Jasper County	 Missouri	116493	641.37	
+29099	Jefferson County	 Missouri	218628	664.12	
+29101	Johnson County	 Missouri	52964	833.09	
+29103	Knox County	 Missouri	4111	506.8	
+29105	Laclede County	 Missouri	35507	768.03	
+29107	Lafayette County	 Missouri	33278	638.9	
+29109	Lawrence County	 Missouri	38559	613.42	
+29111	Lewis County	 Missouri	10203	510.88	
+29113	Lincoln County	 Missouri	52637	640.44	
+29115	Linn County	 Missouri	12668	621.5	
+29117	Livingston County	 Missouri	15068	538.51	
+29119	McDonald County	 Missouri	22970	539.74	
+29121	Macon County	 Missouri	15532	812.58	
+29123	Madison County	 Missouri	12334	497.64	
+29125	Maries County	 Missouri	9140	530.01	
+29127	Marion County	 Missouri	28703	444.07	
+29129	Mercer County	 Missouri	3763	455.21	
+29131	Miller County	 Missouri	24822	599.98	
+29133	Mississippi County	 Missouri	14231	428.93	
+29135	Moniteau County	 Missouri	15587	418.87	
+29137	Monroe County	 Missouri	8876	670.26	
+29139	Montgomery County	 Missouri	12181	541.97	
+29141	Morgan County	 Missouri	20479	613.94	
+29143	New Madrid County	 Missouri	18780	698.07	
+29145	Newton County	 Missouri	58314	626.72	
+29147	Nodaway County	 Missouri	23305	877.81	
+29149	Oregon County	 Missouri	10885	791.65	
+29151	Osage County	 Missouri	13857	613.44	
+29153	Ozark County	 Missouri	9672	755.13	
+29155	Pemiscot County	 Missouri	18288	512.44	
+29157	Perry County	 Missouri	18986	484.3	
+29159	Pettis County	 Missouri	42044	686.38	
+29161	Phelps County	 Missouri	44825	674.32	
+29163	Pike County	 Missouri	18574	684.84	
+29165	Platte County	 Missouri	89567	427.26	
+29167	Polk County	 Missouri	31035	642.51	
+29169	Pulaski County	 Missouri	51620	551.44	
+29171	Putnam County	 Missouri	4976	519.7	
+29173	Ralls County	 Missouri	10198	483.84	
+29175	Randolph County	 Missouri	25388	487.69	
+29177	Ray County	 Missouri	23422	573.62	
+29179	Reynolds County	 Missouri	6682	814.47	
+29181	Ripley County	 Missouri	14070	631.71	
+29183	St. Charles County	 Missouri	360695	593.54	
+29185	St. Clair County	 Missouri	9693	701.95	
+29186	Ste. Genevieve County	 Missouri	18066	508.96	
+29187	St. Francois County	 Missouri	65246	452.43	
+29189	St. Louis County	 Missouri	999147	523.61	
+29195	Saline County	 Missouri	23232	764.62	
+29197	Schuyler County	 Missouri	4397	308.18	
+29199	Scotland County	 Missouri	4843	439.29	
+29201	Scott County	 Missouri	39192	426.06	
+29203	Shannon County	 Missouri	8407	1004.05	
+29205	Shelby County	 Missouri	6328	502.45	
+29207	Stoddard County	 Missouri	29902	828.99	
+29209	Stone County	 Missouri	31968	510.95	
+29211	Sullivan County	 Missouri	6667	651.48	
+29213	Taney County	 Missouri	51596	651.53	
+29215	Texas County	 Missouri	25840	1179.33	
+29217	Vernon County	 Missouri	20958	837.11	
+29219	Warren County	 Missouri	32440	437.76	
+29221	Washington County	 Missouri	25120	762.5	
+29223	Wayne County	 Missouri	13444	774.13	
+29225	Webster County	 Missouri	36183	593.74	
+29227	Worth County	 Missouri	2146	266.77	
+29229	Wright County	 Missouri	18732	683.24	
+29510	St. Louis city	 Missouri	318527	66.15	
+30001	Beaverhead County	 Montana	9228	5572.35	
+30003	Big Horn County	 Montana	12872	5014.72	
+30005	Blaine County	 Montana	6514	4238.98	
+30007	Broadwater County	 Montana	5575	1238.94	
+30009	Carbon County	 Montana	10057	2062.26	
+30011	Carter County	 Montana	1276	3348.41	
+30013	Cascade County	 Montana	81248	2711.74	
+30015	Chouteau County	 Montana	5811	3997.13	
+30017	Custer County	 Montana	11706	3793.37	
+30019	Daniels County	 Montana	1734	1426.57	
+30021	Dawson County	 Montana	9022	2383.23	
+30023	Deer Lodge County	 Montana	9277	741.27	
+30025	Fallon County	 Montana	3051	1623.06	
+30027	Fergus County	 Montana	11507	4350.51	
+30029	Flathead County	 Montana	90967	5256.6	
+30031	Gallatin County	 Montana	90339	2532.73	
+30033	Garfield County	 Montana	1100	4847.66	
+30035	Glacier County	 Montana	13422	3037.12	
+30037	Golden Valley County	 Montana	769	1176.42	
+30039	Granite County	 Montana	3083	1733.17	
+30041	Hill County	 Montana	16157	2916.07	
+30043	Jefferson County	 Montana	11360	1658.89	
+30045	Judith Basin County	 Montana	2052	1870.75	
+30047	Lake County	 Montana	28794	1653.75	
+30049	Lewis and Clark County	 Montana	63432	3497.63	
+30051	Liberty County	 Montana	2326	1447.18	
+30053	Lincoln County	 Montana	19594	3675.22	
+30055	McCone County	 Montana	1808	2682.84	
+30057	Madison County	 Montana	7688	3602.93	
+30059	Meagher County	 Montana	1900	2394.87	
+30061	Mineral County	 Montana	4203	1223.43	
+30063	Missoula County	 Montana	109402	2618.39	
+30065	Musselshell County	 Montana	4597	1870.94	
+30067	Park County	 Montana	15655	2666.73	
+30069	Petroleum County	 Montana	566	1674.05	
+30071	Phillips County	 Montana	4203	5212.22	
+30073	Pondera County	 Montana	6147	1639.83	
+30075	Powder River County	 Montana	1639	3298.02	
+30077	Powell County	 Montana	7067	2332.71	
+30079	Prairie County	 Montana	1193	1742.61	
+30081	Ravalli County	 Montana	40311	2400.39	
+30083	Richland County	 Montana	9961	2103.08	
+30085	Roosevelt County	 Montana	10477	2369.7	
+30087	Rosebud County	 Montana	9261	5026.96	
+30089	Sanders County	 Montana	11421	2790.18	
+30091	Sheridan County	 Montana	3447	1706.38	
+30093	Silver Bow County	 Montana	34164	718.99	
+30095	Stillwater County	 Montana	9096	1804.71	
+30097	Sweet Grass County	 Montana	3661	1862.1	
+30099	Teton County	 Montana	6082	2292.57	
+30101	Toole County	 Montana	5210	1945.82	
+30103	Treasure County	 Montana	698	984.14	
+30105	Valley County	 Montana	7423	5062.08	
+30107	Wheatland County	 Montana	2142	1428.37	
+30109	Wibaux County	 Montana	899	890.12	
+30111	Yellowstone County	 Montana	148191	2649.11	
+31001	Adams County	 Nebraska	31299	564.19	
+31003	Antelope County	 Nebraska	6655	858.49	
+31005	Arthur County	 Nebraska	490	718.36	
+31007	Banner County	 Nebraska	778	746.43	
+31009	Blaine County	 Nebraska	584	714.39	
+31011	Boone County	 Nebraska	5473	687.3	
+31013	Box Butte County	 Nebraska	11345	1077.92	
+31015	Boyd County	 Nebraska	2025	544.64	
+31017	Brown County	 Nebraska	3183	1225.15	
+31019	Buffalo County	 Nebraska	46330	975.31	
+31021	Burt County	 Nebraska	6829	497.12	
+31023	Butler County	 Nebraska	8345	584.43	
+31025	Cass County	 Nebraska	25214	566.27	
+31027	Cedar County	 Nebraska	8807	745.86	
+31029	Chase County	 Nebraska	3964	897.67	
+31031	Cherry County	 Nebraska	5722	6009.87	
+31033	Cheyenne County	 Nebraska	10038	1196.55	
+31035	Clay County	 Nebraska	6497	573.56	
+31037	Colfax County	 Nebraska	10453	418.61	
+31039	Cuming County	 Nebraska	9140	574.58	
+31041	Custer County	 Nebraska	10904	2576.21	
+31043	Dakota County	 Nebraska	20869	267.41	
+31045	Dawes County	 Nebraska	9176	1400.9	
+31047	Dawson County	 Nebraska	24267	1019.34	
+31049	Deuel County	 Nebraska	1962	440.83	
+31051	Dixon County	 Nebraska	5982	482.75	
+31053	Dodge County	 Nebraska	36590	543.98	
+31055	Douglas County	 Nebraska	518271	339.65	
+31057	Dundy County	 Nebraska	1996	920.84	
+31059	Fillmore County	 Nebraska	5867	576.66	
+31061	Franklin County	 Nebraska	3196	576.13	
+31063	Frontier County	 Nebraska	2693	980.11	
+31065	Furnas County	 Nebraska	4922	720.53	
+31067	Gage County	 Nebraska	22209	859.99	
+31069	Garden County	 Nebraska	2011	1731.15	
+31071	Garfield County	 Nebraska	2106	571.36	
+31073	Gosper County	 Nebraska	2020	462.77	
+31075	Grant County	 Nebraska	608	783.27	
+31077	Greeley County	 Nebraska	2515	570.74	
+31079	Hall County	 Nebraska	58681	552.25	
+31081	Hamilton County	 Nebraska	9096	546.76	
+31083	Harlan County	 Nebraska	3419	574.2	
+31085	Hayes County	 Nebraska	1037	713.37	
+31087	Hitchcock County	 Nebraska	2898	718.62	
+31089	Holt County	 Nebraska	10418	2417.8	
+31091	Hooker County	 Nebraska	689	721.54	
+31093	Howard County	 Nebraska	6294	575.77	
+31095	Jefferson County	 Nebraska	7572	575.53	
+31097	Johnson County	 Nebraska	5188	376.84	
+31099	Kearney County	 Nebraska	6514	516.15	
+31101	Keith County	 Nebraska	8284	1109.85	
+31103	Keya Paha County	 Nebraska	742	774.21	
+31105	Kimball County	 Nebraska	3789	952.38	
+31107	Knox County	 Nebraska	8648	1139.75	
+31109	Lancaster County	 Nebraska	286425	846.73	
+31111	Lincoln County	 Nebraska	36212	2575.27	
+31113	Logan County	 Nebraska	724	571.18	
+31115	Loup County	 Nebraska	534	571.06	
+31117	McPherson County	 Nebraska	348	860.06	
+31119	Madison County	 Nebraska	34766	575.09	
+31121	Merrick County	 Nebraska	7779	494.39	
+31123	Morrill County	 Nebraska	4993	1429.92	
+31125	Nance County	 Nebraska	3730	448.08	
+31127	Nemaha County	 Nebraska	7224	411.91	
+31129	Nuckolls County	 Nebraska	4490	576	
+31131	Otoe County	 Nebraska	15729	619.12	
+31133	Pawnee County	 Nebraska	2753	432.97	
+31135	Perkins County	 Nebraska	2947	884.33	
+31137	Phelps County	 Nebraska	9184	540.62	
+31139	Pierce County	 Nebraska	7231	575.31	
+31141	Platte County	 Nebraska	32195	689.13	
+31143	Polk County	 Nebraska	5371	441.13	
+31145	Red Willow County	 Nebraska	11013	718.1	
+31147	Richardson County	 Nebraska	8355	555.98	
+31149	Rock County	 Nebraska	1540	1011.91	
+31151	Saline County	 Nebraska	14278	576.08	
+31153	Sarpy County	 Nebraska	159413	247.29	
+31155	Saunders County	 Nebraska	20696	758.91	
+31157	Scotts Bluff County	 Nebraska	36835	745.57	
+31159	Seward County	 Nebraska	16729	575.74	
+31161	Sheridan County	 Nebraska	5432	2470.12	
+31163	Sherman County	 Nebraska	3133	571.66	
+31165	Sioux County	 Nebraska	1262	2067.43	
+31167	Stanton County	 Nebraska	6139	431.08	
+31169	Thayer County	 Nebraska	5195	575.36	
+31171	Thomas County	 Nebraska	831	713.69	
+31173	Thurston County	 Nebraska	6926	396.27	
+31175	Valley County	 Nebraska	4322	570.54	
+31177	Washington County	 Nebraska	20201	393.79	
+31179	Wayne County	 Nebraska	9542	443.52	
+31181	Webster County	 Nebraska	3773	575.04	
+31183	Wheeler County	 Nebraska	725	575.61	
+31185	York County	 Nebraska	13727	576.04	
+32001	Churchill County	 Nevada	24779	5023.65	
+32003	Clark County	 Nevada	1954773	8091.05	
+32005	Douglas County	 Nevada	47056	737.67	
+32007	Elko County	 Nevada	49133	17204.04	
+32009	Esmeralda County	 Nevada	916	3589.19	
+32011	Eureka County	 Nevada	1809	4180.25	
+32013	Humboldt County	 Nevada	16511	9658.42	
+32015	Lander County	 Nevada	5751	5519.64	
+32017	Lincoln County	 Nevada	5282	10637.44	
+32019	Lyon County	 Nevada	51797	2016.49	
+32021	Mineral County	 Nevada	4718	3813.17	
+32023	Nye County	 Nevada	43801	18159.71	
+32027	Pershing County	 Nevada	6707	6067.89	
+32029	Storey County	 Nevada	4010	263.81	
+32031	Washoe County	 Nevada	422010	6551.48	
+32033	White Pine County	 Nevada	9967	8897.17	
+32510	Carson City	 Nevada	55184	155.85	
+33001	Belknap County	 New Hampshire	60206	468.59	
+33003	Carroll County	 New Hampshire	47761	992.32	
+33005	Cheshire County	 New Hampshire	77106	729.21	
+33007	Coos County	 New Hampshire	32872	1831.72	
+33009	Grafton County	 New Hampshire	88985	1750.3	
+33011	Hillsborough County	 New Hampshire	401101	892.28	
+33013	Merrimack County	 New Hampshire	146742	956.56	
+33015	Rockingham County	 New Hampshire	295872	794.04	
+33017	Strafford County	 New Hampshire	123295	383.95	
+33019	Sullivan County	 New Hampshire	43534	551.98	
+34001	Atlantic County	 New Jersey	274402	671.47	
+34003	Bergen County	 New Jersey	906781	246.82	
+34005	Burlington County	 New Jersey	449117	819.48	
+34007	Camden County	 New Jersey	513660	227.59	
+34009	Cape May County	 New Jersey	96987	620.29	
+34011	Cumberland County	 New Jersey	156864	676.57	
+34013	Essex County	 New Jersey	783840	129.59	
+34015	Gloucester County	 New Jersey	288187	337	
+34017	Hudson County	 New Jersey	636194	62.26	
+34019	Hunterdon County	 New Jersey	127996	437.85	
+34021	Mercer County	 New Jersey	366442	228.87	
+34023	Middlesex County	 New Jersey	811064	322.65	
+34025	Monmouth County	 New Jersey	629263	665.34	
+34027	Morris County	 New Jersey	493472	481.36	
+34029	Ocean County	 New Jersey	575961	915.9	
+34031	Passaic County	 New Jersey	500168	197.07	
+34033	Salem County	 New Jersey	66007	372.54	
+34035	Somerset County	 New Jersey	323650	305.07	
+34037	Sussex County	 New Jersey	148962	535.96	
+34039	Union County	 New Jersey	536383	105.46	
+34041	Warren County	 New Jersey	108488	362.78	
+35001	Bernalillo County	 New Mexico	661924	1168.77	
+35003	Catron County	 New Mexico	3686	6929.49	
+35005	Chaves County	 New Mexico	65343	6075.6	
+35006	Cibola County	 New Mexico	27293	4542.07	
+35007	Colfax County	 New Mexico	13614	3768.29	
+35009	Curry County	 New Mexico	48101	1407.78	
+35011	De Baca County	 New Mexico	2069	2334.02	
+35013	Do? Ana County	 New Mexico	208794	3814.88	
+35015	Eddy County	 New Mexico	53693	4197.8	
+35017	Grant County	 New Mexico	29602	3967.79	
+35019	Guadalupe County	 New Mexico	4655	3031.81	
+35021	Harding County	 New Mexico	612	2126.1	
+35023	Hidalgo County	 New Mexico	4903	3446.2	
+35025	Lea County	 New Mexico	64670	4394.33	
+35027	Lincoln County	 New Mexico	20440	4831.64	
+35028	Los Alamos County	 New Mexico	18008	109.35	
+35029	Luna County	 New Mexico	25162	2965.5	
+35031	McKinley County	 New Mexico	71888	5455.62	
+35033	Mora County	 New Mexico	4830	1933.6	
+35035	Otero County	 New Mexico	64176	6627.84	
+35037	Quay County	 New Mexico	8956	2881.98	
+35039	Rio Arriba County	 New Mexico	40201	5896.53	
+35041	Roosevelt County	 New Mexico	19840	2455.08	
+35043	Sandoval County	 New Mexico	131302	3714.65	
+35045	San Juan County	 New Mexico	128600	5538.71	
+35047	San Miguel County	 New Mexico	29225	4736	
+35049	Santa Fe County	 New Mexico	144209	1910.95	
+35051	Sierra County	 New Mexico	11956	4236.59	
+35053	Socorro County	 New Mexico	17843	6649.06	
+35055	Taos County	 New Mexico	32775	2204.77	
+35057	Torrance County	 New Mexico	16285	3346.1	
+35059	Union County	 New Mexico	4460	3831	
+35061	Valencia County	 New Mexico	76172	1068.29	
+36001	Albany County	 New York	304511	533.47	
+36003	Allegany County	 New York	48837	1034.48	
+36005	Bronx County	 New York	1386364	57.42	
+36007	Broome County	 New York	199928	715.5	
+36009	Cattaraugus County	 New York	80166	1322.33	
+36011	Cayuga County	 New York	79996	778.93	
+36013	Chautauqua County	 New York	134599	1500.19	
+36015	Chemung County	 New York	88779	410.81	
+36017	Chenango County	 New York	50490	898.76	
+36019	Clinton County	 New York	82054	1117.68	
+36021	Columbia County	 New York	62881	648.32	
+36023	Cortland County	 New York	49453	501.55	
+36025	Delaware County	 New York	47851	1468.11	
+36027	Dutchess County	 New York	297291	825.43	
+36029	Erie County	 New York	919542	1226.97	
+36031	Essex County	 New York	39309	1916.62	
+36033	Franklin County	 New York	51698	1697.54	
+36035	Fulton County	 New York	55358	532.94	
+36037	Genesee County	 New York	59992	495.37	
+36039	Greene County	 New York	49122	658.19	
+36041	Hamilton County	 New York	4835	1807.9	
+36043	Herkimer County	 New York	64475	1458.46	
+36045	Jefferson County	 New York	117011	1857.35	
+36047	Kings County	 New York	2512740	96.87	
+36049	Lewis County	 New York	27062	1289.99	
+36051	Livingston County	 New York	65215	640.49	
+36053	Madison County	 New York	72977	661.56	
+36055	Monroe County	 New York	744746	1365.95	
+36057	Montgomery County	 New York	50025	410.35	
+36059	Nassau County	 New York	1338712	453.32	
+36061	New York County	 New York	1596735	33.68	
+36063	Niagara County	 New York	215869	1139.89	
+36065	Oneida County	 New York	234336	1257.16	
+36067	Onondaga County	 New York	466179	805.73	
+36069	Ontario County	 New York	107728	662.46	
+36071	Orange County	 New York	372951	838.58	
+36073	Orleans County	 New York	42995	817.53	
+36075	Oswego County	 New York	122055	1312.22	
+36077	Otsego County	 New York	62147	1015.24	
+36079	Putnam County	 New York	99702	246.27	
+36081	Queens County	 New York	2235008	177.35	
+36083	Rensselaer County	 New York	159464	665.46	
+36085	Richmond County	 New York	468374	102.62	
+36087	Rockland County	 New York	312011	199.36	
+36089	St. Lawrence County	 New York	112060	2821.61	
+36091	Saratoga County	 New York	219832	843.78	
+36093	Schenectady County	 New York	154466	209.64	
+36095	Schoharie County	 New York	32617	626.18	
+36097	Schuyler County	 New York	18472	346.16	
+36099	Seneca County	 New York	35306	390.53	
+36101	Steuben County	 New York	98992	1404.17	
+36103	Suffolk County	 New York	1492360	2373.39	
+36105	Sullivan County	 New York	77340	996.93	
+36107	Tioga County	 New York	51067	522.94	
+36109	Tompkins County	 New York	101570	491.65	
+36111	Ulster County	 New York	182516	1160.82	
+36113	Warren County	 New York	65700	931.73	
+36115	Washington County	 New York	63108	845.91	
+36117	Wayne County	 New York	93476	1384.18	
+36119	Westchester County	 New York	950227	500.21	
+36121	Wyoming County	 New York	42092	596.48	
+36123	Yates County	 New York	25351	371.85	
+37001	Alamance County	 North Carolina	151170	434.8	
+37003	Alexander County	 North Carolina	37014	263.29	
+37005	Alleghany County	 North Carolina	11069	235.52	
+37007	Anson County	 North Carolina	26699	537.17	
+37009	Ashe County	 North Carolina	27099	426.81	
+37011	Avery County	 North Carolina	17815	247.22	
+37013	Beaufort County	 North Carolina	47542	958	
+37015	Bertie County	 North Carolina	21035	741.22	
+37017	Bladen County	 North Carolina	34922	887.15	
+37019	Brunswick County	 North Carolina	107925	1050.06	
+37021	Buncombe County	 North Carolina	239000	660.05	
+37023	Burke County	 North Carolina	90821	514.91	
+37025	Cabarrus County	 North Carolina	178396	365.02	
+37027	Caldwell County	 North Carolina	82493	474.32	
+37029	Camden County	 North Carolina	9965	305.72	
+37031	Carteret County	 North Carolina	66415	1351.57	
+37033	Caswell County	 North Carolina	23615	428.47	
+37035	Catawba County	 North Carolina	154201	413.52	
+37037	Chatham County	 North Carolina	63896	709.18	
+37039	Cherokee County	 North Carolina	27304	466.69	
+37041	Chowan County	 North Carolina	14825	233.32	
+37043	Clay County	 North Carolina	10575	220.6	
+37045	Cleveland County	 North Carolina	97890	468.31	
+37047	Columbus County	 North Carolina	57612	953.64	
+37049	Craven County	 North Carolina	102904	761.82	
+37051	Cumberland County	 North Carolina	319329	658.5	
+37053	Currituck County	 North Carolina	23677	525.68	
+37055	Dare County	 North Carolina	34019	1561.59	
+37057	Davidson County	 North Carolina	162628	566.81	
+37059	Davie County	 North Carolina	41183	266.89	
+37061	Duplin County	 North Carolina	58510	819.15	
+37063	Durham County	 North Carolina	269283	298.12	
+37065	Edgecombe County	 North Carolina	56253	506.61	
+37067	Forsyth County	 North Carolina	351368	412.91	
+37069	Franklin County	 North Carolina	60470	494.14	
+37071	Gaston County	 North Carolina	206291	363.85	
+37073	Gates County	 North Carolina	12069	345.63	
+37075	Graham County	 North Carolina	8766	301.61	
+37077	Granville County	 North Carolina	59666	536.6	
+37079	Greene County	 North Carolina	21386	265.91	
+37081	Guilford County	 North Carolina	489576	657.73	
+37083	Halifax County	 North Carolina	54693	730.97	
+37085	Harnett County	 North Carolina	115559	601.3	
+37087	Haywood County	 North Carolina	58915	554.85	
+37089	Henderson County	 North Carolina	106577	374.85	
+37091	Hertford County	 North Carolina	24525	360.83	
+37093	Hoke County	 North Carolina	47368	392.37	
+37095	Hyde County	 North Carolina	5810	1424	
+37097	Iredell County	 North Carolina	159614	593.42	
+37099	Jackson County	 North Carolina	39985	494.36	
+37101	Johnston County	 North Carolina	169122	795.9	
+37103	Jones County	 North Carolina	10144	474.74	
+37105	Lee County	 North Carolina	57876	259.36	
+37107	Lenoir County	 North Carolina	59372	402.11	
+37109	Lincoln County	 North Carolina	78052	307.06	
+37111	McDowell County	 North Carolina	44926	446.43	
+37113	Macon County	 North Carolina	33815	519.44	
+37115	Madison County	 North Carolina	20727	451.61	
+37117	Martin County	 North Carolina	24298	462.9	
+37119	Mecklenburg County	 North Carolina	926873	549.74	
+37121	Mitchell County	 North Carolina	15539	222.15	
+37123	Montgomery County	 North Carolina	27741	501.1	
+37125	Moore County	 North Carolina	88314	706.29	
+37127	Nash County	 North Carolina	95545	542.72	
+37129	New Hanover County	 North Carolina	203276	327.93	
+37131	Northampton County	 North Carolina	21959	550.26	
+37133	Onslow County	 North Carolina	176461	908.46	
+37135	Orange County	 North Carolina	133958	401.15	
+37137	Pamlico County	 North Carolina	13145	566.24	
+37139	Pasquotank County	 North Carolina	40551	289.45	
+37141	Pender County	 North Carolina	52447	932.69	
+37143	Perquimans County	 North Carolina	13414	328.95	
+37145	Person County	 North Carolina	39322	404.1	
+37147	Pitt County	 North Carolina	167951	654.81	
+37149	Polk County	 North Carolina	20386	238.58	
+37151	Randolph County	 North Carolina	141568	789.97	
+37153	Richmond County	 North Carolina	46608	479.64	
+37155	Robeson County	 North Carolina	133920	951.07	
+37157	Rockingham County	 North Carolina	93264	572.35	
+37159	Rowan County	 North Carolina	138189	523.89	
+37161	Rutherford County	 North Carolina	67446	565.98	
+37163	Sampson County	 North Carolina	63408	947.51	
+37165	Scotland County	 North Carolina	36266	320.65	
+37167	Stanly County	 North Carolina	60489	404.3	
+37169	Stokes County	 North Carolina	47224	455.9	
+37171	Surry County	 North Carolina	73551	537.81	
+37173	Swain County	 North Carolina	13995	540.65	
+37175	Transylvania County	 North Carolina	32825	380.57	
+37177	Tyrrell County	 North Carolina	4367	600.32	
+37179	Union County	 North Carolina	201617	639.64	
+37181	Vance County	 North Carolina	45183	269.85	
+37183	Wake County	 North Carolina	905573	857.5	
+37185	Warren County	 North Carolina	20860	443.83	
+37187	Washington County	 North Carolina	13085	424.26	
+37189	Watauga County	 North Carolina	51103	312.76	
+37191	Wayne County	 North Carolina	122419	556.72	
+37193	Wilkes County	 North Carolina	69265	759.96	
+37195	Wilson County	 North Carolina	81020	374.29	
+37197	Yadkin County	 North Carolina	38254	337.53	
+37199	Yancey County	 North Carolina	17814	313.13	
+38001	Adams County	 North Dakota	2325	988.89	
+38003	Barnes County	 North Dakota	11047	1513.34	
+38005	Benson County	 North Dakota	6677	1439.39	
+38007	Billings County	 North Dakota	838	1153.47	
+38009	Bottineau County	 North Dakota	6449	1697.83	
+38011	Bowman County	 North Dakota	3154	1167.03	
+38013	Burke County	 North Dakota	2011	1129.33	
+38015	Burleigh County	 North Dakota	81941	1668.12	
+38017	Cass County	 North Dakota	150240	1768	
+38019	Cavalier County	 North Dakota	3974	1510.22	
+38021	Dickey County	 North Dakota	5280	1141.76	
+38023	Divide County	 North Dakota	2095	1294.24	
+38025	Dunn County	 North Dakota	3648	2082.38	
+38027	Eddy County	 North Dakota	2393	644.26	
+38029	Emmons County	 North Dakota	3544	1554.82	
+38031	Foster County	 North Dakota	3368	646.75	
+38033	Golden Valley County	 North Dakota	1646	1002.4	
+38035	Grand Forks County	 North Dakota	66890	1439.91	
+38037	Grant County	 North Dakota	2380	1666.02	
+38039	Griggs County	 North Dakota	2393	716.21	
+38041	Hettinger County	 North Dakota	2502	1133.78	
+38043	Kidder County	 North Dakota	2426	1433.3	
+38045	LaMoure County	 North Dakota	4141	1150.86	
+38047	Logan County	 North Dakota	1972	1011.14	
+38049	McHenry County	 North Dakota	5478	1911.83	
+38051	McIntosh County	 North Dakota	2813	995.12	
+38053	McKenzie County	 North Dakota	6692	2861.05	
+38055	McLean County	 North Dakota	9020	2328.27	
+38057	Mercer County	 North Dakota	8400	1112.49	
+38059	Morton County	 North Dakota	27439	1945.39	
+38061	Mountrail County	 North Dakota	7830	1941.16	
+38063	Nelson County	 North Dakota	3115	1008.8	
+38065	Oliver County	 North Dakota	1875	731.23	
+38067	Pembina County	 North Dakota	7383	1121.78	
+38069	Pierce County	 North Dakota	4378	1082.26	
+38071	Ramsey County	 North Dakota	11450	1300.93	
+38073	Ransom County	 North Dakota	5498	864.18	
+38075	Renville County	 North Dakota	2468	892.11	
+38077	Richland County	 North Dakota	16295	1445.8	
+38079	Rolette County	 North Dakota	14015	939.4	
+38081	Sargent County	 North Dakota	3876	867.15	
+38083	Sheridan County	 North Dakota	1282	1005.83	
+38085	Sioux County	 North Dakota	4193	1128.37	
+38087	Slope County	 North Dakota	768	1219.27	
+38089	Stark County	 North Dakota	24682	1340.55	
+38091	Steele County	 North Dakota	1976	715.54	
+38093	Stutsman County	 North Dakota	20965	2298.36	
+38095	Towner County	 North Dakota	2264	1041.61	
+38097	Traill County	 North Dakota	8105	862.59	
+38099	Walsh County	 North Dakota	11131	1294.17	
+38101	Ward County	 North Dakota	62013	2056.36	
+38103	Wells County	 North Dakota	4228	1290.7	
+38105	Williams County	 North Dakota	23287	2148.08	
+39001	Adams County	 Ohio	28524	585.83	
+39003	Allen County	 Ohio	106079	406.92	
+39005	Ashland County	 Ohio	53203	426.86	
+39007	Ashtabula County	 Ohio	101262	1368.76	
+39009	Athens County	 Ohio	64592	508.58	
+39011	Auglaize County	 Ohio	45934	401.74	
+39013	Belmont County	 Ohio	70182	541.41	
+39015	Brown County	 Ohio	44666	495.26	
+39017	Butler County	 Ohio	368029	470.24	
+39019	Carroll County	 Ohio	28828	399.02	
+39021	Champaign County	 Ohio	39982	429.74	
+39023	Clark County	 Ohio	138278	403.83	
+39025	Clermont County	 Ohio	197543	457.74	
+39027	Clinton County	 Ohio	42161	412.31	
+39029	Columbiana County	 Ohio	107598	535.22	
+39031	Coshocton County	 Ohio	36880	567.61	
+39033	Crawford County	 Ohio	43623	402.85	
+39035	Cuyahoga County	 Ohio	1278024	1245.62	
+39037	Darke County	 Ohio	52776	600.38	
+39039	Defiance County	 Ohio	38975	414.21	
+39041	Delaware County	 Ohio	174454	455.99	
+39043	Erie County	 Ohio	76952	625.78	
+39045	Fairfield County	 Ohio	146138	508.58	
+39047	Fayette County	 Ohio	28931	407.11	
+39049	Franklin County	 Ohio	1167484	543.35	
+39051	Fulton County	 Ohio	42635	407.36	
+39053	Gallia County	 Ohio	30877	471.16	
+39055	Geauga County	 Ohio	93485	408.71	
+39057	Greene County	 Ohio	161936	416.24	
+39059	Guernsey County	 Ohio	40056	528.33	
+39061	Hamilton County	 Ohio	801350	412.81	
+39063	Hancock County	 Ohio	75043	533.64	
+39065	Hardin County	 Ohio	31986	470.55	
+39067	Harrison County	 Ohio	15818	410.81	
+39069	Henry County	 Ohio	28246	420	
+39071	Highland County	 Ohio	43454	557.89	
+39073	Hocking County	 Ohio	29372	423.62	
+39075	Holmes County	 Ohio	42501	424.04	
+39077	Huron County	 Ohio	59628	494.94	
+39079	Jackson County	 Ohio	33134	421.52	
+39081	Jefferson County	 Ohio	69343	410.89	
+39083	Knox County	 Ohio	60791	529.56	
+39085	Lake County	 Ohio	229873	979.02	
+39087	Lawrence County	 Ohio	62441	457.3	
+39089	Licking County	 Ohio	166135	688.39	
+39091	Logan County	 Ohio	45816	466.81	
+39093	Lorain County	 Ohio	301108	923.09	
+39095	Lucas County	 Ohio	441198	560.64	
+39097	Madison County	 Ohio	43213	465.97	
+39099	Mahoning County	 Ohio	238352	423.4	
+39101	Marion County	 Ohio	66514	404.17	
+39103	Medina County	 Ohio	172334	423.13	
+39105	Meigs County	 Ohio	23664	432.41	
+39107	Mercer County	 Ohio	40866	473.32	
+39109	Miami County	 Ohio	102657	409.19	
+39111	Monroe County	 Ohio	14679	457.48	
+39113	Montgomery County	 Ohio	535626	464.39	
+39115	Morgan County	 Ohio	15042	421.88	
+39117	Morrow County	 Ohio	34895	407.38	
+39119	Muskingum County	 Ohio	85996	672.61	
+39121	Noble County	 Ohio	14643	404.6	
+39123	Ottawa County	 Ohio	41445	620.41	
+39125	Paulding County	 Ohio	19522	418.92	
+39127	Perry County	 Ohio	36086	412.62	
+39129	Pickaway County	 Ohio	55795	506.84	
+39131	Pike County	 Ohio	28652	443.98	
+39133	Portage County	 Ohio	161178	507.14	
+39135	Preble County	 Ohio	42240	426.35	
+39137	Putnam County	 Ohio	34445	484.28	
+39139	Richland County	 Ohio	124286	500.36	
+39141	Ross County	 Ohio	77741	693	
+39143	Sandusky County	 Ohio	60842	417.8	
+39145	Scioto County	 Ohio	79122	616.12	
+39147	Seneca County	 Ohio	56630	552.41	
+39149	Shelby County	 Ohio	49359	411.06	
+39151	Stark County	 Ohio	375593	580.94	
+39153	Summit County	 Ohio	541788	420.1	
+39155	Trumbull County	 Ohio	209942	634.08	
+39157	Tuscarawas County	 Ohio	92532	571.53	
+39159	Union County	 Ohio	52153	437	
+39161	Van Wert County	 Ohio	28808	410.51	
+39163	Vinton County	 Ohio	13397	414.99	
+39165	Warren County	 Ohio	213146	407.14	
+39167	Washington County	 Ohio	61751	640.18	
+39169	Wayne County	 Ohio	114644	556.34	
+39171	Williams County	 Ohio	37779	423.08	
+39173	Wood County	 Ohio	126254	620.58	
+39175	Wyandot County	 Ohio	22626	407.65	
+40001	Adair County	 Oklahoma	22470	577.06	
+40003	Alfalfa County	 Oklahoma	5631	881.5	
+40005	Atoka County	 Oklahoma	14133	990.05	
+40007	Beaver County	 Oklahoma	5587	1817.68	
+40009	Beckham County	 Oklahoma	22519	904.19	
+40011	Blaine County	 Oklahoma	10651	938.94	
+40013	Bryan County	 Oklahoma	42494	943.49	
+40015	Caddo County	 Oklahoma	29403	1290.41	
+40017	Canadian County	 Oklahoma	116299	905.25	
+40019	Carter County	 Oklahoma	47603	833.78	
+40021	Cherokee County	 Oklahoma	47165	776.45	
+40023	Choctaw County	 Oklahoma	15172	800.72	
+40025	Cimarron County	 Oklahoma	2451	1841.27	
+40027	Cleveland County	 Oklahoma	256550	558.39	
+40029	Coal County	 Oklahoma	5906	521.32	
+40031	Comanche County	 Oklahoma	123101	1083.91	
+40033	Cotton County	 Oklahoma	6171	641.99	
+40035	Craig County	 Oklahoma	14922	762.78	
+40037	Creek County	 Oklahoma	69934	969.82	
+40039	Custer County	 Oklahoma	27583	1002.07	
+40041	Delaware County	 Oklahoma	41332	792.37	
+40043	Dewey County	 Oklahoma	4775	1008.34	
+40045	Ellis County	 Oklahoma	4095	1231.94	
+40047	Garfield County	 Oklahoma	60272	1060	
+40049	Garvin County	 Oklahoma	27471	813.73	
+40051	Grady County	 Oklahoma	52451	1105.38	
+40053	Grant County	 Oklahoma	4536	1003.67	
+40055	Greer County	 Oklahoma	6185	643.71	
+40057	Harmon County	 Oklahoma	2888	538.6	
+40059	Harper County	 Oklahoma	3672	1041.02	
+40061	Haskell County	 Oklahoma	12761	625.29	
+40063	Hughes County	 Oklahoma	13762	814.69	
+40065	Jackson County	 Oklahoma	26275	804.22	
+40067	Jefferson County	 Oklahoma	6445	773.88	
+40069	Johnston County	 Oklahoma	10938	658.33	
+40071	Kay County	 Oklahoma	46288	945.2	
+40073	Kingfisher County	 Oklahoma	14965	906.03	
+40075	Kiowa County	 Oklahoma	9421	1030.74	
+40077	Latimer County	 Oklahoma	11099	729.16	
+40079	Le Flore County	 Oklahoma	50056	1608.14	
+40081	Lincoln County	 Oklahoma	34106	965.68	
+40083	Logan County	 Oklahoma	41982	748.98	
+40085	Love County	 Oklahoma	9404	531.99	
+40087	McClain County	 Oklahoma	34471	580.18	
+40089	McCurtain County	 Oklahoma	33144	1901.45	
+40091	McIntosh County	 Oklahoma	20266	712.49	
+40093	Major County	 Oklahoma	7563	957.92	
+40095	Marshall County	 Oklahoma	15774	426.98	
+40097	Mayes County	 Oklahoma	41162	683.55	
+40099	Murray County	 Oklahoma	13460	424.95	
+40101	Muskogee County	 Oklahoma	70635	839.01	
+40103	Noble County	 Oklahoma	11540	742.5	
+40105	Nowata County	 Oklahoma	10627	580.93	
+40107	Okfuskee County	 Oklahoma	12203	628.94	
+40109	Oklahoma County	 Oklahoma	721088	718.38	
+40111	Okmulgee County	 Oklahoma	39770	702.36	
+40113	Osage County	 Oklahoma	47650	2303.94	
+40115	Ottawa County	 Oklahoma	31940	484.77	
+40117	Pawnee County	 Oklahoma	16573	594.92	
+40119	Payne County	 Oklahoma	77125	697.18	
+40121	Pittsburg County	 Oklahoma	45570	1377.92	
+40123	Pontotoc County	 Oklahoma	37438	725.5	
+40125	Pottawatomie County	 Oklahoma	69676	793.39	
+40127	Pushmataha County	 Oklahoma	11449	1422.86	
+40129	Roger Mills County	 Oklahoma	3678	1146.53	
+40131	Rogers County	 Oklahoma	87031	711.49	
+40133	Seminole County	 Oklahoma	25394	640.55	
+40135	Sequoyah County	 Oklahoma	41945	714.93	
+40137	Stephens County	 Oklahoma	44848	891.19	
+40139	Texas County	 Oklahoma	20620	2048.97	
+40141	Tillman County	 Oklahoma	7981	879.29	
+40143	Tulsa County	 Oklahoma	602692	587.05	
+40145	Wagoner County	 Oklahoma	73067	591.01	
+40147	Washington County	 Oklahoma	51112	424.19	
+40149	Washita County	 Oklahoma	11616	1009.14	
+40151	Woods County	 Oklahoma	8741	1290.14	
+40153	Woodward County	 Oklahoma	20232	1246.09	
+41001	Baker County	 Oregon	16092	3088.61	
+41003	Benton County	 Oregon	85501	679.01	
+41005	Clackamas County	 Oregon	377206	1879.13	
+41007	Clatsop County	 Oregon	37068	1084.8	
+41009	Columbia County	 Oregon	49317	688.37	
+41011	Coos County	 Oregon	62937	1806.45	
+41013	Crook County	 Oregon	21102	2987.55	
+41015	Curry County	 Oregon	22344	1988.64	
+41017	Deschutes County	 Oregon	158884	3054.96	
+41019	Douglas County	 Oregon	107391	5134.06	
+41021	Gilliam County	 Oregon	1904	1222.91	
+41023	Grant County	 Oregon	7366	4529.53	
+41025	Harney County	 Oregon	7359	10227.05	
+41027	Hood River County	 Oregon	22207	533.6	
+41029	Jackson County	 Oregon	203613	2801.94	
+41031	Jefferson County	 Oregon	21746	1791.27	
+41033	Josephine County	 Oregon	82636	1641.66	
+41035	Klamath County	 Oregon	66350	6136.19	
+41037	Lake County	 Oregon	7886	8359.03	
+41039	Lane County	 Oregon	351794	4721.95	
+41041	Lincoln County	 Oregon	45992	1193.89	
+41043	Linn County	 Oregon	116871	2309.3	
+41045	Malheur County	 Oregon	31057	9930.51	
+41047	Marion County	 Oregon	315391	1195.2	
+41049	Morrow County	 Oregon	11146	2048.68	
+41051	Multnomah County	 Oregon	737110	465.7	
+41053	Polk County	 Oregon	75448	744.21	
+41055	Sherman County	 Oregon	1865	831.29	
+41057	Tillamook County	 Oregon	25254	1332.86	
+41059	Umatilla County	 Oregon	75846	3231.34	
+41061	Union County	 Oregon	25670	2038.4	
+41063	Wallowa County	 Oregon	6938	3151.78	
+41065	Wasco County	 Oregon	25113	2395.46	
+41067	Washington County	 Oregon	531818	726.43	
+41069	Wheeler County	 Oregon	1287	1715.55	
+41071	Yamhill County	 Oregon	99119	718.41	
+42001	Adams County	 Pennsylvania	101352	521.56	
+42003	Allegheny County	 Pennsylvania	1224772	744.73	
+42005	Armstrong County	 Pennsylvania	68942	664.48	
+42007	Beaver County	 Pennsylvania	170614	443.94	
+42009	Bedford County	 Pennsylvania	49680	1017.49	
+42011	Berks County	 Pennsylvania	411094	865.68	
+42013	Blair County	 Pennsylvania	127133	527.17	
+42015	Bradford County	 Pennsylvania	62628	1161.09	
+42017	Bucks County	 Pennsylvania	625485	622.15	
+42019	Butler County	 Pennsylvania	183946	794.85	
+42021	Cambria County	 Pennsylvania	143305	693.48	
+42023	Cameron County	 Pennsylvania	5058	398.61	
+42025	Carbon County	 Pennsylvania	65101	388.79	
+42027	Centre County	 Pennsylvania	153758	1111.93	
+42029	Chester County	 Pennsylvania	499548	759.86	
+42031	Clarion County	 Pennsylvania	39991	608.99	
+42033	Clearfield County	 Pennsylvania	81668	1153.87	
+42035	Clinton County	 Pennsylvania	39261	898.12	
+42037	Columbia County	 Pennsylvania	66984	489.81	
+42039	Crawford County	 Pennsylvania	88492	1037.82	
+42041	Cumberland County	 Pennsylvania	235314	551.2	
+42043	Dauphin County	 Pennsylvania	267891	557.57	
+42045	Delaware County	 Pennsylvania	558874	190.77	
+42047	Elk County	 Pennsylvania	31981	832.27	
+42049	Erie County	 Pennsylvania	280181	1558.49	
+42051	Fayette County	 Pennsylvania	136914	797.99	
+42053	Forest County	 Pennsylvania	7664	431.42	
+42055	Franklin County	 Pennsylvania	149554	772.69	
+42057	Fulton County	 Pennsylvania	14829	438.06	
+42059	Greene County	 Pennsylvania	38614	577.99	
+42061	Huntingdon County	 Pennsylvania	45931	890.3	
+42063	Indiana County	 Pennsylvania	88648	834.35	
+42065	Jefferson County	 Pennsylvania	45051	656.91	
+42067	Juniata County	 Pennsylvania	24664	393.61	
+42069	Lackawanna County	 Pennsylvania	214353	464.57	
+42071	Lancaster County	 Pennsylvania	519913	983.9	
+42073	Lawrence County	 Pennsylvania	90885	362.78	
+42075	Lebanon County	 Pennsylvania	133578	362.61	
+42077	Lehigh County	 Pennsylvania	350165	348.33	
+42079	Luzerne County	 Pennsylvania	320555	907.14	
+42081	Lycoming County	 Pennsylvania	116447	1243.84	
+42083	McKean County	 Pennsylvania	43451	984.22	
+42085	Mercer County	 Pennsylvania	116474	682.62	
+42087	Mifflin County	 Pennsylvania	46694	413.46	
+42089	Monroe County	 Pennsylvania	169346	616.05	
+42091	Montgomery County	 Pennsylvania	799886	487.47	
+42093	Montour County	 Pennsylvania	18243	132.3	
+42095	Northampton County	 Pennsylvania	297519	377.41	
+42097	Northumberland County	 Pennsylvania	94441	477.4	
+42099	Perry County	 Pennsylvania	45791	555.81	
+42101	Philadelphia County	 Pennsylvania	1525811	142.68	
+42103	Pike County	 Pennsylvania	57437	566.66	
+42105	Potter County	 Pennsylvania	17466	1081.47	
+42107	Schuylkill County	 Pennsylvania	147935	782.63	
+42109	Snyder County	 Pennsylvania	39620	332.18	
+42111	Somerset County	 Pennsylvania	77638	1081.26	
+42113	Sullivan County	 Pennsylvania	6453	452.37	
+42115	Susquehanna County	 Pennsylvania	43171	832.44	
+42117	Tioga County	 Pennsylvania	42081	1137.35	
+42119	Union County	 Pennsylvania	44944	317.15	
+42121	Venango County	 Pennsylvania	54865	683.08	
+42123	Warren County	 Pennsylvania	41613	897.83	
+42125	Washington County	 Pennsylvania	207916	861	
+42127	Wayne County	 Pennsylvania	52299	750.59	
+42129	Westmoreland County	 Pennsylvania	364877	1036.46	
+42131	Wyoming County	 Pennsylvania	28221	404.82	
+42133	York County	 Pennsylvania	434579	910.34	
+44001	Bristol County	 Rhode Island	49796	44.71	
+44003	Kent County	 Rhode Island	166066	188.01	
+44005	Newport County	 Rhode Island	82503	313.65	
+44007	Providence County	 Rhode Island	627414	435.85	
+44009	Washington County	 Rhode Island	126692	562.9	
+45001	Abbeville County	 South Carolina	25387	511.1	
+45003	Aiken County	 South Carolina	160169	1080.53	
+45005	Allendale County	 South Carolina	10399	412.59	
+45007	Anderson County	 South Carolina	187228	757.47	
+45009	Bamberg County	 South Carolina	15941	395.49	
+45011	Barnwell County	 South Carolina	22523	557.29	
+45013	Beaufort County	 South Carolina	162316	923	
+45015	Berkeley County	 South Carolina	179773	1229.23	
+45017	Calhoun County	 South Carolina	15134	392.36	
+45019	Charleston County	 South Carolina	352548	1357.14	
+45021	Cherokee County	 South Carolina	55351	397.3	
+45023	Chester County	 South Carolina	33028	586.19	
+45025	Chesterfield County	 South Carolina	46462	805.84	
+45027	Clarendon County	 South Carolina	34746	695.71	
+45029	Colleton County	 South Carolina	38665	1132.05	
+45031	Darlington County	 South Carolina	68500	567.55	
+45033	Dillon County	 South Carolina	31733	406.56	
+45035	Dorchester County	 South Carolina	136836	576.74	
+45037	Edgefield County	 South Carolina	26763	506.56	
+45039	Fairfield County	 South Carolina	23804	709.98	
+45041	Florence County	 South Carolina	136714	803.05	
+45043	Georgetown County	 South Carolina	60285	1035.09	
+45045	Greenville County	 South Carolina	452931	797.01	
+45047	Greenwood County	 South Carolina	69531	462.95	
+45049	Hampton County	 South Carolina	20987	562.72	
+45051	Horry County	 South Carolina	270943	1255	
+45053	Jasper County	 South Carolina	24792	685.84	
+45055	Kershaw County	 South Carolina	61583	740.31	
+45057	Lancaster County	 South Carolina	76364	555.32	
+45059	Laurens County	 South Carolina	66623	722.02	
+45061	Lee County	 South Carolina	19160	411.33	
+45063	Lexington County	 South Carolina	262424	759.49	
+45065	McCormick County	 South Carolina	10140	393.89	
+45067	Marion County	 South Carolina	33038	494.11	
+45069	Marlboro County	 South Carolina	28750	485.3	
+45071	Newberry County	 South Carolina	37432	647.32	
+45073	Oconee County	 South Carolina	74038	673.63	
+45075	Orangeburg County	 South Carolina	92229	1127.83	
+45077	Pickens County	 South Carolina	119167	511.87	
+45079	Richland County	 South Carolina	384596	771.74	
+45081	Saluda County	 South Carolina	19758	460.64	
+45083	Spartanburg County	 South Carolina	284540	819.21	
+45085	Sumter County	 South Carolina	107279	682.08	
+45087	Union County	 South Carolina	28804	515.96	
+45089	Williamsburg County	 South Carolina	34361	936.97	
+45091	York County	 South Carolina	226576	695.77	
+46003	Aurora County	 South Dakota	2726	712.58	
+46005	Beadle County	 South Dakota	17372	1264.93	
+46007	Bennett County	 South Dakota	3432	1190.7	
+46009	Bon Homme County	 South Dakota	7041	581.37	
+46011	Brookings County	 South Dakota	31973	804.82	
+46013	Brown County	 South Dakota	36562	1731.36	
+46015	Brule County	 South Dakota	5236	846.56	
+46017	Buffalo County	 South Dakota	1950	487.46	
+46019	Butte County	 South Dakota	10122	2266.43	
+46021	Campbell County	 South Dakota	1419	771.39	
+46023	Charles Mix County	 South Dakota	9127	1150.27	
+46025	Clark County	 South Dakota	3653	967.88	
+46027	Clay County	 South Dakota	13966	416.73	
+46029	Codington County	 South Dakota	27284	717.13	
+46031	Corson County	 South Dakota	4046	2529.52	
+46033	Custer County	 South Dakota	8219	1559.22	
+46035	Davison County	 South Dakota	19513	436.81	
+46037	Day County	 South Dakota	5673	1091.29	
+46039	Deuel County	 South Dakota	4376	636.75	
+46041	Dewey County	 South Dakota	5358	2445.83	
+46043	Douglas County	 South Dakota	2992	434.16	
+46045	Edmunds County	 South Dakota	4050	1151.23	
+46047	Fall River County	 South Dakota	7028	1749.24	
+46049	Faulk County	 South Dakota	2374	1005.77	
+46051	Grant County	 South Dakota	7324	687.95	
+46053	Gregory County	 South Dakota	4251	1053.51	
+46055	Haakon County	 South Dakota	1852	1827.37	
+46057	Hamlin County	 South Dakota	5875	537.99	
+46059	Hand County	 South Dakota	3394	1440.34	
+46061	Hanson County	 South Dakota	3366	435.67	
+46063	Harding County	 South Dakota	1367	2677.64	
+46065	Hughes County	 South Dakota	17064	800.35	
+46067	Hutchinson County	 South Dakota	7283	814.45	
+46069	Hyde County	 South Dakota	1437	866.66	
+46071	Jackson County	 South Dakota	3067	1871.41	
+46073	Jerauld County	 South Dakota	2047	532.67	
+46075	Jones County	 South Dakota	1084	971.75	
+46077	Kingsbury County	 South Dakota	5159	863.73	
+46079	Lake County	 South Dakota	11364	575.1	
+46081	Lawrence County	 South Dakota	24063	800.34	
+46083	Lincoln County	 South Dakota	45055	578.64	
+46085	Lyman County	 South Dakota	3752	1707.18	
+46087	McCook County	 South Dakota	5592	577.21	
+46089	McPherson County	 South Dakota	2485	1151.92	
+46091	Marshall County	 South Dakota	4631	885.67	
+46093	Meade County	 South Dakota	25456	3482.67	
+46095	Mellette County	 South Dakota	2057	1309.87	
+46097	Miner County	 South Dakota	2365	572.03	
+46099	Minnehaha County	 South Dakota	170342	813.74	
+46101	Moody County	 South Dakota	6474	521.13	
+46103	Pennington County	 South Dakota	101240	2784.46	
+46105	Perkins County	 South Dakota	2890	2890.85	
+46107	Potter County	 South Dakota	2327	898.47	
+46109	Roberts County	 South Dakota	10158	1135.42	
+46111	Sanborn County	 South Dakota	2357	570.25	
+46113	Shannon County	 South Dakota	13683	2096.72	
+46115	Spink County	 South Dakota	6483	1510.18	
+46117	Stanley County	 South Dakota	2940	1517.06	
+46119	Sully County	 South Dakota	1382	1070.42	
+46121	Todd County	 South Dakota	9711	1391	
+46123	Tripp County	 South Dakota	5608	1617.51	
+46125	Turner County	 South Dakota	8344	617.5	
+46127	Union County	 South Dakota	14377	467.11	
+46129	Walworth County	 South Dakota	5443	744.25	
+46135	Yankton County	 South Dakota	22434	532.66	
+46137	Ziebach County	 South Dakota	2796	1971.21	
+47001	Anderson County	 Tennessee	75039	344.83	
+47003	Bedford County	 Tennessee	45060	474.89	
+47005	Benton County	 Tennessee	16420	436.23	
+47007	Bledsoe County	 Tennessee	12898	406.73	
+47009	Blount County	 Tennessee	123086	566.66	
+47011	Bradley County	 Tennessee	99229	331.52	
+47013	Campbell County	 Tennessee	40629	498.27	
+47015	Cannon County	 Tennessee	13797	265.73	
+47017	Carroll County	 Tennessee	28486	599.89	
+47019	Carter County	 Tennessee	57531	347.64	
+47021	Cheatham County	 Tennessee	39103	307.16	
+47023	Chester County	 Tennessee	17043	288.76	
+47025	Claiborne County	 Tennessee	32025	441.56	
+47027	Clay County	 Tennessee	7842	259.26	
+47029	Cocke County	 Tennessee	35631	443.17	
+47031	Coffee County	 Tennessee	52853	434.49	
+47033	Crockett County	 Tennessee	14567	265.49	
+47035	Cumberland County	 Tennessee	56144	684.97	
+47037	Davidson County	 Tennessee	629113	526.16	
+47039	Decatur County	 Tennessee	11732	344.93	
+47041	DeKalb County	 Tennessee	18770	329	
+47043	Dickson County	 Tennessee	49704	491.34	
+47045	Dyer County	 Tennessee	38234	526.52	
+47047	Fayette County	 Tennessee	38370	706.27	
+47049	Fentress County	 Tennessee	17945	499	
+47051	Franklin County	 Tennessee	40972	574.37	
+47053	Gibson County	 Tennessee	49594	603.64	
+47055	Giles County	 Tennessee	29439	611.22	
+47057	Grainger County	 Tennessee	22613	302.46	
+47059	Greene County	 Tennessee	68755	624.27	
+47061	Grundy County	 Tennessee	13751	361.17	
+47063	Hamblen County	 Tennessee	62528	175.78	
+47065	Hamilton County	 Tennessee	337023	575.76	
+47067	Hancock County	 Tennessee	6759	223.51	
+47069	Hardeman County	 Tennessee	27193	670.44	
+47071	Hardin County	 Tennessee	25987	596.36	
+47073	Hawkins County	 Tennessee	56725	499.66	
+47075	Haywood County	 Tennessee	18673	534.19	
+47077	Henderson County	 Tennessee	27835	525.95	
+47079	Henry County	 Tennessee	32271	593.49	
+47081	Hickman County	 Tennessee	24481	612.75	
+47083	Houston County	 Tennessee	8375	206.94	
+47085	Humphreys County	 Tennessee	18428	556.75	
+47087	Jackson County	 Tennessee	11526	319.57	
+47089	Jefferson County	 Tennessee	51541	314.34	
+47091	Johnson County	 Tennessee	18199	302.76	
+47093	Knox County	 Tennessee	433207	525.81	
+47095	Lake County	 Tennessee	7780	193.81	
+47097	Lauderdale County	 Tennessee	27772	507.17	
+47099	Lawrence County	 Tennessee	41779	617.96	
+47101	Lewis County	 Tennessee	12050	282.5	
+47103	Lincoln County	 Tennessee	33295	570.68	
+47105	Loudon County	 Tennessee	48586	247.04	
+47107	McMinn County	 Tennessee	52325	432.24	
+47109	McNairy County	 Tennessee	26001	560.87	
+47111	Macon County	 Tennessee	22265	307.2	
+47113	Madison County	 Tennessee	97976	558.68	
+47115	Marion County	 Tennessee	28184	513.8	
+47117	Marshall County	 Tennessee	30585	376.13	
+47119	Maury County	 Tennessee	80965	615.57	
+47121	Meigs County	 Tennessee	11696	216.79	
+47123	Monroe County	 Tennessee	44680	652.88	
+47125	Montgomery County	 Tennessee	173138	543.87	
+47127	Moore County	 Tennessee	6349	130.38	
+47129	Morgan County	 Tennessee	21882	522.41	
+47131	Obion County	 Tennessee	31721	555.38	
+47133	Overton County	 Tennessee	22040	434.83	
+47135	Perry County	 Tennessee	7856	422.93	
+47137	Pickett County	 Tennessee	5108	174.58	
+47139	Polk County	 Tennessee	16756	442.39	
+47141	Putnam County	 Tennessee	72172	402.44	
+47143	Rhea County	 Tennessee	31817	336.4	
+47145	Roane County	 Tennessee	54027	394.99	
+47147	Robertson County	 Tennessee	66143	476.72	
+47149	Rutherford County	 Tennessee	263815	624	
+47151	Scott County	 Tennessee	22196	533.25	
+47153	Sequatchie County	 Tennessee	14173	266.04	
+47155	Sevier County	 Tennessee	90218	597.77	
+47157	Shelby County	 Tennessee	929437	783.69	
+47159	Smith County	 Tennessee	19157	325.38	
+47161	Stewart County	 Tennessee	13262	493.22	
+47163	Sullivan County	 Tennessee	156675	429.71	
+47165	Sumner County	 Tennessee	161206	543.16	
+47167	Tipton County	 Tennessee	61038	474.76	
+47169	Trousdale County	 Tennessee	7827	116.65	
+47171	Unicoi County	 Tennessee	18287	186.49	
+47173	Union County	 Tennessee	19179	247.14	
+47175	Van Buren County	 Tennessee	5552	274.61	
+47177	Warren County	 Tennessee	39767	434.12	
+47179	Washington County	 Tennessee	122840	329.71	
+47181	Wayne County	 Tennessee	17015	735.65	
+47183	Weakley County	 Tennessee	34802	581.85	
+47185	White County	 Tennessee	25863	379.55	
+47187	Williamson County	 Tennessee	184225	583.67	
+47189	Wilson County	 Tennessee	114618	583.27	
+48001	Anderson County	 Texas	58269	1078.05	
+48003	Andrews County	 Texas	15006	1501.09	
+48005	Angelina County	 Texas	86550	864.51	
+48007	Aransas County	 Texas	23391	528.01	
+48009	Archer County	 Texas	8944	925.85	
+48011	Armstrong County	 Texas	1820	913.85	
+48013	Atascosa County	 Texas	45091	1235.73	
+48015	Austin County	 Texas	28372	656.44	
+48017	Bailey County	 Texas	7096	827.43	
+48019	Bandera County	 Texas	20477	797.6	
+48021	Bastrop County	 Texas	74023	895.99	
+48023	Baylor County	 Texas	3706	901.08	
+48025	Bee County	 Texas	32083	880.39	
+48027	Bell County	 Texas	310155	1087.19	
+48029	Bexar County	 Texas	1719902	1256.76	
+48031	Blanco County	 Texas	10425	713.46	
+48033	Borden County	 Texas	642	906.11	
+48035	Bosque County	 Texas	18114	1002.72	
+48037	Bowie County	 Texas	92460	922.83	
+48039	Brazoria County	 Texas	313813	1597.54	
+48041	Brazos County	 Texas	194087	590.35	
+48043	Brewster County	 Texas	9175	6193.22	
+48045	Briscoe County	 Texas	1674	901.64	
+48047	Brooks County	 Texas	7236	943.67	
+48049	Brown County	 Texas	38018	957.03	
+48051	Burleson County	 Texas	17160	677.83	
+48053	Burnet County	 Texas	42946	1020.18	
+48055	Caldwell County	 Texas	38152	547.46	
+48057	Calhoun County	 Texas	21366	1032.24	
+48059	Callahan County	 Texas	13521	901.34	
+48061	Cameron County	 Texas	405819	1276.42	
+48063	Camp County	 Texas	12389	203.21	
+48065	Carson County	 Texas	6215	924.15	
+48067	Cass County	 Texas	30324	960.41	
+48069	Castro County	 Texas	7984	899.39	
+48071	Chambers County	 Texas	34562	868.59	
+48073	Cherokee County	 Texas	50690	1062.02	
+48075	Childress County	 Texas	7047	713.66	
+48077	Clay County	 Texas	10718	1116.23	
+48079	Cochran County	 Texas	3087	775.34	
+48081	Coke County	 Texas	3298	928.07	
+48083	Coleman County	 Texas	8817	1281.55	
+48085	Collin County	 Texas	788580	885.91	
+48087	Collingsworth County	 Texas	3050	919.48	
+48089	Colorado County	 Texas	20784	973.68	
+48091	Comal County	 Texas	108985	574.65	
+48093	Comanche County	 Texas	13875	947.74	
+48095	Concho County	 Texas	4073	993.75	
+48097	Cooke County	 Texas	38427	898.87	
+48099	Coryell County	 Texas	75728	1056.81	
+48101	Cottle County	 Texas	1600	901.66	
+48103	Crane County	 Texas	4359	785.65	
+48105	Crockett County	 Texas	3669	2807.66	
+48107	Crosby County	 Texas	6100	901.74	
+48109	Culberson County	 Texas	2386	3812.94	
+48111	Dallam County	 Texas	6734	1505.37	
+48113	Dallas County	 Texas	2379214	908.87	
+48115	Dawson County	 Texas	13761	902.16	
+48117	Deaf Smith County	 Texas	19275	1498.36	
+48119	Delta County	 Texas	5240	277.94	
+48121	Denton County	 Texas	667934	957.72	
+48123	DeWitt County	 Texas	20156	910.55	
+48125	Dickens County	 Texas	2399	905.26	
+48127	Dimmit County	 Texas	10054	1334.58	
+48129	Donley County	 Texas	3652	933.09	
+48131	Duval County	 Texas	11821	1795.82	
+48133	Eastland County	 Texas	18519	931.98	
+48135	Ector County	 Texas	138193	901.76	
+48137	Edwards County	 Texas	2023	2120.13	
+48139	Ellis County	 Texas	149712	951.73	
+48141	El Paso County	 Texas	801115	1014.75	
+48143	Erath County	 Texas	38192	1089.88	
+48145	Falls County	 Texas	17756	773.86	
+48147	Fannin County	 Texas	33867	899.23	
+48149	Fayette County	 Texas	24557	959.92	
+48151	Fisher County	 Texas	3963	901.82	
+48153	Floyd County	 Texas	6439	992.57	
+48155	Foard County	 Texas	1273	707.74	
+48157	Fort Bend County	 Texas	587666	886.11	
+48159	Franklin County	 Texas	10593	294.79	
+48161	Freestone County	 Texas	19631	892.2	
+48163	Frio County	 Texas	17265	1134.39	
+48165	Gaines County	 Texas	17572	1502.91	
+48167	Galveston County	 Texas	292874	876.46	
+48169	Garza County	 Texas	6295	896.25	
+48171	Gillespie County	 Texas	24777	1061.58	
+48173	Glasscock County	 Texas	1255	901	
+48175	Goliad County	 Texas	7223	859.43	
+48177	Gonzales County	 Texas	19773	1069.91	
+48179	Gray County	 Texas	22731	929.3	
+48181	Grayson County	 Texas	120641	979.25	
+48183	Gregg County	 Texas	121451	276.41	
+48185	Grimes County	 Texas	26564	801.27	
+48187	Guadalupe County	 Texas	131945	714.23	
+48189	Hale County	 Texas	36153	1004.86	
+48191	Hall County	 Texas	3337	904.13	
+48193	Hamilton County	 Texas	8448	836.45	
+48195	Hansford County	 Texas	5556	920.48	
+48197	Hardeman County	 Texas	4124	697.05	
+48199	Hardin County	 Texas	54497	897.43	
+48201	Harris County	 Texas	4101752	1777.89	
+48203	Harrison County	 Texas	65958	915.17	
+48205	Hartley County	 Texas	6015	1463.3	
+48207	Haskell County	 Texas	5891	910.33	
+48209	Hays County	 Texas	158464	679.85	
+48211	Hemphill County	 Texas	3863	912.11	
+48213	Henderson County	 Texas	78558	949.09	
+48215	Hidalgo County	 Texas	774820	1582.78	
+48217	Hill County	 Texas	35079	985.71	
+48219	Hockley County	 Texas	22988	908.57	
+48221	Hood County	 Texas	51161	436.82	
+48223	Hopkins County	 Texas	35088	792.8	
+48225	Houston County	 Texas	23512	1236.93	
+48227	Howard County	 Texas	34927	904.27	
+48229	Hudspeth County	 Texas	3407	4572.26	
+48231	Hunt County	 Texas	85955	882.09	
+48233	Hutchinson County	 Texas	21992	895.01	
+48235	Irion County	 Texas	1596	1051.68	
+48237	Jack County	 Texas	9027	920.18	
+48239	Jackson County	 Texas	14075	857.1	
+48241	Jasper County	 Texas	35703	969.68	
+48243	Jeff Davis County	 Texas	2319	2264.77	
+48245	Jefferson County	 Texas	251627	1111.32	
+48247	Jim Hogg County	 Texas	5257	1136.24	
+48249	Jim Wells County	 Texas	41014	868.3	
+48251	Johnson County	 Texas	151174	734.43	
+48253	Jones County	 Texas	20137	937.21	
+48255	Karnes County	 Texas	14936	753.58	
+48257	Kaufman County	 Texas	103385	806.87	
+48259	Kendall County	 Texas	33745	663.1	
+48261	Kenedy County	 Texas	451	1945.6	
+48263	Kent County	 Texas	829	902.97	
+48265	Kerr County	 Texas	49469	1107.76	
+48267	Kimble County	 Texas	4577	1251.02	
+48269	King County	 Texas	227	913.38	
+48271	Kinney County	 Texas	3574	1365.4	
+48273	Kleberg County	 Texas	31925	1090.5	
+48275	Knox County	 Texas	3713	855.5	
+48277	Lamar County	 Texas	49740	932.53	
+48279	Lamb County	 Texas	13996	1017.8	
+48281	Lampasas County	 Texas	19837	714.02	
+48283	La Salle County	 Texas	6850	1494.36	
+48285	Lavaca County	 Texas	19269	970.44	
+48287	Lee County	 Texas	16591	634.09	
+48289	Leon County	 Texas	16827	1080.47	
+48291	Liberty County	 Texas	75662	1176.33	
+48293	Limestone County	 Texas	23350	933.22	
+48295	Lipscomb County	 Texas	3324	932.28	
+48297	Live Oak County	 Texas	11526	1078.94	
+48299	Llano County	 Texas	19115	966.25	
+48301	Loving County	 Texas	85	676.88	
+48303	Lubbock County	 Texas	278339	900.74	
+48305	Lynn County	 Texas	5886	893.5	
+48307	McCulloch County	 Texas	8281	1073.43	
+48309	McLennan County	 Texas	234626	1060.27	
+48311	McMullen County	 Texas	696	1142.71	
+48313	Madison County	 Texas	13590	472.48	
+48315	Marion County	 Texas	10544	420.39	
+48317	Martin County	 Texas	4804	915.69	
+48319	Mason County	 Texas	3978	932.26	
+48321	Matagorda County	 Texas	36653	1612.33	
+48323	Maverick County	 Texas	54107	1291.84	
+48325	Medina County	 Texas	46009	1334.63	
+48327	Menard County	 Texas	2232	902.32	
+48329	Midland County	 Texas	138472	902.03	
+48331	Milam County	 Texas	24691	1021.74	
+48333	Mills County	 Texas	4880	749.95	
+48335	Mitchell County	 Texas	9367	915.98	
+48337	Montague County	 Texas	19737	938.51	
+48339	Montgomery County	 Texas	458339	1076.91	
+48341	Moore County	 Texas	21765	909.68	
+48343	Morris County	 Texas	12914	258.65	
+48345	Motley County	 Texas	1153	989.87	
+48347	Nacogdoches County	 Texas	64647	981.41	
+48349	Navarro County	 Texas	47739	1086.27	
+48351	Newton County	 Texas	14372	939.57	
+48353	Nolan County	 Texas	15104	914.01	
+48355	Nueces County	 Texas	340568	1166.58	
+48357	Ochiltree County	 Texas	10314	918.14	
+48359	Oldham County	 Texas	2048	1501.53	
+48361	Orange County	 Texas	82306	379.56	
+48363	Palo Pinto County	 Texas	28010	985.56	
+48365	Panola County	 Texas	23814	821.39	
+48367	Parker County	 Texas	116820	910.15	
+48369	Parmer County	 Texas	10172	885.23	
+48371	Pecos County	 Texas	15510	4765.11	
+48373	Polk County	 Texas	45618	1109.91	
+48375	Potter County	 Texas	121099	922.06	
+48377	Presidio County	 Texas	7678	3856.54	
+48379	Rains County	 Texas	10976	258.89	
+48381	Randall County	 Texas	121090	922.49	
+48383	Reagan County	 Texas	3384	1176.09	
+48385	Real County	 Texas	3326	700.09	
+48387	Red River County	 Texas	12795	1057.67	
+48389	Reeves County	 Texas	13606	2642.13	
+48391	Refugio County	 Texas	7352	818.72	
+48393	Roberts County	 Texas	992	924.25	
+48395	Robertson County	 Texas	16596	865.73	
+48397	Rockwall County	 Texas	78749	148.71	
+48399	Runnels County	 Texas	10473	1057.22	
+48401	Rusk County	 Texas	53211	938.7	
+48403	Sabine County	 Texas	10642	576.65	
+48405	San Augustine County	 Texas	8898	592.25	
+48407	San Jacinto County	 Texas	26482	627.96	
+48409	San Patricio County	 Texas	65352	707.11	
+48411	San Saba County	 Texas	6037	1138.33	
+48413	Schleicher County	 Texas	3327	1310.74	
+48415	Scurry County	 Texas	16855	907.61	
+48417	Shackelford County	 Texas	3346	915.61	
+48419	Shelby County	 Texas	25602	834.6	
+48421	Sherman County	 Texas	3040	923.27	
+48423	Smith County	 Texas	209691	949.55	
+48425	Somervell County	 Texas	8444	191.91	
+48427	Starr County	 Texas	60882	1229.38	
+48429	Stephens County	 Texas	9561	921.55	
+48431	Sterling County	 Texas	1223	923.58	
+48433	Stonewall County	 Texas	1447	920.31	
+48435	Sutton County	 Texas	4123	1454.52	
+48437	Swisher County	 Texas	7816	900.74	
+48439	Tarrant County	 Texas	1814667	897.56	
+48441	Taylor County	 Texas	131425	919.34	
+48443	Terrell County	 Texas	1001	2357.94	
+48445	Terry County	 Texas	12561	890.96	
+48447	Throckmorton County	 Texas	1626	915.54	
+48449	Titus County	 Texas	32045	425.72	
+48451	Tom Green County	 Texas	110434	1540.63	
+48453	Travis County	 Texas	1034842	1022.19	
+48455	Trinity County	 Texas	14466	714.05	
+48457	Tyler County	 Texas	21638	935.77	
+48459	Upshur County	 Texas	39386	592.72	
+48461	Upton County	 Texas	3300	1241.93	
+48463	Uvalde County	 Texas	26434	1558.71	
+48465	Val Verde County	 Texas	48578	3232.7	
+48467	Van Zandt County	 Texas	52507	859.56	
+48469	Victoria County	 Texas	87188	888.81	
+48471	Walker County	 Texas	67447	801.51	
+48473	Waller County	 Texas	42894	518.49	
+48475	Ward County	 Texas	10705	835.81	
+48477	Washington County	 Texas	33628	621.4	
+48479	Webb County	 Texas	250320	3375.67	
+48481	Wharton County	 Texas	41153	1094.51	
+48483	Wheeler County	 Texas	5414	915.39	
+48485	Wichita County	 Texas	131019	633.04	
+48487	Wilbarger County	 Texas	13451	978.16	
+48489	Willacy County	 Texas	21983	784.27	
+48491	Williamson County	 Texas	426296	1136.5	
+48493	Wilson County	 Texas	42999	808.64	
+48495	Winkler County	 Texas	7137	841.29	
+48497	Wise County	 Texas	59351	922.84	
+48499	Wood County	 Texas	41927	695.87	
+48501	Yoakum County	 Texas	7918	799.79	
+48503	Young County	 Texas	18368	930.9	
+48505	Zapata County	 Texas	14014	1058.18	
+48507	Zavala County	 Texas	11753	1301.82	
+49001	Beaver County	 Utah	6527	2592.43	
+49003	Box Elder County	 Utah	49660	6729.45	
+49005	Cache County	 Utah	112095	1173.17	
+49007	Carbon County	 Utah	21153	1484.69	
+49009	Daggett County	 Utah	897	723.1	
+49011	Davis County	 Utah	306664	633.57	
+49013	Duchesne County	 Utah	18537	3256.29	
+49015	Emery County	 Utah	10902	4461.83	
+49017	Garfield County	 Utah	5107	5208.5	
+49019	Grand County	 Utah	9183	3694.3	
+49021	Iron County	 Utah	45984	3302.12	
+49023	Juab County	 Utah	10233	3406.46	
+49025	Kane County	 Utah	7093	4108.6	
+49027	Millard County	 Utah	12436	6828.51	
+49029	Morgan County	 Utah	9485	610.79	
+49031	Piute County	 Utah	1699	765.81	
+49033	Rich County	 Utah	2264	1086.36	
+49035	Salt Lake County	 Utah	1032226	807.83	
+49037	San Juan County	 Utah	14707	7933.64	
+49039	Sanpete County	 Utah	27645	1602.71	
+49041	Sevier County	 Utah	20759	1918.41	
+49043	Summit County	 Utah	36598	1882.15	
+49045	Tooele County	 Utah	58158	7287.73	
+49047	Uintah County	 Utah	32809	4499.21	
+49049	Utah County	 Utah	516571	2141.06	
+49051	Wasatch County	 Utah	23661	1209.24	
+49053	Washington County	 Utah	139484	2430.07	
+49055	Wayne County	 Utah	2756	2466.61	
+49057	Weber County	 Utah	230940	659.49	
+50001	Addison County	 Vermont	36814	808.46	
+50003	Bennington County	 Vermont	36990	677.72	
+50005	Caledonia County	 Vermont	31170	657.74	
+50007	Chittenden County	 Vermont	156696	619.62	
+50009	Essex County	 Vermont	6316	673.83	
+50011	Franklin County	 Vermont	47853	692.66	
+50013	Grand Isle County	 Vermont	7032	194.66	
+50015	Lamoille County	 Vermont	24471	463.47	
+50017	Orange County	 Vermont	28980	691.97	
+50019	Orleans County	 Vermont	27198	720.33	
+50021	Rutland County	 Vermont	61599	944.43	
+50023	Washington County	 Vermont	59462	695.83	
+50025	Windham County	 Vermont	44310	798.18	
+50027	Windsor County	 Vermont	56607	976.09	
+51001	Accomack County	 Virginia	33454	1310.18	
+51003	Albemarle County	 Virginia	99484	726.24	
+51005	Alleghany County	 Virginia	16297	446.93	
+51007	Amelia County	 Virginia	12674	358.57	
+51009	Amherst County	 Virginia	32301	478.81	
+51011	Appomattox County	 Virginia	14952	334.75	
+51013	Arlington County	 Virginia	209077	25.97	
+51015	Augusta County	 Virginia	73662	972.28	
+51017	Bath County	 Virginia	4713	534.59	
+51019	Bedford County	 Virginia	68750	769.36	
+51021	Bland County	 Virginia	6827	358.74	
+51023	Botetourt County	 Virginia	33074	545.98	
+51025	Brunswick County	 Virginia	17372	569.4	
+51027	Buchanan County	 Virginia	24071	503.9	
+51029	Buckingham County	 Virginia	17071	583.6	
+51031	Campbell County	 Virginia	54797	507.28	
+51033	Caroline County	 Virginia	28510	538.94	
+51035	Carroll County	 Virginia	29989	477.84	
+51036	Charles City County	 Virginia	7226	203.9	
+51037	Charlotte County	 Virginia	12546	477.46	
+51041	Chesterfield County	 Virginia	316895	438.43	
+51043	Clarke County	 Virginia	14143	178.2	
+51045	Craig County	 Virginia	5186	330.07	
+51047	Culpeper County	 Virginia	46894	382.32	
+51049	Cumberland County	 Virginia	9951	299.76	
+51051	Dickenson County	 Virginia	15877	334.57	
+51053	Dinwiddie County	 Virginia	27926	507.04	
+51057	Essex County	 Virginia	11130	285.92	
+51059	Fairfax County	 Virginia	1083770	406.81	
+51061	Fauquier County	 Virginia	65495	651.83	
+51063	Floyd County	 Virginia	15268	381.49	
+51065	Fluvanna County	 Virginia	25749	290.23	
+51067	Franklin County	 Virginia	56012	711.6	
+51069	Frederick County	 Virginia	78397	415.66	
+51071	Giles County	 Virginia	17149	360.97	
+51073	Gloucester County	 Virginia	36821	288.02	
+51075	Goochland County	 Virginia	21496	290.01	
+51077	Grayson County	 Virginia	15535	445.93	
+51079	Greene County	 Virginia	18453	156.98	
+51081	Greensville County	 Virginia	12127	296.83	
+51083	Halifax County	 Virginia	36140	824.05	
+51085	Hanover County	 Virginia	99964	474.11	
+51087	Henrico County	 Virginia	307576	243.22	
+51089	Henry County	 Virginia	53971	384.41	
+51091	Highland County	 Virginia	2317	415.88	
+51093	Isle of Wight County	 Virginia	35240	362.79	
+51095	James City County	 Virginia	66939	179.73	
+51097	King and Queen County	 Virginia	6968	326.35	
+51099	King George County	 Virginia	23739	187.81	
+51101	King William County	 Virginia	15861	285.67	
+51103	Lancaster County	 Virginia	11371	231.36	
+51105	Lee County	 Virginia	25528	437.34	
+51107	Loudoun County	 Virginia	314980	521.14	
+51109	Louisa County	 Virginia	33083	510.83	
+51111	Lunenburg County	 Virginia	12838	432.4	
+51113	Madison County	 Virginia	13270	321.81	
+51115	Mathews County	 Virginia	8965	251.98	
+51117	Mecklenburg County	 Virginia	32548	679.34	
+51119	Middlesex County	 Virginia	10855	210.76	
+51121	Montgomery County	 Virginia	94179	389.44	
+51125	Nelson County	 Virginia	15000	474.34	
+51127	New Kent County	 Virginia	18460	223.77	
+51131	Northampton County	 Virginia	12408	795.4	
+51133	Northumberland County	 Virginia	12389	285.68	
+51135	Nottoway County	 Virginia	15875	316.13	
+51137	Orange County	 Virginia	33625	343.44	
+51139	Page County	 Virginia	24038	314.11	
+51141	Patrick County	 Virginia	18513	485.88	
+51143	Pittsylvania County	 Virginia	63318	978.21	
+51145	Powhatan County	 Virginia	28003	262.42	
+51147	Prince Edward County	 Virginia	23017	353.87	
+51149	Prince George County	 Virginia	36013	281.55	
+51153	Prince William County	 Virginia	404011	349.05	
+51155	Pulaski County	 Virginia	34869	329.6	
+51157	Rappahannock County	 Virginia	7440	266.86	
+51159	Richmond County	 Virginia	9234	216.4	
+51161	Roanoke County	 Virginia	92432	250.84	
+51163	Rockbridge County	 Virginia	22357	601.02	
+51165	Rockingham County	 Virginia	76353	853.35	
+51167	Russell County	 Virginia	28773	476.78	
+51169	Scott County	 Virginia	23061	538.66	
+51171	Shenandoah County	 Virginia	42076	512.56	
+51173	Smyth County	 Virginia	32103	452.33	
+51175	Southampton County	 Virginia	18576	603.07	
+51177	Spotsylvania County	 Virginia	122854	412.3	
+51179	Stafford County	 Virginia	129446	279.55	
+51181	Surry County	 Virginia	6988	310.32	
+51183	Sussex County	 Virginia	12095	492.86	
+51185	Tazewell County	 Virginia	44846	519.91	
+51187	Warren County	 Virginia	37567	216.35	
+51191	Washington County	 Virginia	54691	567.59	
+51193	Westmoreland County	 Virginia	17468	252.65	
+51195	Wise County	 Virginia	41361	404.56	
+51197	Wythe County	 Virginia	29203	464.63	
+51199	York County	 Virginia	65503	215.5	
+51510	Alexandria city	 Virginia	140337	15.38	
+51515	Bedford city	 Virginia	6103	6.86	
+51520	Bristol city	 Virginia	17747	11.59	
+51530	Buena Vista city	 Virginia	6679	6.83	
+51540	Charlottesville city	 Virginia	43223	10.26	
+51550	Chesapeake city	 Virginia	223233	350.92	
+51570	Colonial Heights city	 Virginia	17426	7.79	
+51580	Covington city	 Virginia	5903	4.44	
+51590	Danville city	 Virginia	43185	43.94	
+51595	Emporia city	 Virginia	5825	6.96	
+51600	Fairfax city	 Virginia	22712	6.16	
+51610	Falls Church city	 Virginia	12300	2	
+51620	Franklin city	 Virginia	8531	7.72	
+51630	Fredericksburg city	 Virginia	24932	10.52	
+51640	Galax city	 Virginia	6942	8.07	
+51650	Hampton city	 Virginia	137471	128.56	
+51660	Harrisonburg city	 Virginia	49043	17.59	
+51670	Hopewell city	 Virginia	22501	10.72	
+51678	Lexington city	 Virginia	6990	2.49	
+51680	Lynchburg city	 Virginia	75657	49.77	
+51683	Manassas city	 Virginia	37943	10.03	
+51685	Manassas Park city	 Virginia	14409	1.83	
+51690	Martinsville city	 Virginia	13854	11.01	
+51700	Newport News city	 Virginia	180831	119.03	
+51710	Norfolk city	 Virginia	243056	96.3	
+51720	Norton city	 Virginia	3971	7.26	
+51730	Petersburg city	 Virginia	32226	23.22	
+51735	Poquoson city	 Virginia	12110	78.43	
+51740	Portsmouth city	 Virginia	95786	46.62	
+51750	Radford city	 Virginia	16511	10.19	
+51760	Richmond city	 Virginia	205348	62.61	
+51770	Roanoke city	 Virginia	96742	42.93	
+51775	Salem city	 Virginia	24792	14.55	
+51790	Staunton city	 Virginia	84216	19.76	
+51800	Suffolk city	 Virginia	439528	429.09	
+51810	Virginia Beach city	 Virginia	21030	497.35	
+51820	Waynesboro city	 Virginia	14207	14.06	
+51830	Williamsburg city	 Virginia	26330	8.74	
+51840	Winchester city	 Virginia	18575	9.33	
+53001	Adams County	 Washington	21658	1929.73	
+53003	Asotin County	 Washington	175424	640.69	
+53005	Benton County	 Washington	72431	1760.19	
+53007	Chelan County	 Washington	71411	2993.87	
+53009	Clallam County	 Washington	426984	2676.14	
+53011	Clark County	 Washington	4001	656.26	
+53013	Columbia County	 Washington	102138	873.52	
+53015	Cowlitz County	 Washington	38369	1166.41	
+53017	Douglas County	 Washington	7584	1848.74	
+53019	Ferry County	 Washington	78680	2257.46	
+53021	Franklin County	 Washington	2246	1265.38	
+53023	Garfield County	 Washington	88885	718.18	
+53025	Grant County	 Washington	72272	2791.37	
+53027	Grays Harbor County	 Washington	78707	2224.59	
+53029	Island County	 Washington	29802	517.39	
+53031	Jefferson County	 Washington	1940777	2178.03	
+53033	King County	 Washington	251400	2306.77	
+53035	Kitsap County	 Washington	40954	565.98	
+53037	Kittitas County	 Washington	20421	2333.24	
+53039	Klickitat County	 Washington	75399	1904.29	
+53041	Lewis County	 Washington	10536	2436.43	
+53043	Lincoln County	 Washington	60545	2339.74	
+53045	Mason County	 Washington	40959	1051.09	
+53047	Okanogan County	 Washington	20945	5315.38	
+53049	Pacific County	 Washington	12976	1223.58	
+53051	Pend Oreille County	 Washington	798528	1425.34	
+53053	Pierce County	 Washington	15740	1806.67	
+53055	San Juan County	 Washington	117087	621.09	
+53057	Skagit County	 Washington	11053	1920.49	
+53059	Skamania County	 Washington	714443	1683.95	
+53061	Snohomish County	 Washington	470375	2196.53	
+53063	Spokane County	 Washington	43498	1780.82	
+53065	Stevens County	 Washington	252410	2540.66	
+53067	Thurston County	 Washington	4003	773.68	
+53069	Wahkiakum County	 Washington	58643	286.7	
+53071	Walla Walla County	 Washington	201404	1299.23	
+53073	Whatcom County	 Washington	44997	2503.64	
+53075	Whitman County	 Washington	242454	2177.61	
+53077	Yakima County	 Washington	16472	4311.78	
+54001	Barbour County	 West Virginia	104410	342.77	
+54003	Berkeley County	 West Virginia	24617	321.61	
+54005	Boone County	 West Virginia	14531	503.22	
+54007	Braxton County	 West Virginia	24021	516.2	
+54009	Brooke County	 West Virginia	96240	92.26	
+54011	Cabell County	 West Virginia	7613	288.04	
+54013	Calhoun County	 West Virginia	9432	280.65	
+54015	Clay County	 West Virginia	8147	343.85	
+54017	Doddridge County	 West Virginia	46000	320.51	
+54019	Fayette County	 West Virginia	8623	668.4	
+54021	Gilmer County	 West Virginia	11929	340.09	
+54023	Grant County	 West Virginia	35572	480.23	
+54025	Greenbrier County	 West Virginia	23791	1024.49	
+54027	Hampshire County	 West Virginia	30594	644.67	
+54029	Hancock County	 West Virginia	13912	88.36	
+54031	Hardy County	 West Virginia	68959	584.52	
+54033	Harrison County	 West Virginia	29206	416.63	
+54035	Jackson County	 West Virginia	53545	471.62	
+54037	Jefferson County	 West Virginia	192572	211.59	
+54039	Kanawha County	 West Virginia	16389	911.07	
+54041	Lewis County	 West Virginia	21714	389.79	
+54043	Lincoln County	 West Virginia	36508	438.61	
+54045	Logan County	 West Virginia	21966	455.63	
+54047	McDowell County	 West Virginia	56460	534.94	
+54049	Marion County	 West Virginia	32993	311.51	
+54051	Marshall County	 West Virginia	27242	312.2	
+54053	Mason County	 West Virginia	62251	444.84	
+54055	Mercer County	 West Virginia	28049	420.71	
+54057	Mineral County	 West Virginia	26660	329.16	
+54059	Mingo County	 West Virginia	96417	423.66	
+54061	Monongalia County	 West Virginia	13528	365.91	
+54063	Monroe County	 West Virginia	17507	473.68	
+54065	Morgan County	 West Virginia	26201	229.69	
+54067	Nicholas County	 West Virginia	44307	654.45	
+54069	Ohio County	 West Virginia	7666	108.86	
+54071	Pendleton County	 West Virginia	7630	698.21	
+54073	Pleasants County	 West Virginia	8750	134.6	
+54075	Pocahontas County	 West Virginia	33471	941.9	
+54077	Preston County	 West Virginia	55660	651.45	
+54079	Putnam County	 West Virginia	78852	350.42	
+54081	Raleigh County	 West Virginia	29361	609.38	
+54083	Randolph County	 West Virginia	10391	1040	
+54085	Ritchie County	 West Virginia	14884	453.61	
+54087	Roane County	 West Virginia	13813	483.8	
+54089	Summers County	 West Virginia	16889	367.73	
+54091	Taylor County	 West Virginia	7109	175.7	
+54093	Tucker County	 West Virginia	9188	421.13	
+54095	Tyler County	 West Virginia	24210	260.71	
+54097	Upshur County	 West Virginia	42273	354.89	
+54099	Wayne County	 West Virginia	9158	512.23	
+54101	Webster County	 West Virginia	16526	556.18	
+54103	Wetzel County	 West Virginia	5769	361.39	
+54105	Wirt County	 West Virginia	86835	234.85	
+54107	Wood County	 West Virginia	23668	376.98	
+54109	Wyoming County	 West Virginia	20898	501.85	
+55001	Adams County	 Wisconsin	16113	688.57	
+55003	Ashland County	 Wisconsin	45882	2294.11	
+55005	Barron County	 Wisconsin	15078	890.08	
+55007	Bayfield County	 Wisconsin	248526	2041.75	
+55009	Brown County	 Wisconsin	13544	615.47	
+55011	Buffalo County	 Wisconsin	15528	709.63	
+55013	Burnett County	 Wisconsin	48960	880.44	
+55015	Calumet County	 Wisconsin	62362	397.06	
+55017	Chippewa County	 Wisconsin	34610	1041.36	
+55019	Clark County	 Wisconsin	56596	1219.14	
+55021	Columbia County	 Wisconsin	16677	795.78	
+55023	Crawford County	 Wisconsin	490379	599.29	
+55025	Dane County	 Wisconsin	88741	1238.43	
+55027	Dodge County	 Wisconsin	27872	907.08	
+55029	Door County	 Wisconsin	43963	2369.94	
+55031	Douglas County	 Wisconsin	43788	1480.03	
+55033	Dunn County	 Wisconsin	98952	863.96	
+55035	Eau Claire County	 Wisconsin	4486	645.31	
+55037	Florence County	 Wisconsin	101577	497.52	
+55039	Fond du Lac County	 Wisconsin	9361	765.87	
+55041	Forest County	 Wisconsin	51055	1046.49	
+55043	Grant County	 Wisconsin	36800	1183.44	
+55045	Green County	 Wisconsin	19064	584.62	
+55047	Green Lake County	 Wisconsin	23712	380.46	
+55049	Iowa County	 Wisconsin	5978	768.16	
+55051	Iron County	 Wisconsin	20436	919.29	
+55053	Jackson County	 Wisconsin	83751	1000.08	
+55055	Jefferson County	 Wisconsin	26701	582.8	
+55057	Juneau County	 Wisconsin	166373	804.22	
+55059	Kenosha County	 Wisconsin	20600	754.36	
+55061	Kewaunee County	 Wisconsin	114718	1084.61	
+55063	La Crosse County	 Wisconsin	16836	479.96	
+55065	Lafayette County	 Wisconsin	19951	634.62	
+55067	Langlade County	 Wisconsin	28710	887.95	
+55069	Lincoln County	 Wisconsin	81266	906.97	
+55071	Manitowoc County	 Wisconsin	134041	1493.85	
+55073	Marathon County	 Wisconsin	41704	1576.24	
+55075	Marinette County	 Wisconsin	15366	1550.26	
+55077	Marquette County	 Wisconsin	4274	464.46	
+55078	Menominee County	 Wisconsin	946584	365.02	
+55079	Milwaukee County	 Wisconsin	44714	1189.8	
+55081	Monroe County	 Wisconsin	37632	908.47	
+55083	Oconto County	 Wisconsin	36029	1149.18	
+55085	Oneida County	 Wisconsin	176777	1236.11	
+55087	Outagamie County	 Wisconsin	86429	644.46	
+55089	Ozaukee County	 Wisconsin	7458	1116.3	
+55091	Pepin County	 Wisconsin	40842	248.7	
+55093	Pierce County	 Wisconsin	44094	591.62	
+55095	Polk County	 Wisconsin	70027	956.33	
+55097	Portage County	 Wisconsin	14141	822.82	
+55099	Price County	 Wisconsin	195024	1278.57	
+55101	Racine County	 Wisconsin	18020	791.98	
+55103	Richland County	 Wisconsin	160356	589.45	
+55105	Rock County	 Wisconsin	14670	726.26	
+55107	Rusk County	 Wisconsin	84363	930.96	
+55109	St. Croix County	 Wisconsin	61953	735.85	
+55111	Sauk County	 Wisconsin	16580	848.51	
+55113	Sawyer County	 Wisconsin	41820	1350.44	
+55115	Shawano County	 Wisconsin	115377	909.39	
+55117	Sheboygan County	 Wisconsin	20631	1271.07	
+55119	Taylor County	 Wisconsin	28853	984.58	
+55121	Trempealeau County	 Wisconsin	29827	742.05	
+55123	Vernon County	 Wisconsin	21489	816.5	
+55125	Vilas County	 Wisconsin	102310	1017.92	
+55127	Walworth County	 Wisconsin	15893	576.55	
+55129	Washburn County	 Wisconsin	131840	853.13	
+55131	Washington County	 Wisconsin	389740	435.92	
+55133	Waukesha County	 Wisconsin	52377	580.52	
+55135	Waupaca County	 Wisconsin	24565	765.38	
+55137	Waushara County	 Wisconsin	166984	637.44	
+55139	Winnebago County	 Wisconsin	74591	578.75	
+55141	Wood County	 Wisconsin	36186	809.51	
+56001	Albany County	 Wyoming	11636	4309.03	
+56003	Big Horn County	 Wyoming	45840	3159.1	
+56005	Campbell County	 Wyoming	15781	4801.69	
+56007	Carbon County	 Wyoming	13779	7964.44	
+56009	Converse County	 Wyoming	7036	4265.29	
+56011	Crook County	 Wyoming	40103	2870.61	
+56013	Fremont County	 Wyoming	13277	9266.21	
+56015	Goshen County	 Wyoming	4791	2232.31	
+56017	Hot Springs County	 Wyoming	8564	2006.32	
+56019	Johnson County	 Wyoming	91719	4174.86	
+56021	Laramie County	 Wyoming	17960	2687.82	
+56023	Lincoln County	 Wyoming	75876	4089.23	
+56025	Natrona County	 Wyoming	2478	5375.91	
+56027	Niobrara County	 Wyoming	28203	2627.99	
+56029	Park County	 Wyoming	8677	6968.85	
+56031	Platte County	 Wyoming	29097	2111.02	
+56033	Sheridan County	 Wyoming	10065	2527.14	
+56035	Sublette County	 Wyoming	43890	4935.97	
+56037	Sweetwater County	 Wyoming	21326	10491.73	
+56039	Teton County	 Wyoming	20942	4221.96	
+56041	Uinta County	 Wyoming	8425	2087.66	
+56043	Washakie County	 Wyoming	7152	2242.85	
+56045	Weston County	 Wyoming		2400.13	
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
